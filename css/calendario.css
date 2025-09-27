@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7,1fr);
-    margin: 0.1em;
+    margin: 0.5em;
 
 }
 
@@ -14,20 +14,44 @@
 .day{
     color: rgb(78, 78, 78);
     text-align: center;
+    padding: 0.5em 0.5em 2em 0.5em;
 }
 
 .day.number{
     border: 0.0625em solid #ac82ff;
     text-align: start;
-    padding-left: 0.5em;
-    padding: 1em;
 }
 
-.day.number p{
+.day.number span {
+    display: inline-block;
+    padding: 0 0.5em;
+    border-radius: 0.3em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.day.number:hover span {
+    background-color: #a973ff;
+    color: white;
+}
+
+
+.day.number a{
+    color: rgb(78, 78, 78);
+    text-decoration: none;
     font-size:0.8em;
     display: block;
     background-color: #bb9ef7;
     border-radius: 0.1em;
-    padding: 0 0.8em 0 0.8em;
-    width: max-content;
+    margin-top: 0.5em;
+    padding: 0 0.8em;
+    width: auto;
+} 
+
+.day.number.other-month{
+    color: rgba(78, 78, 78, 0.8);
+}
+
+.day.number.other-month a{
+    color: rgba(78, 78, 78, 0.8);
+    background-color: rgba(187, 158, 247, 0.5);
 }
