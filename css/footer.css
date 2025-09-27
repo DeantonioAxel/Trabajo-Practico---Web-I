@@ -1,0 +1,261 @@
+.footer{
+    background-color: #6cc5e8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-data{
+    color: rgb(78, 78, 78);
+    border: 0.0625em solid #ac82ff;
+    border-radius: 0.3em;
+    width: 100%;
+    margin: 0.2em;
+    padding-left: 0.5em;
+}
+
+.footer-data h4{
+    text-align: center;
+    padding: 0.5em;
+}
+
+.footer-data.grupo p {
+    text-align: start;  
+    padding: 0.7em 0.5em;
+}
+
+.footer-data.menu a{
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    text-align: start;
+    padding: 0.7em;
+}
+
+.footer-data .iconos a{
+    padding: 2em;
+}
+
+.footer-data .iconos img{
+    width: 4em;
+    height: 4em;
+    margin-top: 4em;
+}
+
+@media screen and (max-width: 1224px){
+    .footer-data .iconos img{
+    width: 3.2em;
+    height: 3.2em;
+}
+}
+
+@media screen and (max-width: 1109px){
+    .footer-data.grupo p {
+    padding: 0.5em 0.5em;
+}
+.footer-data.menu a {
+    padding: 0.8em;
+}
+    .footer-data .iconos img{
+    width: 2.8em;
+    height: 2.8em;
+}
+}
+
+@media screen and (max-width: 1052px){
+    .footer-data .iconos a{
+    padding: 1.8em;
+}
+    .footer-data .iconos img{
+    width: 2.8em;
+    height: 2.8em;
+}
+}
+
+@media screen and (max-width: 996px){
+    .footer-data .iconos img{
+    width: 2.5em;
+    height: 2.5em;
+}
+}
+
+@media screen and (max-width: 951px){
+    .footer-data .iconos a{
+    padding: 1.6em;
+}
+}
+
+@media screen and (max-width: 893px){
+    .footer-data .iconos a{
+    padding: 1.4em;
+}
+}
+
+@media screen and (max-width: 835px){
+    .footer-data.grupo p {
+    padding: 0.5em 0.4em;
+}
+.footer-data.menu a {
+    padding: 0.6em;
+}
+    .footer-data .iconos a{
+    padding: 1.2em;
+}
+}
+
+@media screen and (max-width: 779px){
+    .footer-data .iconos a{
+    padding: 1em;
+}
+}
+
+@media screen and (max-width: 720px){
+    .footer-data.grupo p {
+    padding: 0.4em 0.3em;
+}
+.footer-data.menu a {
+    padding: 0.5em;
+}
+    .footer-data .iconos a{
+    padding: 0.8em;
+}
+}
+
+@media screen and (max-width: 663px){
+    .footer-data .iconos a{
+    padding: 0.7em;
+}
+    .footer-data .iconos img{
+    width: 2.3em;
+    height: 2.3em;
+}
+}
+
+@media screen and (max-width: 605px){
+.footer-data .iconos a{
+    padding: 0.5em;
+}
+.footer-data .iconos img{
+    width: 2.1em;
+    height: 2.1em;
+    margin-top: 3.5em;
+}
+}
+
+@media screen and (max-width: 519px){
+.footer-data.menu a {
+    padding: 0.2em;
+}
+    .footer-data .iconos img{
+    width: 2em;
+    height: 2em;
+    margin-top: 3.2em;
+}
+}
+
+
+@media screen and (max-width: 570px){
+.footer-data.grupo p{
+    font-size: 0.8em;
+}
+.footer-data.menu a p{
+    font-size: 0.8em;
+}
+}
+
+@media screen and (max-width: 519px){
+.footer-data .iconos img{
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: 3em;
+}
+}
+
+@media screen and (max-width: 477px){
+    .footer-data .iconos img{
+    width: 1.6em;
+    height: 1.6em;
+    margin-top: 2.8em;
+}
+}
+
+@media screen and (max-width: 468px){
+.footer-data.grupo p{
+    font-size: 0.6em;
+}
+.footer-data.menu a p{
+    font-size: 0.6em;
+}
+}
+
+@media screen and (max-width: 448px){
+.footer-data .iconos img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 2.6em;
+}
+}
+
+@media screen and (max-width: 432px){
+.footer-data .iconos img{
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: 2.5em;
+}
+}
+
+@media screen and (max-width: 418px){
+    .footer-data .iconos img{
+    width: 1.3em;
+    height: 1.3em;
+}
+}
+
+@media screen and (max-width: 404px){
+.footer-data .iconos img{
+    width: 1.1em;
+    height: 1.1em;
+}
+}
+
+@media screen and (max-width: 376px){
+.footer-data .iconos img{
+    width: 0.9em;
+    height: 0.9em;
+}
+}
+
+@media screen and (max-width: 362px){
+.footer-data.grupo p{
+    font-size: 0.5em;
+}
+.footer-data.menu a p{
+    font-size: 0.5em;
+}
+}
+
+@media screen and (max-width: 346px){
+.footer-data .iconos a{
+    padding: 0.4em;
+}
+.footer-data .iconos img{
+    width: 0.8em;
+    height: 0.8em;
+    margin-top: 2.3em;
+}
+}
+
+@media screen and (max-width: 320px){
+.footer-data.grupo p{
+    font-size: 0.4em;
+}
+.footer-data.menu a p{
+    font-size: 0.4em;
+}
+.footer-data .iconos a{
+    padding: 0.3em;
+}
+.footer-data .iconos img{
+    width: 0.7em;
+    height: 0.7em;
+    margin-top: 2.2em;
+}
+}

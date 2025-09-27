@@ -1,20 +1,21 @@
 .calender{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7,1fr);
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
+    grid-template-rows: repeat(7, minmax(60px, auto));
     margin: 0.5em;
-
 }
 
 .calender-tittle{
     grid-column: 1/-1;
     text-align: center;
+    font-size: 4em;
 }
 
 .day{
     color: rgb(78, 78, 78);
     text-align: center;
     padding: 0.5em 0.5em 2em 0.5em;
+    word-break: break-word;
 }
 
 .day.number{
@@ -34,7 +35,6 @@
     color: white;
 }
 
-
 .day.number a{
     color: rgb(78, 78, 78);
     text-decoration: none;
@@ -45,6 +45,9 @@
     margin-top: 0.5em;
     padding: 0 0.8em;
     width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 } 
 
 .day.number.other-month{
@@ -54,4 +57,46 @@
 .day.number.other-month a{
     color: rgba(78, 78, 78, 0.8);
     background-color: rgba(187, 158, 247, 0.5);
+}
+
+@media screen and (max-width: 650px){
+    .day{
+        font-size:0.55em;
+        padding: 0.3em 0.2em 1em 0.2em;
+    }
+    .day.number a{
+        padding: 0.2em 0.4em;
+        font-size: 0.6em;
+    }
+    .day.number span{
+        font-size: 0.6em;
+        padding: 0 0.2em;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .calender-tittle{
+        font-size: 3.5em;
+    }
+    .day{
+        padding-bottom: 0.8em;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .calender-tittle{
+        font-size: 2.8em;
+    }
+    .day{
+        padding-bottom: 0.6em;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .calender-tittle{
+        font-size: 2.5em;
+    }
+    .day{
+        padding-bottom: 0.4em;
+    }
 }
