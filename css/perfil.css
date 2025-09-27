@@ -66,7 +66,7 @@
 }
 
 .headerC .nav-links li a:hover{
-    color:#ac82ff ;
+    color:#8269F1 ;
 }
 
 .headerC .login button , .headerC .register button{
@@ -76,21 +76,21 @@
 }
 
 .headerC .login button{
-    color: #A230EF;
-    border-color: #A230EF;
+    color: #6227dc;
+    border-color: #6227dc;
     background-color: white;
 }
 
 .headerC .register button{
     color: white;
-    border-color: #A230EF;
-    background-color: #A230EF;
+    border-color: #6227dc;
+    background-color: #6227dc;
 }
 
 .headerline{
     
     height: 0.2em;
-    background-color:#ac82ff;
+    background-color:#6227dc;
     border: none;
     opacity: 0.2;
 }
