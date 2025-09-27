@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+
+}
+
+.headerC {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8em;
+    padding: 0.5em 10%;
+}
+
+.headerC .logo, .headerC .shoppingCart {
+    cursor: pointer;
+}
+
+.headerC .logo img {
+    border-radius: 50%;
+    height: 8em;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.headerC .shoppingCart img{
+    height: 2em;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.headerC .logo img:hover , .headerC .shoppingCart img:hover{
+    transform: scale(1.2);
+}
+
+.headerC .nav-links{
+    list-style: none;
+    
+}
+
+.headerC .nav-links li{
+    display: inline-block;
+    padding: 0 1.5em;
+}
+
+.headerC .nav-links li:hover{
+    transform: scale(1.2);
+}
+.headerC .titulologo a{
+    color: black;
+    font-size:1.5em;
+    text-decoration: none;
+}
+
+.headerC .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.headerC .nav-links li a:hover{
+    color:#ac82ff ;
+}
+
+.headerC .login button , .headerC .register button{
+    font-weight: 700;
+    padding: 0.5em;
+    border-radius: 999px ;
+}
+
+.headerC .login button{
+    color: #A230EF;
+    border-color: #A230EF;
+    background-color: white;
+}
+
+.headerC .register button{
+    color: white;
+    border-color: #A230EF;
+    background-color: #A230EF;
+}
+
+.headerline{
+    
+    height: 0.2em;
+    background-color:#ac82ff;
+    border: none;
+    opacity: 0.2;
+}
