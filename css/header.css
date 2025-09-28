@@ -6,11 +6,9 @@
     padding: 0;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
-
 }
 
 .headerC {
-    
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -21,16 +19,13 @@
 
 .headerC .logo, .headerC .shoppingCart {
     cursor: pointer;
-    
 }
 
 .logo{
     display:inline-flex;
     align-items:center ;
     font-size: 1.2em;
-    gap: 0.5em;
-   
-    
+    gap: 0.5em; 
 }
 
 .headerC .logo img {
