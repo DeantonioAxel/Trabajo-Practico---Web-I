@@ -10,24 +10,36 @@
 }
 
 .headerC {
-    position: relative;
+    
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8em;
-    padding: 0.5em 10%;
+    min-height: 8em;
+    padding: 1em 5%;
 }
 
 .headerC .logo, .headerC .shoppingCart {
     cursor: pointer;
+    
+}
+
+.logo{
+    display:inline-flex;
+    align-items:center ;
+    font-size: 1.2em;
+    gap: 0.5em;
+   
+    
 }
 
 .headerC .logo img {
+    border: #1b093f;
     border-radius: 50%;
-    height: 8em;
+    height: 5em;
     width: auto;
     transition: all 0.3s;
+    
 }
 
 .headerC .shoppingCart img{
@@ -42,7 +54,6 @@
 
 .headerC .nav-links{
     list-style: none;
-    
 }
 
 .headerC .nav-links li{
@@ -53,10 +64,11 @@
 .headerC .nav-links li:hover{
     transform: scale(1.2);
 }
-.headerC .titulologo a{
+
+.logo a{
     color: black;
-    font-size:1.5em;
     text-decoration: none;
+    
 }
 
 .headerC .nav-links a{
@@ -68,23 +80,32 @@
 .headerC .nav-links li a:hover{
     color:#8269F1 ;
 }
+.headerC .right-side{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
 
-.headerC .login button , .headerC .register button{
+.right-side .login button , .right-side .register button{
+    
     font-weight: 700;
     padding: 0.5em;
-    border-radius: 999px ;
+    border-radius: 999px;
+   
 }
 
 .headerC .login button{
     color: #6227dc;
     border-color: #6227dc;
     background-color: white;
+    
 }
 
 .headerC .register button{
     color: white;
     border-color: #6227dc;
     background-color: #6227dc;
+    
 }
 
 .headerline{
@@ -93,4 +114,13 @@
     background-color:#6227dc;
     border: none;
     opacity: 0.2;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding:  10px 0px;
+    }
 }
