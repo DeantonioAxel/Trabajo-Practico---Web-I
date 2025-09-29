@@ -1,0 +1,19 @@
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #8269f1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2em 0;
+    letter-spacing: 1px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color:rgb(44, 46, 50);
+    text-transform: uppercase;
+    margin: 2em 0;
+}
+.datos_alumno{
+    justify-content: space-around;
+}
