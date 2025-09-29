@@ -4,6 +4,8 @@
     font-family: "Roboto", sans-serif;
 }
 
+
+
 h2{
     font-size: 1.5em;
     color: #8269f1;
@@ -146,4 +148,35 @@ h2{
 .flecha img {
     width: 40px;
     height: auto;
+}
+
+.pasos h2{
+font-size:5em;
+margin-right: 1.5;
+
+}
+
+.pasos h3{
+font-size: 3.2em;
+margin: 0;
+}
+
+
+
+.paso1, .paso2 , .paso3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pasos p{ width: 30em;
+     height: 12em; 
+     border: 1px solid red; 
+     border-radius: 20px; 
+     box-shadow: 22px rgba(0,0,0,0.2);
+     display: flex; 
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+     text-align: center;
 }
