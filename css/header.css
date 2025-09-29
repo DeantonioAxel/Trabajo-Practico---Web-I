@@ -37,10 +37,28 @@
     
 }
 
+.headerC .shoppingCart {
+    position: relative;
+    display: inline-block;
+}
+
 .headerC .shoppingCart img{
     height: 2em;
     width: auto;
     transition: all 0.3s;
+}
+
+.headerC .shoppingCart p {
+    position: absolute;
+    top: 2em;
+    left: -0.8em;
+    font-size: 0.7em;
+    background: #8269F1;
+    color: white;
+    font-weight: bold;
+    padding: 0.125em 0.375em;
+    border-radius: 50%; 
+    line-height: 1;
 }
 
 .headerC .logo img:hover , .headerC .shoppingCart img:hover{

@@ -1,12 +1,11 @@
 .footer{
-    background-color: #6cc5e8;
+    background-color: rgb(241, 227, 227);
     display: flex;
     justify-content: space-around;
 }
 
 .footer-data{
-    color: rgb(78, 78, 78);
-    border: 0.0625em solid #ac82ff;
+    border: 0.0625em solid #6227dc;
     border-radius: 0.3em;
     width: 100%;
     margin: 0.2em;
@@ -14,6 +13,7 @@
 }
 
 .footer-data h4{
+    color: #6227dc;
     text-align: center;
     padding: 0.5em;
 }
@@ -24,7 +24,6 @@
 }
 
 .footer-data.menu a{
-    color: rgb(78, 78, 78);
     text-decoration: none;
     text-align: start;
     padding: 0.7em;
