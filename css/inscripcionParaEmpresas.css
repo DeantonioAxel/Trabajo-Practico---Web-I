@@ -14,6 +14,51 @@ h1{
     text-transform: uppercase;
     margin: 2em 0;
 }
+section{
+    width: 80%;
+    margin: 5% 10% 10% 10%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+}
+form input{
+    width: 15em;
+}
 .datos_alumno{
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-around; 
+}
+.boton_circular{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    color: black;
+    font-size: larger;
+    border-color: #6227dc;
+    background-color: #eaebff;
+}
+.datos_confirmacion{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 2em 0em;
+}
+.Importe_acumulado{
+    width: 5em;
+    background-color: #6227dc;
+    color: #eaebff;
+    font-size: 1.5em;
+}
+.boton_inscripcion{
+
+    width: 10em;
+    font-weight: 700;
+    padding: 0.5em;
+    border-radius: 999px;
+    color: #6227dc;
+    border-color: #6227dc;
+    background-color: white;
 }
