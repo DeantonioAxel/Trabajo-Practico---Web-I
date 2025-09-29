@@ -12,7 +12,7 @@ h1{
     font-size: 1em;
     color:rgb(44, 46, 50);
     text-transform: uppercase;
-    margin: 2em 0;
+    margin: 2em 0 2em 7.5em;
 }
 section{
     width: 80%;
@@ -21,8 +21,10 @@ section{
 form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1em;
     width: 80%;
+    margin: 0 10%;
 }
 form input{
     width: 15em;
