@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registrarse.css">
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <section class="registrarse">
+        <img class="logo" src="../images/logo X Group.png" alt="logo_X_Group">
+        <h1>Registrarse</h1>
+        <form class="formulario-registrarse" method="get">
+
+            <label for="nombre">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            </label>
+            
+            <label for="apellido">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            </label>
+            
+            <label for="correo">
+                <input type="email" name="correo" id="correo" placeholder="Email" required>
+            </label>
+            
+            <label for="contrasenia">
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required>
+            </label>
+
+            <label for="repetir-contrasenia">
+                <input type="password" name="repetir-contrasenia" id="repetir-contrasenia" placeholder="Repetir contraseña" required>
+            </label>
+            
+            <button class="btn" type="submit">Registrarse</button>
+
+            <div class="iniciar-sesion">
+                <p>¿Ya tenés una cuenta?</p>
+                <a href="./IniciarSesion.html">Iniciar Sesión</a>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/IniciarSesion.css">
+    <title>Iniciar Sesión</title>
+</head>
+
+<body>
+    <section class="iniciar-sesion">
+        <img class="logo" src="../images/logo X Group.png" alt="logo_X_Group">
+        <h1>Iniciar Sesión</h1>
+
+        <form class="formulario-iniciar-sesion" method="get">
+
+            <label for="ususario">
+                <input type="text" placeholder="Usuario" id="ususario" name="ususario" required>
+            </label>
+
+            <label for="password">
+                <input type="password" placeholder="Contraseña" id="password" name="password" required>
+            </label>
+
+            <div class="recordarme-contrasena">
+                <div class="recordarme">
+                    <input type="checkbox" name="radio">
+                    <label for="radio">Recordarme</label>
+                </div>
+                <a href="./recuperarContrasenia.html">¿Olvidó su contraseña?</a>
+            </div>
+
+            <button class="btn" type="submit">Iniciar Sesión</button>
+
+            <div class="crear-cuenta">
+                <p>¿No estás registrado?</p>
+                <a href="./Registrarse.html">Registrarme</a>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
