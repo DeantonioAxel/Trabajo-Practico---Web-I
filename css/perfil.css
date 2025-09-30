@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Satoshi-Bold, sans-serif;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: 20% 79%;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.perfil .descripcion {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.perfil .descripcion img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.perfil .descripcion p {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    color: #6227dc;
+}
+
+.perfil .descripcion .usuario {
+    font-size: 40px;
+}
+
+.perfil .descripcion .btn {
+    display: block;
+    height: 3.25rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #6227dc;
+    color: white;
+    border: 0;
+    margin: 10px auto 10px auto;
+}
+
+.perfil .descripcion .btn:hover {
+    background-color: #8051dc;
+    cursor: pointer;
+}
+
+.perfil .mis-cursos {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.perfil .mis-cursos h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 50px;
+    color: #6227dc;
+}
+
+.perfil .cursos-recomendados {
+    grid-column: 1/3;
+    grid-row: 2;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.perfil .cursos-recomendados h2 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 35px;
+    color: #6227dc;
+}
