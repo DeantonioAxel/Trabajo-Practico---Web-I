@@ -16,6 +16,19 @@ h2{
     letter-spacing: 1px;
 }
 
+/* .imagenCursoDestacado{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.contenedorCursosDestacadoA{
+    height: 250%;
+    overflow: hidden;
+} */
+
+
 .cajasCursosRecomendados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
