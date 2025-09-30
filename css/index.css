@@ -16,6 +16,9 @@ h2{
     letter-spacing: 1px;
 }
 
+
+
+
 .cajasCursosRecomendados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
