@@ -41,23 +41,6 @@
     font-size: 40px;
 }
 
-.perfil .descripcion .btn {
-    display: block;
-    height: 3.25rem;
-    border-radius: 20px;
-    font-size: 1rem;
-    padding: 1rem;
-    background-color: #6227dc;
-    color: white;
-    border: 0;
-    margin: 10px auto 10px auto;
-}
-
-.perfil .descripcion .btn:hover {
-    background-color: #8051dc;
-    cursor: pointer;
-}
-
 .perfil .mis-cursos {
     grid-column: 2;
     grid-row: 1;
@@ -75,6 +58,14 @@
     color: #6227dc;
 }
 
+.perfil .mis-cursos .mis-cursos-grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: 2rem auto 2rem auto;
+}
+
 .perfil .cursos-recomendados {
     grid-column: 1/3;
     grid-row: 2;
@@ -89,4 +80,104 @@
     margin-left: 2rem;
     font-size: 35px;
     color: #6227dc;
+}
+
+.perfil .cursos-recomendados .cursos-recomendados-grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: 2rem auto 2rem auto;
+}
+
+.cursos-contenedor {
+    border: 0.2em solid #8269f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1em;
+    padding-bottom: 6.5em;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: white;
+}
+
+.cursos-contenedor .imagenCurso {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.cursos-contenedor .precio {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 0.2em 0.5em;
+    position: absolute;
+    top: 183px;
+    right: 0;
+}
+
+.cursos-contenedor .duracion {
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 220px;
+    left: 5px;
+}
+
+.cursos-contenedor .tituloCurso {
+    font-size: 0.95em;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 220px;
+    right: 5px;
+}
+
+.cursos-contenedor .verMas {
+    font-size: 0.9em;
+    color: gray;
+    margin: 0.5em 0;
+    cursor: pointer;
+    position: absolute;
+    top: 235px;
+    right: 5px;
+}
+
+.cursos-contenedor .verMas:active {
+    transform: scale(0.95);
+}
+
+.cursos-contenedor .verMas:hover {
+    transform: scale(1.05);
+}
+
+.cursos-contenedor .comprar {
+    font-size: 1em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6c63ff, #3f3d9f);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 270px;
+    right: 5px;
+}
+
+.cursos-contenedor .comprar:hover {
+    background: linear-gradient(135deg, #3f3d9f, #6c63ff);
+    transform: scale(1.05);
+}
+
+.cursos-contenedor .comprar:active {
+    transform: scale(0.95);
 }
