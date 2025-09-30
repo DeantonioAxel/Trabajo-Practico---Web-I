@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Inscripcion - X Group Education</title>
+    <title>Inscripcion - X Group Education</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -43,58 +43,39 @@
             <div class="forms-inner">
 
                 <div class="forms-header">
-                    <h2>Curso Photoshop</h2>
+                    <h2>Curso Java</h2>
                     <h3>Inscripción</h3>
                 </div>
 
                 <form action="anotar" method="get">
                     <label for="nombre1">Nombre</label>
-                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre" required>
+                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre">
 
                     <label for="apellido1">Apellido</label>
-                    <input type="text" name="apellido" id="apellido1" placeholder="Apellido" required>
+                    <input type="text" name="apellido" id="apellido1" placeholder="Apellido">
 
                     <label for="dni1">DNI</label>
-                    <input type="number" name="DNI" id="dni1" placeholder="DNI" required>
+                    <input type="number" name="DNI" id="dni1" placeholder="DNI">
 
-                    <img src="../images/dash-circle-fill.svg" alt="borrar">
+                   
                 </form>
 
-                <form action="anotar" method="get">
-                    <label for="nombre1">Nombre</label>
-                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre" required>
-
-                    <label for="apellido1">Apellido</label>
-                    <input type="text" name="apellido" id="apellido1" placeholder="Apellido" required>
-
-                    <label for="dni1">DNI</label>
-                    <input type="number" name="DNI" id="dni1" placeholder="DNI" required>
-
-                    <img src="../images/dash-circle-fill.svg" alt="borrar">
-                </form>
-
-                <form action="anotar" method="get">
-                    <label for="nombre1">Nombre</label>
-                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre" required>
-
-                    <label for="apellido1">Apellido</label>
-                    <input type="text" name="apellido" id="apellido1" placeholder="Apellido" required>
-
-                    <label for="dni1">DNI</label>
-                    <input type="number" name="DNI" id="dni1" placeholder="DNI" required>
-
-                    <img src="../images/dash-circle-fill.svg" alt="borrar">
-
+                
                 <div class="forms-add">
-                    <img src="../images/plus-circle-fill.svg" alt="agregar">
-                    <h3>Agregar Persona</h3>
+                    <label for="Horario">Horario:
+                        <select name="horario" id="horario">
+                            <option value="" disabled selected>Selecciona un horario</option>
+                            <option value="Mañana">Mañana 8-12hs</option>
+                            <option value="Tarde">Tarde 14-18hs</option>
+                            <option value="Noche">Noche 19-23hs</option>
+                        </select>
+                    </label>
                 </div>
 
                 <div class="forms-enrollment-amount">
                     <h3>$000,-</h3>
                     <button type="submit" class="inscription">Inscripción</button>
                 </div>
-                </form>
 
             </div>
         </section>
