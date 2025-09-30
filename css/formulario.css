@@ -1,0 +1,66 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.forms-header {
+    padding-bottom: 1.5em; 
+}
+
+.forms-header h2{
+    padding-bottom: 0.5em;
+    font-size: 2em;
+}
+
+.forms-header h3{
+    font-size: 1.5em;
+}
+
+.forms form {
+    margin-bottom: 1.5em;
+    font-size: 1em;
+}
+
+.forms-add {
+    display: flex;
+    align-items: center;
+    gap: 0.5em; 
+    margin: 2em 0; 
+}
+
+.forms-enrollment-amount {
+    display: flex;
+    gap: 0.5em; 
+    align-items: center;
+}
+
+.forms-enrollment-amount h3{
+    color: rgb(252, 252, 252);
+    background-color: black;
+    border-radius: 0.3em;
+}
+
+.forms-enrollment-amount .inscription {
+    color: #6227dc;
+    border: 2px solid #6227dc;
+    background-color: white;
+    padding: 0 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.forms-enrollment-amount .inscription:hover {
+    color: white;
+    background-color:#6227dc ;
+}
+
+@media screen and (max-width: 516px){
+.forms form label{
+    display: flex;
+    flex-direction: column;
+}
+}

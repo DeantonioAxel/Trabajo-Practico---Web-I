@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto -X Group Education</title>
+    <title>Perfil - X Group Education</title>
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/contacto.css">
     <link rel="icon" href="../images/logo X Group.png" type="imagen/png">
 </head>
+
 <body>
     <main>
     <header class="headerC">
@@ -38,64 +39,67 @@
         </div>
     </header>
         <hr class="headerline">
+        <section class="forms">
+            <div class="forms-inner">
 
-        <section>
-            <form action="Contacto" method="get">
-                <h2>Dejanos tu mensaje</h2>
-                <hr>
-                <label for="name">Nombre:
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
-                </label>
-                <label for="last_name">Apellido
-                    <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
-                </label>
-                <label for="phone">Telefono
-                    <input type="tel" id="phone" name="phone" placeholder="11 1234-5678">
-                </label>
-                <label for="email">Correo Electrónico:
-                    <input type="email" id="email" name="email" placeholder="alumno@ejemplo.com" required>
-                </label>
-                <label for="message">Mensaje:
-                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Deja tu mensaje aqui" required></textarea>
-                </label>
-                <button type="submit">Enviar</button>
-            </form>
+                <div class="forms-header">
+                    <h2>Curso Photoshop</h2>
+                    <h3>Inscripción</h3>
+                </div>
 
-            <article>
-                <h2>Otras formas de contacto</h2>
-                <hr>
-                <div>
-                    <img src="../images/1.png" alt="icono de smartphone">
-                    <p>15-1234-5678</p>
+                <form action="anotar" method="get">
+                    <label for="nombre1">Nombre</label>
+                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre">
+
+                    <label for="apellido1">Apellido</label>
+                    <input type="text" name="apellido" id="apellido1" placeholder="Apellido">
+
+                    <label for="dni1">DNI</label>
+                    <input type="number" name="DNI" id="dni1" placeholder="DNI">
+
+                    <img src="../images/dash-circle-fill.svg" alt="borrar">
+                </form>
+
+                <form action="anotar" method="get">
+                    <label for="nombre1">Nombre</label>
+                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre">
+
+                    <label for="apellido1">Apellido</label>
+                    <input type="text" name="apellido" id="apellido1" placeholder="Apellido">
+
+                    <label for="dni1">DNI</label>
+                    <input type="number" name="DNI" id="dni1" placeholder="DNI">
+
+                    <img src="../images/dash-circle-fill.svg" alt="borrar">
+                </form>
+
+                <form action="anotar" method="get">
+                    <label for="nombre1">Nombre</label>
+                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre">
+
+                    <label for="apellido1">Apellido</label>
+                    <input type="text" name="apellido" id="apellido1" placeholder="Apellido">
+
+                    <label for="dni1">DNI</label>
+                    <input type="number" name="DNI" id="dni1" placeholder="DNI">
+
+                    <img src="../images/dash-circle-fill.svg" alt="borrar">
+                </form>
+
+                <div class="forms-add">
+                    <img src="../images/plus-circle-fill.svg" alt="agregar">
+                    <h3>Agregar Persona</h3>
                 </div>
-                <hr>
-                <div>
-                    <img src="../images/2.png" alt="icono de email">
-                    <p>contacto@xgroup.com</p>
+
+                <div class="forms-enrollment-amount">
+                    <h3>$000,-</h3>
+                    <button type="submit" class="inscription">Inscripción</button>
                 </div>
-                <hr>
-                <div>
-                    <img src="../images/3.png" alt="icono de ubicacion">
-                    <p>Sarmiento 701, Capital Federal</p>
-                </div>
-                <hr>
-                
-            </article>
+
+            </div>
+        </section>
 
         </section>
-        
-        <div class="maps">
-                <img src="../images/Ubicacion en el mapa.png" alt="Ubicacion en el maps">
-        </div>
-
-        <hr>
-
-        <aside>
-            <!-- ver los posibles publicaciones o publicidades -->
-
-        </aside>
-        <hr>
-        
         <footer class="footer">
             <div class="footer-data grupo">
                 <h4>Integrantes</h4>
@@ -121,10 +125,7 @@
             </div>
             </div>
         </footer>
-        
-        
+    </main>        
 
-    </main>
-    
 </body>
 </html>
