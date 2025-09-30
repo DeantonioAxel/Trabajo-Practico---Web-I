@@ -1,0 +1,96 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 5% 5% 5%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    font-size: 1.2em;
+    margin: 0 2em;
+    
+}
+form label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+form label img{
+    width: 3em;
+    height: 3em;
+}
+form input{
+    width: 100%;
+}
+.seleccion_de_color{
+    display:flex;
+    flex-direction: column;
+    gap:0.1em;
+}
+button{
+    width: 10em;
+    font-weight: 700;
+    padding: 0.5em;
+    border-radius: 999px;
+    color: #6227dc;
+    border-color: #6227dc;
+    background-color: white;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #8269f1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2em 0;
+    letter-spacing: 1px;
+}
+
+.visualizacion{
+    display:flex;
+    flex-direction: column;
+    height: 28em;
+    width: 28em;
+    margin: 3.5em 2em 2em 2em;
+    border: black 1px solid;
+    background-color:#cb6ce6 ;
+}
+.importe{
+    display:flex;
+    justify-content: center;
+    margin: 0 0 0 23em;
+    color: white;
+    background-color: black;
+}
+.giftcard{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.3em; 
+   text-transform: uppercase; 
+   text-align: center;
+   margin: 5em 0 0 0;
+}
+.para{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.3em; 
+   text-transform: uppercase; 
+   text-align: center;
+}
+.destinatario{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 2em; 
+   text-transform: uppercase; 
+   text-align: center; 
+}
+.vista{
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 1em; 
+   text-transform: uppercase; 
+   text-align: center; 
+}
