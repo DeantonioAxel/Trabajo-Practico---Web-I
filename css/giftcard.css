@@ -42,14 +42,18 @@ form input #name, #number{
     flex-direction: column;
     gap:0.1em;
 }
-button{
+.boton-confirmar {
     width: 10em;
     font-weight: 700;
     padding: 0.5em;
     border-radius: 999px;
-    color: #6227dc;
-    border-color: #6227dc;
-    background-color: white;
+    color: white;
+    border: 0;
+    background-color: #6227dc;
+}
+.boton-confirmar:hover {
+    background-color: #8051dc;
+    cursor: pointer;
 }
 
 h2{
