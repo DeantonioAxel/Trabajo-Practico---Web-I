@@ -26,7 +26,7 @@
     display: inline-flex;
     align-items: center;
     font-size: 1.2em;
-    gap: 0.5em; 
+    gap: 0.5em;
 }
 
 .headerC .logo img {
@@ -37,12 +37,11 @@
     transition: all 0.3s;
 }
 
-/* Contenedor del input de cursos */
 .search-cursos {
     display: inline-block;
-    position: relative;
-    width: 12em;       /* ancho fijo */
-    margin-left: 1em;  /* separación desde el logo */
+    width: 25em;
+    margin-right: 2em;
+    flex-shrink: 0;
 }
 
 .search-cursos input {
@@ -53,12 +52,6 @@
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     outline: none;
-    transition: all 0.3s ease;
-}
-
-/* Eliminamos cualquier crecimiento al focus */
-.search-cursos input:focus {
-    width: 100%;
 }
 
 .headerC .shoppingCart {
@@ -81,7 +74,7 @@
     color: white;
     font-weight: bold;
     padding: 0.125em 0.375em;
-    border-radius: 50%; 
+    border-radius: 50%;
     line-height: 1;
 }
 
@@ -111,9 +104,9 @@
     top: 100%;
     left: 0;
     background-color: white;
-    border: 1px solid #6227dc;
+    border: 0.0625em solid #6227dc;
     border-radius: 0.3em;
-    min-width: 150px;
+    min-width: 9.375em;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -154,12 +147,12 @@
 .headerC .right-side {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 2em;
 }
 
 .headerC .login,
 .headerC .register {
-    all: unset;            
+    all: unset;
     display: inline-block;
     padding: 0.5em 1em;
     border-radius: 999px;
@@ -171,13 +164,13 @@
 
 .headerC .login {
     color: #6227dc;
-    border: 2px solid #6227dc;
+    border: 0.125em solid #6227dc;
     background-color: white;
 }
 
 .headerC .register {
     color: white;
-    border: 2px solid #6227dc;
+    border: 0.125em solid #6227dc;
     background-color: #6227dc;
 }
 
@@ -196,28 +189,90 @@
     opacity: 0.2;
 }
 
-/* Responsive */
-@media (max-width: 48em) { /* 768px */
+@media (max-width: 48em) {
+    .headerC {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+
+    .headerC .logo,
+    .search-cursos,
+    .headerC .shoppingCart {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .headerC .logo {
+        margin-right: 1em;
+    }
+
     .search-cursos {
-        width: 10em; 
-        margin-left: 0.5em;
+        width: 18em;
+        margin: 0 1em 0 0;
+    }
+
+    .headerC .right-side {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    .headerC .login,
+    .headerC .register {
+        flex: 1 1 auto;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .nav-links li.dropdown:hover .dropdown-content {
+        position: static;
+        border: none;
+        border-radius: 0;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .nav-links li.dropdown:hover .dropdown-content {
+        display: block;
     }
 }
 
-@media (max-width: 43.75em) { /* 700px */
+@media (max-width: 43.75em) {
     .headerC {
         flex-direction: column;
+        gap: 0.5em;
     }
+
     .headerC nav {
-        padding: 10px 0;
+        padding: 0.625em 0;
     }
+
     .headerC .nav-links li {
         display: block;
         padding: 0.5em 0;
         text-align: center;
     }
+
     .search-cursos {
-        width: 100%; 
+        width: 100%;
         margin: 0.5em 0;
+    }
+
+    .headerC .right-side {
+        gap: 1em;
     }
 }
