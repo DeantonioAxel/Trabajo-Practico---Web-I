@@ -26,7 +26,7 @@ form{
     width: 80%;
     margin: 0 10%;
 }
-form input{
+form input, select{
     display: block;
     width: 100%;
     height: 2rem;
@@ -35,6 +35,9 @@ form input{
     border-radius: 10px;
     margin: 0 auto;
     font-size: 1rem;
+}
+form label{
+    gap: 1em;
 }
 .datos_alumno{
     display: flex;
@@ -70,4 +73,13 @@ form input{
     color: #6227dc;
     border-color: #6227dc;
     background-color: white;
+}
+@media screen and (width < 600px){
+
+
+    .datos_alumno{
+        display: block;
+    }
+    
+
 }

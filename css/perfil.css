@@ -37,6 +37,42 @@
     color: #6227dc;
 }
 
+.perfil .descripcion .enviar-giftcard{
+    display: block;
+    width: 80%;
+    height: 3.25rem;
+    padding: 0.4em;
+    margin: 0 auto 1em auto;
+    border-radius: 0.625rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6227dc;
+    color: white;
+    border: 0;
+}
+
+.perfil .descripcion .enviar-giftcard:hover {
+    background-color: #8051dc;
+    cursor: pointer;
+}
+
+
+/*
+.iniciar-sesion .formulario-iniciar-sesion .btn {
+    height: 3.25rem;
+    border-radius: 0.625rem;
+    font-size: 1.5rem;
+    background-color: #6227dc;
+    color: white;
+    border: 0;
+}
+.iniciar-sesion .formulario-iniciar-sesion .btn:hover{
+    background-color: #8051dc;
+    cursor: pointer;
+}*/
+
+
 .perfil .descripcion .usuario {
     font-size: 40px;
 }

@@ -16,8 +16,30 @@ h2{
     letter-spacing: 1px;
 }
 
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
 
+.slider-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.pasos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 1em;
+    gap: 1em;
+}
 
+.pasos img {
+    width: 20em;
+    height: auto;
+    object-fit: contain;
+}
 
 .cajasCursosRecomendados {
     display: grid;
@@ -88,7 +110,7 @@ h2{
 }
 
 .contenedorCursosDestacado .verMasIndex:hover {
-     transform: scale(1.05);
+    transform: scale(1.05);
 }
 .contenedorCursosDestacado .comprarIndex {
     font-size: 1em;
@@ -153,34 +175,51 @@ h2{
     height: auto;
 }
 
-.pasos h2{
-font-size:5em;
-margin-right: 1.5;
+@media (max-width: 64em) {
+    .cajasCursosRecomendados {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
 
+    .logosMediosDePagosIndex img {
+        width: 8em;
+        height: auto;
+    }
+
+    .pasos img {
+        width: 15em;
+    }
 }
 
-.pasos h3{
-font-size: 3.2em;
-margin: 0;
+@media (max-width: 48em) { /* 768px */
+    .cajasCursosRecomendados {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .pasos {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .pasos img {
+        width: 12em;
+    }
+
+    .logosMediosDePagosIndex {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .logosMediosDePagosIndex img {
+        width: 10em;
+    }
 }
 
 
+@media (max-width: 26.56em) {
+    .pasos {
+        flex-direction: column;
+    }
 
-.paso1, .paso2 , .paso3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pasos p{ 
-    width: 30em;
-    height: 12em; 
-    border: 1px solid red; 
-    border-radius: 20px; 
-    box-shadow: 22px rgba(0,0,0,0.2);
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
 }
