@@ -55,10 +55,31 @@
         <hr class="headerline">
     <main>
         <section>
-            <h2>Curso completo de Java</h2>
             <h1 class="inscripcion">Inscripcion</h1>
             <form action="Inscripcion">
-                <div class= "datos_alumno">
+                <div></div>
+                    <label for="company_name">
+                        <input type="text" id="company_name" name="company_name" placeholder="Nombre de la empresa" required>
+                    </label>
+                    <label for="Seleccion_curso">
+                        <select id="Seleccion_curso" name="Seleccion_curso" required>
+                            <option value="" disabled selected>Seleccionar curso</option>
+                            <option value="Canva">Canva</option>
+                            <option value="Blenderdiseño3d">Blender: Diseño 3D</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="ChatGpt">Chat Gpt</option>
+                            <option value="Illustrator">Illustrator</option>
+                            <option value="Photoshop">Photoshop</option>
+                            <option value="Java">Java</option>
+                            <option value="ProgramacionC">Programacion C</option>
+                            <option value="InteligenciaArtificial(AI)">Inteligencia artificial (AI)</option>
+                            <option value="GeneracionPromptsIA">AI: Generación de Prompts</option>
+                            <option value="AIMarketingDigital">AI: Marketing Digital</option>
+                        </select>
+                    </label>
+                </div>
+                    <div class= "datos_alumno">
                     <label for="last_name">
                         <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
                     </label>
