@@ -71,3 +71,12 @@ form input{
     border-color: #6227dc;
     background-color: white;
 }
+@media screen and (width < 600px){
+
+
+    .datos_alumno{
+        display: block;
+    }
+    
+
+}
