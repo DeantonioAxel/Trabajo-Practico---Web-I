@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 20% 79%;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 0.625em;
     width: 80%;
     margin: 0 auto;
 }
@@ -20,8 +20,8 @@
     display: block;
     margin-top: 2rem;
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625em;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.1);
 }
 
 .perfil .descripcion img {
@@ -33,17 +33,17 @@
 
 .perfil .descripcion p {
     text-align: center;
-    margin: 10px 0 10px 0;
+    margin: 0.625em 0;
     color: #6227dc;
 }
 
-.perfil .descripcion .enviar-giftcard{
+.perfil .descripcion .enviar-giftcard {
     display: block;
     width: 80%;
-    height: 3.25rem;
+    height: 3.25em;
     padding: 0.4em;
-    margin: 0 auto 1em auto;
-    border-radius: 0.625rem;
+    margin: 0.625em auto 1em auto;
+    border-radius: 0.625em;
     font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
@@ -57,24 +57,8 @@
     cursor: pointer;
 }
 
-
-/*
-.iniciar-sesion .formulario-iniciar-sesion .btn {
-    height: 3.25rem;
-    border-radius: 0.625rem;
-    font-size: 1.5rem;
-    background-color: #6227dc;
-    color: white;
-    border: 0;
-}
-.iniciar-sesion .formulario-iniciar-sesion .btn:hover{
-    background-color: #8051dc;
-    cursor: pointer;
-}*/
-
-
 .perfil .descripcion .usuario {
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .perfil .mis-cursos {
@@ -83,23 +67,23 @@
     display: block;
     margin-top: 2rem;
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625em;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.1);
 }
 
 .perfil .mis-cursos h1 {
     text-align: center;
     margin-top: 2rem;
-    font-size: 50px;
+    font-size: 3.125em;
     color: #6227dc;
 }
 
 .perfil .mis-cursos .mis-cursos-grilla {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 0.625em;
     width: 90%;
-    margin: 2rem auto 2rem auto;
+    margin: 2rem auto;
 }
 
 .perfil .cursos-recomendados {
@@ -107,34 +91,34 @@
     grid-row: 2;
     width: 100%;
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625em;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.1);
 }
 
 .perfil .cursos-recomendados h2 {
     margin-top: 1rem;
     margin-left: 2rem;
-    font-size: 35px;
+    font-size: 2.1875em;
     color: #6227dc;
 }
 
 .perfil .cursos-recomendados .cursos-recomendados-grilla {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 0.625em;
     width: 90%;
-    margin: 2rem auto 2rem auto;
+    margin: 2rem auto;
 }
 
 .cursos-contenedor {
-    border: 0.2em solid #8269f1;
-    border-radius: 10px;
+    border: 0.125em solid #8269f1;
+    border-radius: 0.625em;
     overflow: hidden;
     margin: 1em;
     padding-bottom: 6.5em;
     width: 100%;
-    max-width: 320px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 20em;
+    box-shadow: 0 0.25em 0.625em rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -153,9 +137,9 @@
     font-weight: bold;
     color: white;
     background-color: black;
-    padding: 0.2em 0.5em;
+    padding: 0.125em 0.3125em;
     position: absolute;
-    top: 183px;
+    top: 11.4375em;
     right: 0;
 }
 
@@ -164,8 +148,8 @@
     font-weight: bold;
     color: black;
     position: absolute;
-    top: 220px;
-    left: 5px;
+    top: 13.75em;
+    left: 0.3125em;
 }
 
 .cursos-contenedor .tituloCurso {
@@ -173,18 +157,18 @@
     font-weight: bold;
     color: black;
     position: absolute;
-    top: 220px;
-    right: 5px;
+    top: 13.75em;
+    right: 0.3125em;
 }
 
 .cursos-contenedor .verMas {
     font-size: 0.9em;
     color: gray;
-    margin: 0.5em 0;
+    margin: 0.3125em 0;
     cursor: pointer;
     position: absolute;
-    top: 235px;
-    right: 5px;
+    top: 14.6875em;
+    right: 0.3125em;
 }
 
 .cursos-contenedor .verMas:active {
@@ -201,12 +185,12 @@
     background: linear-gradient(135deg, #6c63ff, #3f3d9f);
     color: white;
     border: none;
-    padding: 6px 10px;
-    border-radius: 8px;
+    padding: 0.375em 0.625em;
+    border-radius: 0.5em;
     cursor: pointer;
     position: absolute;
-    top: 270px;
-    right: 5px;
+    top: 16.875em;
+    right: 0.3125em;
 }
 
 .cursos-contenedor .comprar:hover {
@@ -216,4 +200,92 @@
 
 .cursos-contenedor .comprar:active {
     transform: scale(0.95);
+}
+
+@media screen and (max-width: 60em) {
+    .perfil {
+        width: 90%;
+        grid-template-columns: 25% 74%;
+    }
+
+    .perfil .descripcion .enviar-giftcard {
+        width: 90%;
+        font-size: 1.25rem;
+    }
+
+    .perfil .mis-cursos h1 {
+        font-size: 2.5em;
+    }
+
+    .perfil .cursos-recomendados h2 {
+        font-size: 1.875em;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .perfil {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 95%;
+    }
+
+    .perfil .descripcion, .perfil .mis-cursos, .perfil .cursos-recomendados {
+        margin-top: 1em;
+    }
+
+    .perfil .descripcion .enviar-giftcard {
+        width: 100%;
+    }
+
+    .perfil .mis-cursos .mis-cursos-grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .perfil .cursos-recomendados .cursos-recomendados-grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .perfil {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+    }
+
+    .perfil .descripcion .usuario {
+        font-size: 1.5em;
+    }
+
+    .perfil .descripcion .enviar-giftcard {
+        font-size: 1rem;
+        height: 3em;
+    }
+
+    .perfil .mis-cursos h1 {
+        font-size: 2em;
+    }
+
+    .perfil .mis-cursos .mis-cursos-grilla,
+    .perfil .cursos-recomendados .cursos-recomendados-grilla {
+        grid-template-columns: 1fr;
+    }
+
+    .cursos-contenedor {
+        max-width: 100%;
+        padding-bottom: 5em;
+    }
+
+    .cursos-contenedor .precio,
+    .cursos-contenedor .duracion,
+    .cursos-contenedor .tituloCurso,
+    .cursos-contenedor .verMas,
+    .cursos-contenedor .comprar {
+        position: static;
+        margin: 0.25em 0;
+    }
+
+    .cursos-contenedor .comprar {
+        width: 100%;
+    }
 }

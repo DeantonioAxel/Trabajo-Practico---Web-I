@@ -1,27 +1,26 @@
 .paginaCursos {
   display: flex;
-  gap: 20px;
+  gap: 1.25em;
   margin: 2em auto;
-  max-width: 1400px;
+  max-width: 87.5em;
 }
 
 .sidebar {
-  flex: 0 0 250px;
+  flex: 0 0 15.625em;
   background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
-  /* Fijo */
+  padding: 1.25em;
+  border-radius: 0.625em;
+  box-shadow: 0 0.125em 0.375em rgba(0,0,0,0.1);
+  /*Fijo*/
   position: sticky;
-  top: 100px; /* distancia desde el top */
+  top: 6.25em; /*Distancia hacia arriba*/
   align-self: flex-start;
   height: fit-content;
 }
 
 .sidebar h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 1.125em;
+  margin-bottom: 0.9375em;
   color: #6227dc;
 }
 
@@ -32,8 +31,8 @@
 }
 
 .sidebar ul li {
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 0.625em;
+  font-size: 0.9375em;
 }
 
 .contenido-cursos {
@@ -48,6 +47,63 @@
 
 .cajasCursosRecomendados {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(18.75em, 1fr));
+  gap: 1.875em;
+}
+
+@media screen and (max-width: 60em) {
+  .paginaCursos {
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em auto;
+  }
+
+  .sidebar {
+    flex: 1 1 auto;
+    width: 100%;
+    top: 0;
+    margin-bottom: 1em;
+  }
+
+  .cajasCursosRecomendados {
+    grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .sidebar h3 {
+    font-size: 1em;
+  }
+
+  .sidebar ul li {
+    font-size: 0.9375em;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .cajasCursosRecomendados {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+
+
+@media screen and (max-width: 26.5625em) { 
+  .paginaCursos {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    top: auto;
+    z-index: auto;
+  }
+
+  .cajasCursosRecomendados {
+    grid-template-columns: 1fr;
+    gap: 1.25em; 
+  }
 }

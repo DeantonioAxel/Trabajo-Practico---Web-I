@@ -19,7 +19,7 @@ body {
 
 .recuperar-contrasenia .logo {
     display: block;
-    width: 200px;
+    width: 12.5em;
     height: auto;
     margin: 0 auto;
 }
@@ -44,8 +44,8 @@ body {
     width: 100%;
     height: 2rem;
     padding: 1.5em;
-    border: 1px solid #6227dc;
-    border-radius: 10px;
+    border: 0.06em solid #6227dc;
+    border-radius: 0.63em;
     margin: 0 auto;
     font-size: 1rem;
 }
@@ -68,4 +68,51 @@ body {
     display: flex;
     flex-direction: row;
     gap: 2em;
+}
+
+@media screen and (max-width: 60em) {
+    .recuperar-contrasenia {
+        width: 35%;
+    }
+
+    .recuperar-contrasenia .logo {
+        width: 10em;
+    }
+
+    .recuperar-contrasenia h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .recuperar-contrasenia {
+        width: 50%;
+    }
+
+    .recuperar-contrasenia .formulario-recuperar-contrasenia .volver {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .recuperar-contrasenia {
+        width: 90%;
+        margin: 0.5em auto;
+    }
+
+    .recuperar-contrasenia h1 {
+        font-size: 1.5rem;
+    }
+
+    .recuperar-contrasenia .formulario-recuperar-contrasenia input {
+        font-size: 0.9rem;
+        padding: 1em;
+    }
+
+    .recuperar-contrasenia .formulario-recuperar-contrasenia .btn {
+        font-size: 1.2rem;
+        height: 3em;
+    }
 }

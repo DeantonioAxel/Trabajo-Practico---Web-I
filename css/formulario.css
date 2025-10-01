@@ -45,10 +45,10 @@
 
 .forms-enrollment-amount .inscription {
     color: #6227dc;
-    border: 2px solid #6227dc;
+    border: 0.13em solid #6227dc; /* 2px ≈ 0.125em */
     background-color: white;
     padding: 0 1em;
-    border-radius: 5px;
+    border-radius: 0.31em; /* 5px */
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s;
 }
@@ -58,9 +58,9 @@
     background-color:#6227dc ;
 }
 
-@media screen and (max-width: 516px){
-.forms form label{
-    display: flex;
-    flex-direction: column;
-}
+@media screen and (max-width: 32.25em){
+    .forms form label{
+        display: flex;
+        flex-direction: column;
+    }
 }

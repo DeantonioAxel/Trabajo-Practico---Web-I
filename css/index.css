@@ -191,7 +191,7 @@ h2{
     }
 }
 
-@media (max-width: 48em) { /* 768px */
+@media (max-width: 48em) {
     .cajasCursosRecomendados {
         grid-template-columns: 1fr;
         gap: 1em;

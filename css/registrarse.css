@@ -19,7 +19,7 @@ body {
 
 .registrarse .logo {
     display: block;
-    width: 200px;
+    width: 12.5em;
     height: auto;
     margin: 0 auto;
 }
@@ -43,8 +43,8 @@ body {
     width: 100%;
     height: 2rem;
     padding: 1.5em;
-    border: 1px solid #6227dc;
-    border-radius: 10px;
+    border: 0.06em solid #6227dc;
+    border-radius: 0.63em;
     margin: 0 auto;
     font-size: 1rem;
 }
@@ -58,7 +58,7 @@ body {
     border: 0;
 }
 
-.registrarse .formulario-registrarse .btn:hover{
+.registrarse .formulario-registrarse .btn:hover {
     background-color: #8051dc;
     cursor: pointer;
 }
@@ -67,4 +67,51 @@ body {
     display: flex;
     flex-direction: row;
     gap: 2em;
+}
+
+@media screen and (max-width: 60em) {
+    .registrarse {
+        width: 35%;
+    }
+
+    .registrarse .logo {
+        width: 10em;
+    }
+
+    .registrarse h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .registrarse {
+        width: 50%;
+    }
+
+    .registrarse .formulario-registrarse .iniciar-sesion {
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .registrarse {
+        width: 90%;
+        margin: 0.5em auto;
+    }
+
+    .registrarse h1 {
+        font-size: 1.5rem;
+    }
+
+    .registrarse .formulario-registrarse input {
+        font-size: 0.9rem;
+        padding: 1em;
+    }
+
+    .registrarse .formulario-registrarse .btn {
+        font-size: 1.2rem;
+        height: 3em;
+    }
 }

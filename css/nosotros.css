@@ -1,137 +1,196 @@
-.contenedor{
+.contenedor, .vistafinal {
     position: relative;
     width: 100%;
     height: 35em;
     overflow: hidden;
-
 }
 
-.imagenCabecera img {
-    width: 100%;              
-    height: 35em;            
-    object-fit:cover;        
-    object-position: center;  
-    display: block;         
+.contenedor img, .vistafinal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
-.etiquetanombre{
-   position: absolute;
+.etiquetanombre {
+    position: absolute;
     background-color: #8269F1;
-    top:40%;
+    top: 40%;
     left: 3%;
     width: 30%;
     padding: 1em;
-    box-shadow: 0 4px 10px rgba(4, 235, 223, 0.671);  
+    box-shadow: 0 0.25em 0.625em rgba(4, 235, 223, 0.671);
 }
 
-.etiquetanombre h2{
-  color: white;
-  font-size: 2.5em;
-  display: flex;
-  justify-content: center;
-}
-
-.etiquetanombre h3{
-  color: white;
-  font-size: 1em;
-  display: flex;
-  justify-content: center;
-}
-
-.contenedor2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.quinessomos {
-    width: 40%;
-    height:10em;
-    background-color: #8269F1;
+.etiquetanombre h2 {
     color: white;
-    border: 7px solid #8269F1;
+    font-size: 2.5em;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 1.6em;
-    box-shadow: 0 4px 10px rgba(4, 220, 235, 0.884);
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 1em;
-  padding: 1em;
-  
+.etiquetanombre h3 {
+    color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
 }
 
-.cuadro{
-  background-color: white;
-  color: #8269F1;
-  padding: 1em;
-  border-radius: 20px;
-  border: 1.2px solid #8269F1;
-  text-align: center;
-  height: 10em;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  overflow: hidden;
-}
-
-.grid h2{
-  font-size: 1.5em;
-}
-
-.cuadro1 {
-  height: 10em;
-  padding:0;
-  border: none;
-  overflow: hidden;
-  background-color: white;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cuadro1 img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 20px;
-}
-
-.vistafinal{
- position: relative;
-    width: 100%;
-    height: 35em;
-    overflow: hidden;
-}
-
-.vistafinal img{
-  width: 100%;              
-    height: 35em;            
-    object-fit:cover;        
-    object-position: center;  
-    display: block; 
-}
-
-.etiquetanombre2{
-   position: absolute;
+.etiquetanombre2 {
+    position: absolute;
     background-color: #8269F1;
-    top:50%;
+    top: 50%;
     left: 50%;
     width: 30%;
     padding: 1em;
-    box-shadow: 0 4px 10px rgba(4, 235, 223, 0.671); 
-  transform: translate(-50%, -50%);
-  text-align: center;
+    box-shadow: 0 0.25em 0.625em rgba(4, 235, 223, 0.671);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
+.contenedor2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quinessomos {
+    width: 40%;
+    height: 10em;
+    background-color: #8269F1;
+    color: white;
+    border: 0.4375em solid #8269F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25em;
+    text-align: center;
+    font-size: 1.6em;
+    box-shadow: 0 0.25em 0.625em rgba(4, 220, 235, 0.884);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+.cuadro {
+    background-color: white;
+    color: #8269F1;
+    padding: 1em;
+    border-radius: 1.25em;
+    border: 0.075em solid #8269F1;
+    text-align: center;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    overflow: hidden;
+}
+
+.grid h2 {
+    font-size: 1.5em;
+}
+
+.cuadro1 {
+    height: 10em;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1.25em;
+}
+
+@media screen and (max-width: 60em) {
+    .contenedor, .vistafinal {
+        height: 28em;
+    }
+
+    .etiquetanombre, .etiquetanombre2 {
+        width: 40%;
+        padding: 0.75em;
+    }
+
+    .etiquetanombre h2 {
+        font-size: 2em;
+    }
+
+    .etiquetanombre h3 {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .contenedor, .vistafinal {
+        height: 22em;
+    }
+
+    .etiquetanombre, .etiquetanombre2 {
+        width: 50%;
+        padding: 0.5em;
+    }
+
+    .etiquetanombre h2 {
+        font-size: 1.8em;
+    }
+
+    .etiquetanombre h3 {
+        font-size: 0.8em;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quinessomos {
+        width: 60%;
+        height: 8em;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 26.5625em) {
+    .contenedor, .vistafinal {
+        height: 18em;
+    }
+
+    .etiquetanombre, .etiquetanombre2 {
+        width: 70%;
+        padding: 0.5em;
+    }
+
+    .etiquetanombre h2 {
+        font-size: 1.5em;
+    }
+
+    .etiquetanombre h3 {
+        font-size: 0.7em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
+
+    .quinessomos {
+        width: 80%;
+        height: 6em;
+        font-size: 1.2em;
+    }
+}

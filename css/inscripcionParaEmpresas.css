@@ -79,13 +79,75 @@ form input, select{
     border-color: #6227dc;
     background-color: white;
 }
-@media screen and (width < 600px){
 
-
-    .datos_alumno{
-        display: block;
+@media screen and (max-width: 60em) {
+    section {
+        width: 90%;
+        margin: 5% 5% 10% 5%;
     }
-    .empresa_curso{
-        margin: 0;
-    }    
+    form {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .inscripcion {
+        margin-left: 5em;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    section {
+        width: 95%;
+        margin: 5% 2.5% 10% 2.5%;
+    }
+    form {
+        width: 95%;
+        margin: 0 2.5%;
+    }
+    .datos_alumno {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .empresa_curso {
+        margin: 0 1em;
+    }
+    .inscripcion {
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    h2 {
+        font-size: 1.25em;
+    }
+    .inscripcion {
+        font-size: 0.9em;
+        margin-left: 0;
+    }
+    form input, select {
+        font-size: 0.875em;
+        padding: 1em;
+    }
+    .empresa_curso {
+        font-size: 1em;
+        margin: 0.5em;
+    }
+    .datos_confirmacion {
+        flex-direction: column;
+        gap: 1em;
+        margin: 1em 0;
+    }
+    .Importe_acumulado {
+        width: 4em;
+        font-size: 1.2em;
+    }
+    .boton_inscripcion {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.5em 0;
+    }
+    .boton_circular {
+        width: 1.8em;
+        height: 1.8em;
+    }
 }
