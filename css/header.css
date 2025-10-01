@@ -37,6 +37,30 @@
     transition: all 0.3s;
 }
 
+/* Contenedor del input de cursos */
+.search-cursos {
+    display: inline-block;
+    position: relative;
+    width: 12em;       /* ancho fijo */
+    margin-left: 1em;  /* separación desde el logo */
+}
+
+.search-cursos input {
+    width: 100%;
+    padding: 0.5em 1em;
+    border: 0.125em solid #6227dc;
+    border-radius: 0.3em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Eliminamos cualquier crecimiento al focus */
+.search-cursos input:focus {
+    width: 100%;
+}
+
 .headerC .shoppingCart {
     position: relative;
     display: inline-block;
@@ -66,18 +90,50 @@
     transform: scale(1.2);
 }
 
-.headerC .nav-links {
+.nav-links {
     list-style: none;
+    text-align: center;
 }
 
-.headerC .nav-links li {
+.nav-links li {
     display: inline-block;
     padding: 0 1.5em;
     transition: transform 0.2s;
 }
 
-.headerC .nav-links li:hover {
-    transform: scale(1.2);
+.nav-links li.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #6227dc;
+    border-radius: 0.3em;
+    min-width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+    color: #6227dc;
+}
+
+.nav-links li.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .logo a {
@@ -85,13 +141,13 @@
     text-decoration: none !important;
 }
 
-.headerC .nav-links a {
+.nav-links a {
     font-weight: 700 !important;
     color: black !important;
     text-decoration: none !important;
 }
 
-.headerC .nav-links li a:hover {
+.nav-links li a:hover {
     color: #8269F1 !important;
 }
 
@@ -101,32 +157,36 @@
     gap: 1.5em;
 }
 
-/* Botón Iniciar Sesión */
-.headerC .login button {
-    all: unset;
-    color: #6227dc !important;
-    border: 2px solid #6227dc !important;
-    background-color: white !important;
-    padding: 0.5em 1em !important;
-    border-radius: 999px !important;
-    font-weight: 700 !important;
-    cursor: pointer !important;
-    font-family: "Roboto", sans-serif !important;
-    text-align: center !important;
+.headerC .login,
+.headerC .register {
+    all: unset;            
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 
-/* Botón Registrarse */
-.headerC .register button {
-    all: unset;
-    color: white !important;
-    border: 2px solid #6227dc !important;
-    background-color: #6227dc !important;
-    padding: 0.5em 1em !important;
-    border-radius: 999px !important;
-    font-weight: 700 !important;
-    cursor: pointer !important;
-    font-family: "Roboto", sans-serif !important;
-    text-align: center !important;
+.headerC .login {
+    color: #6227dc;
+    border: 2px solid #6227dc;
+    background-color: white;
+}
+
+.headerC .register {
+    color: white;
+    border: 2px solid #6227dc;
+    background-color: #6227dc;
+}
+
+.headerC .login:hover {
+    background-color: #f0f0f0;
+}
+
+.headerC .register:hover {
+    background-color: #8269F1;
 }
 
 .headerline {
@@ -137,7 +197,14 @@
 }
 
 /* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 48em) { /* 768px */
+    .search-cursos {
+        width: 10em; 
+        margin-left: 0.5em;
+    }
+}
+
+@media (max-width: 43.75em) { /* 700px */
     .headerC {
         flex-direction: column;
     }
@@ -148,5 +215,9 @@
         display: block;
         padding: 0.5em 0;
         text-align: center;
+    }
+    .search-cursos {
+        width: 100%; 
+        margin: 0.5em 0;
     }
 }
