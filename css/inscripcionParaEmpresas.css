@@ -36,8 +36,13 @@ form input, select{
     margin: 0 auto;
     font-size: 1rem;
 }
-form label{
+.empresa_curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 1em;
+    font-size: 1.2em;
+    margin: 0 1.3em;
 }
 .datos_alumno{
     display: flex;
@@ -80,6 +85,7 @@ form label{
     .datos_alumno{
         display: block;
     }
-    
-
+    .empresa_curso{
+        margin: 0;
+    }    
 }
