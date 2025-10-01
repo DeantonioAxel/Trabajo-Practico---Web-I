@@ -68,7 +68,6 @@ main {
     background: #333;
 }
 
-/* -------- Contenido de clases -------- */
 .contenidoClases {
     background: #fff;
     padding: 20px;
@@ -86,7 +85,6 @@ main {
     color: #6227dc;
 }
 
-/* Cada unidad */
 .contenidoClases details {
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -101,7 +99,6 @@ main {
     border-color: #8269f1;
 }
 
-/* Cabecera de cada unidad */
 .contenidoClases summary {
     background: #f8f9fa;
     padding: 12px 16px;
@@ -121,14 +118,12 @@ main {
     background: #eaeaea;
 }
 
-/* Lista de contenidos */
 .contenidoClases ul {
     list-style: none;
     padding: 10px 20px;
     margin: 0;
 }
 
-/* Ítems */
 .contenidoClases li {
     display: flex;
     align-items: center;
@@ -144,17 +139,15 @@ main {
 .contenidoClases li h3 {
     margin: 0;
     font-size: 1em;
-    flex: 1; /* empuja el tiempo hacia la derecha */
+    flex: 1;
     font-weight: normal;
 }
 
-/* Íconos */
 .contenidoClases li i {
     color: #8269f1;
     font-size: 1.2em;
 }
 
-/* Tiempo (reloj + minutos) a la derecha */
 .contenidoClases li .tiempo {
     display: flex;
     align-items: center;
@@ -164,7 +157,6 @@ main {
     font-size: 0.9em;
 }
 
-/* Animación */
 .contenidoClases details[open] ul {
     animation: fadeIn 0.4s ease-in-out;
 }
@@ -174,7 +166,6 @@ main {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* -------- Información docente -------- */
 .informacionDocente {
     background-color: #e3e3e3;
     border-radius: 20px;

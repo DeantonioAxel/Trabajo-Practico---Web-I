@@ -10,39 +10,76 @@
     <link rel="icon" href="../images/logo X Group.png" type="imagen/png">
 </head>
 <body>
-    <header class="headerC">
+    <header class="headerC" id="headerC">
         <div class="logo"> 
             <a href="../html/index.html"> <img src="../images/logo X Group.png"   alt="Logo de la pagina"> </a>
         
             <a class="titulologo" href="../html/index.html"><h1>X Group Education</h1></a>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li> <a href="../html/index.html"><h3>Inicio</h3></a> </li>                
-                <li> <a href="#"><h3>Tecnicaturas</h3></a> </li>
-                <li> <a href="#"><h3>Cursos y capacitaciones</h3></a> </li>
-                <li> <a href="#"><h3>Nosotros</h3></a> </li>
-                <li> <a href="../html/contacto.html"><h3>Contacto</h3></a> </li>
-            </ul> 
-        </nav>
+        <div class="search-cursos">
+        <input 
+            list="cursos" 
+            id="traveling-web" 
+            name="traveling-web" 
+        >
+        <datalist id="cursos">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
+        </div>
         <div class="right-side">
             <div class="shoppingCart">
             <img src="../images/shopping cart.png" alt="logo de carrito">
             <p>0</p>
-            </div>
-            
-                <a href="../html/IniciarSesion.html" class="login"> <button> Iniciar Sesion </button> </a>
-                <a href="../html/registrarse.html" class="register"> <button> Registrate   </button></a>    
-            
+        </div>
+        <a href="../html/perfil.html" class="login">Perfil</a>
+        <a href="../html/IniciarSesion.html" class="register">Cerrar Sesión</a>   
         </div>
     </header>
         <hr class="headerline">
+        <nav>
+        <ul class="nav-links">
+            <li><a href="../html/index.html"><h3>Inicio</h3></a></li>
+            <li><a href="../html/Nosotros.html"><h3>Nosotros</h3></a></li>
+            <li><a href="../html/giftcard.html"><h3>GiftCard</h3></a></li>
+            <li><a href="../html/calendario.html"><h3>Calendario</h3></a></li>
+            <li><a href="../html/contacto.html"><h3>Contacto</h3></a></li>
+            <li><a href="../html/mercadoDeCursos.html">Mercado de Cursos</a></li>
+        </ul>
+        </nav>
+
+
+
+        <hr class="headerline">
     <main>
         <section>
-            <h2>Curso completo de Java</h2>
             <h1 class="inscripcion">Inscripcion</h1>
             <form action="Inscripcion">
-                <div class= "datos_alumno">
+                <div></div>
+                    <label for="company_name">
+                        <input type="text" id="company_name" name="company_name" placeholder="Nombre de la empresa" required>
+                    </label>
+                    <label for="Seleccion_curso">
+                        <select id="Seleccion_curso" name="Seleccion_curso" required>
+                            <option value="" disabled selected>Seleccionar curso</option>
+                            <option value="Canva">Canva</option>
+                            <option value="Blenderdiseño3d">Blender: Diseño 3D</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="ChatGpt">Chat Gpt</option>
+                            <option value="Illustrator">Illustrator</option>
+                            <option value="Photoshop">Photoshop</option>
+                            <option value="Java">Java</option>
+                            <option value="ProgramacionC">Programacion C</option>
+                            <option value="InteligenciaArtificial(AI)">Inteligencia artificial (AI)</option>
+                            <option value="GeneracionPromptsIA">AI: Generación de Prompts</option>
+                            <option value="AIMarketingDigital">AI: Marketing Digital</option>
+                        </select>
+                    </label>
+                </div>
+                    <div class= "datos_alumno">
                     <label for="last_name">
                         <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
                     </label>

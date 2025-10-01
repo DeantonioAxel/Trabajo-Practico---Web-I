@@ -15,32 +15,49 @@
   <link rel="icon" href="../images/logo X Group.png" type="image/png">
 </head>
 <body>
-  <header class="headerC">
-    <div class="logo"> 
-      <a href="../html/index.html">
-        <img src="../images/logo X Group.png" alt="Logo de la pagina">
-      </a>
-      <a class="titulologo" href="../html/index.html"><h1>X Group Education</h1></a>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="../html/index.html"><h3>Inicio</h3></a></li>
-        <li><a href="#"><h3>Tecnicaturas</h3></a></li>
-        <li><a href="#"><h3>Cursos y capacitaciones</h3></a></li>
-        <li><a href="#"><h3>Nosotros</h3></a></li>
-        <li><a href="../html/contacto.html"><h3>Contacto</h3></a></li>
-      </ul>
-    </nav>
-    <div class="right-side">
-      <div class="shoppingCart">
-        <img src="../images/shopping cart.png" alt="logo de carrito">
-        <p>0</p>
-      </div>
-      <a href="../html/IniciarSesion.html" class="login"><button>Iniciar Sesión</button></a>
-      <a href="../html/registrarse.html" class="register"><button>Registrate</button></a>
-    </div>
-  </header>
-  <hr class="headerline">
+    <header class="headerC" id="headerC">
+        <div class="logo"> 
+            <a href="../html/index.html"> <img src="../images/logo X Group.png"   alt="Logo de la pagina"> </a>
+        
+            <a class="titulologo" href="../html/index.html"><h1>X Group Education</h1></a>
+        </div>
+        <div class="search-cursos">
+        <input 
+            list="cursos" 
+            id="traveling-web" 
+            name="traveling-web" 
+        >
+        <datalist id="cursos">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
+        </div>
+        <div class="right-side">
+            <div class="shoppingCart">
+            <img src="../images/shopping cart.png" alt="logo de carrito">
+            <p>0</p>
+        </div>
+        <a href="../html/perfil.html" class="login">Perfil</a>
+        <a href="../html/IniciarSesion.html" class="register">Cerrar Sesión</a>   
+        </div>
+    </header>
+        <hr class="headerline">
+        <nav>
+        <ul class="nav-links">
+            <li><a href="../html/index.html"><h3>Inicio</h3></a></li>
+            <li><a href="../html/Nosotros.html"><h3>Nosotros</h3></a></li>
+            <li><a href="../html/giftcard.html"><h3>GiftCard</h3></a></li>
+            <li><a href="../html/calendario.html"><h3>Calendario</h3></a></li>
+            <li><a href="../html/contacto.html"><h3>Contacto</h3></a></li>
+            <li><a href="../html/mercadoDeCursos.html">Mercado de Cursos</a></li>
+        </ul>
+        </nav>
+
+
+
+        <hr class="headerline">
 
   <main class="paginaCursos">
     <aside class="sidebar">
@@ -67,7 +84,7 @@
         </section>
 
         <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso java.jpeg" alt="Curso Java"> 
+          <img class="imagenCursoDestacadoIndex" src="../images/Curso java.png" alt="Curso Java"> 
           <h3 class="precioIndex">59,99 US$</h3>
           <h3 class="duracionIndex">62 hs</h3>
           <h4 class="tituloCursoIndex">Curso completo de Java</h4>
@@ -85,7 +102,7 @@
         </section>
 
         <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso phyton.jpeg" alt="Curso Python"> 
+          <img class="imagenCursoDestacadoIndex" src="../images/Curso python.png" alt="Curso Python"> 
           <h3 class="precioIndex">59,99 US$</h3>
           <h3 class="duracionIndex">62 hs</h3>
           <h4 class="tituloCursoIndex">Curso completo de Python</h4>
@@ -94,7 +111,7 @@
         </section>
 
         <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso javascript.jpeg" alt="Curso JavaScript"> 
+          <img class="imagenCursoDestacadoIndex" src="../images/Curso javascript.png" alt="Curso JavaScript"> 
           <h3 class="precioIndex">59,99 US$</h3>
           <h3 class="duracionIndex">60 hs</h3>
           <h4 class="tituloCursoIndex">Curso completo de JavaScript</h4>
@@ -112,7 +129,7 @@
         </section>
 
         <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso blender.png" alt="Curso Blender"> 
+          <img class="imagenCursoDestacadoIndex" src="../images/Curso blender diseño 3d.png" alt="Curso Blender"> 
           <h3 class="precioIndex">69,99 US$</h3>
           <h3 class="duracionIndex">70 hs</h3>
           <h4 class="tituloCursoIndex">Curso completo de Blender 3D</h4>
@@ -130,7 +147,7 @@
         </section>
 
         <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso prompts ia.png" alt="Curso Prompts IA"> 
+          <img class="imagenCursoDestacadoIndex" src="../images/Curso generacion de prompts.png" alt="Curso Prompts IA"> 
           <h3 class="precioIndex">34,99 US$</h3>
           <h3 class="duracionIndex">25 hs</h3>
           <h4 class="tituloCursoIndex">Generación de Prompts con IA</h4>
@@ -151,13 +168,13 @@
           <img class="imagenCursoDestacadoIndex" src="../images/Curso inteligencia artificial.png" alt="Curso Inteligencia Artificial"> 
           <h3 class="precioIndex">69,99 US$</h3>
           <h3 class="duracionIndex">55 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de Inteligencia Artificial</h4>
+          <h4 class="tituloCursoIndex">Curso de Inteligencia Artificial</h4>
           <a href="../html/cursoInteligenciaArtificial.html"><h5 class="verMasIndex">Ver más</h5></a>
           <button class="comprarIndex">Comprar</button>
         </section>
 
         <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso marketing ia.png" alt="Curso Marketing IA"> 
+          <img class="imagenCursoDestacadoIndex" src="../images/Curso marketing digital AI.png" alt="Curso Marketing IA"> 
           <h3 class="precioIndex">59,99 US$</h3>
           <h3 class="duracionIndex">45 hs</h3>
           <h4 class="tituloCursoIndex">Marketing Digital con IA</h4>
