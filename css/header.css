@@ -26,7 +26,7 @@
     display: inline-flex;
     align-items: center;
     font-size: 1.2em;
-    gap: 0.5em; 
+    gap: 0.5em;
 }
 
 .headerC .logo img {
@@ -35,6 +35,23 @@
     height: 5em;
     width: auto;
     transition: all 0.3s;
+}
+
+.search-cursos {
+    display: inline-block;
+    width: 25em;
+    margin-right: 2em;
+    flex-shrink: 0;
+}
+
+.search-cursos input {
+    width: 100%;
+    padding: 0.5em 1em;
+    border: 0.125em solid #6227dc;
+    border-radius: 0.3em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    outline: none;
 }
 
 .headerC .shoppingCart {
@@ -57,7 +74,7 @@
     color: white;
     font-weight: bold;
     padding: 0.125em 0.375em;
-    border-radius: 50%; 
+    border-radius: 50%;
     line-height: 1;
 }
 
@@ -66,18 +83,50 @@
     transform: scale(1.2);
 }
 
-.headerC .nav-links {
+.nav-links {
     list-style: none;
+    text-align: center;
 }
 
-.headerC .nav-links li {
+.nav-links li {
     display: inline-block;
     padding: 0 1.5em;
     transition: transform 0.2s;
 }
 
-.headerC .nav-links li:hover {
-    transform: scale(1.2);
+.nav-links li.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 0.0625em solid #6227dc;
+    border-radius: 0.3em;
+    min-width: 9.375em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+    color: #6227dc;
+}
+
+.nav-links li.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .logo a {
@@ -85,48 +134,52 @@
     text-decoration: none !important;
 }
 
-.headerC .nav-links a {
+.nav-links a {
     font-weight: 700 !important;
     color: black !important;
     text-decoration: none !important;
 }
 
-.headerC .nav-links li a:hover {
+.nav-links li a:hover {
     color: #8269F1 !important;
 }
 
 .headerC .right-side {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 2em;
 }
 
-/* Botón Iniciar Sesión */
-.headerC .login button {
+.headerC .login,
+.headerC .register {
     all: unset;
-    color: #6227dc !important;
-    border: 2px solid #6227dc !important;
-    background-color: white !important;
-    padding: 0.5em 1em !important;
-    border-radius: 999px !important;
-    font-weight: 700 !important;
-    cursor: pointer !important;
-    font-family: "Roboto", sans-serif !important;
-    text-align: center !important;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 
-/* Botón Registrarse */
-.headerC .register button {
-    all: unset;
-    color: white !important;
-    border: 2px solid #6227dc !important;
-    background-color: #6227dc !important;
-    padding: 0.5em 1em !important;
-    border-radius: 999px !important;
-    font-weight: 700 !important;
-    cursor: pointer !important;
-    font-family: "Roboto", sans-serif !important;
-    text-align: center !important;
+.headerC .login {
+    color: #6227dc;
+    border: 0.125em solid #6227dc;
+    background-color: white;
+}
+
+.headerC .register {
+    color: white;
+    border: 0.125em solid #6227dc;
+    background-color: #6227dc;
+}
+
+.headerC .login:hover {
+    background-color: #f0f0f0;
+}
+
+.headerC .register:hover {
+    background-color: #8269F1;
 }
 
 .headerline {
@@ -136,17 +189,90 @@
     opacity: 0.2;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 48em) {
     .headerC {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
     }
+
+    .headerC .logo,
+    .search-cursos,
+    .headerC .shoppingCart {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .headerC .logo {
+        margin-right: 1em;
+    }
+
+    .search-cursos {
+        width: 18em;
+        margin: 0 1em 0 0;
+    }
+
+    .headerC .right-side {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    .headerC .login,
+    .headerC .register {
+        flex: 1 1 auto;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .nav-links li.dropdown:hover .dropdown-content {
+        position: static;
+        border: none;
+        border-radius: 0;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .nav-links li.dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+@media (max-width: 43.75em) {
+    .headerC {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
     .headerC nav {
-        padding: 10px 0;
+        padding: 0.625em 0;
     }
+
     .headerC .nav-links li {
         display: block;
         padding: 0.5em 0;
         text-align: center;
+    }
+
+    .search-cursos {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    .headerC .right-side {
+        gap: 1em;
     }
 }
