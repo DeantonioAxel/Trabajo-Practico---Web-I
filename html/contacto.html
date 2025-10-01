@@ -11,19 +11,33 @@
 </head>
 <body>
     <main>
-    <header class="headerC" id="headerC">
+     <header class="headerC" id="headerC">
         <div class="logo"> 
             <a href="../html/index.html"> <img src="../images/logo X Group.png"   alt="Logo de la pagina"> </a>
         
             <a class="titulologo" href="../html/index.html"><h1>X Group Education</h1></a>
+        </div>
+        <div class="search-cursos">
+        <input 
+            list="cursos" 
+            id="traveling-web" 
+            name="traveling-web" 
+            placeholder="Selecciona un curso"
+        >
+        <datalist id="cursos">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
         </div>
         <div class="right-side">
             <div class="shoppingCart">
             <img src="../images/shopping cart.png" alt="logo de carrito">
             <p>0</p>
         </div>
-        <a href="../html/perfil.html" class="login"> <button> Perfil </button> </a>
-        <a href="../html/IniciarSesion.html" class="register"> <button> Iniciar Sesion   </button></a>    
+        <a href="../html/perfil.html" class="login">Perfil</a>
+        <a href="../html/IniciarSesion.html" class="register">Iniciar Sesión</a>   
         </div>
     </header>
         <hr class="headerline">
@@ -34,8 +48,8 @@
             <li><a href="../html/giftcard.html"><h3>GiftCard</h3></a></li>
 
             <li class="dropdown">
-            <h3>Cursos</h3>
-            <ul class="dropdown-content">
+            <h3 id="cursosBtn">Cursos</h3>
+            <ul class="dropdown-content" id="cursosDropdown">
                 <li><a href="../html/html.html">HTML</a></li>
                 <li><a href="../html/css.html">CSS</a></li>
                 <li><a href="../html/javascript.html">JavaScript</a></li>

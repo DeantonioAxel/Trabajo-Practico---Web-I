@@ -21,9 +21,7 @@
     left: 3%;
     width: 30%;
     padding: 1em;
-    box-shadow: 0 4px 10px rgb(0,0 0,0.4);
-    
-    
+    box-shadow: 0 4px 10px rgba(4, 235, 223, 0.671);  
 }
 
 .etiquetanombre h2{
@@ -31,7 +29,6 @@
   font-size: 2.5em;
   display: flex;
   justify-content: center;
-  
 }
 
 .etiquetanombre h3{
@@ -41,14 +38,24 @@
   justify-content: center;
 }
 
+.contenedor2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .quinessomos {
-    width: 30%;
-    height: 7em;
-    color: #8269F1;
-    
-    border: 7px;
-    border-color: red;
-
-
+    width: 40%;
+    height:10em;
+    background-color: #8269F1;
+    color: white;
+    border: 7px solid #8269F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.6em;
+    box-shadow: 0 4px 10px rgba(4, 235, 223, 0.671);
 }
