@@ -51,13 +51,28 @@
 } 
 
 .day.number.other-month{
-    color: rgba(78, 78, 78, 0.8);
+    color: rgba(128, 127, 127, 0.8);
 }
 
 .day.number.other-month a{
     color: rgba(78, 78, 78, 0.8);
     background-color: rgba(187, 158, 247, 0.5);
-}@media screen and (max-width: 40.63em){
+}
+
+.move-month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.move-month img{
+    margin: 0 1em;
+    width: 2em;
+    height: 2em;
+}
+
+@media screen and (max-width: 40.63em){
     .day{
         font-size:0.55em;
         padding: 0.3em 0.2em 1em 0.2em;

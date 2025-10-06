@@ -1,0 +1,48 @@
+.block-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40em;
+    padding: 2em;
+}
+
+.block-end .card {
+    padding: 2em 3em;
+    border: 0.5em solid #bb9ef7;
+    border-radius: 1em;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-end .card h1,
+.block-end .card button {
+    margin: 0.5em 0;
+}
+
+.block-end .card h1 {
+    color: #6227dc;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.block-end .card button {
+    background-color: #ac82ff;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.8em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.block-end .card button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.block-end .card button:hover {
+    background-color: #a973ff;
+}
