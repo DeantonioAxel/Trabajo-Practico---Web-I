@@ -113,6 +113,7 @@ h2{
     transform: scale(1.05);
 }
 .contenedorCursosDestacado .comprarIndex {
+    text-decoration: none;
     font-size: 1em;
     font-weight: bold;
     background: linear-gradient(135deg, #6c63ff, #3f3d9f);

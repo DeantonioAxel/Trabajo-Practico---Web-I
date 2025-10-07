@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto -X Group Education</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" href="../images/logo X Group.png" type="imagen/png">
+</head>
+<body>
+    <main>
+        <header class="headerC" id="headerC">
+        <div class="logo"> 
+            <a href="./homeLogueado.html"> <img src="../images/logo X Group.png"   alt="Logo de la pagina"> </a>
+        
+            <a class="titulologo" href="./homeLogueado.html"><h1>X Group Education</h1></a>
+        </div>
+        <div class="search-cursos">
+        <input 
+            list="cursos" 
+            id="traveling-web" 
+            name="traveling-web" 
+        >
+        <datalist id="cursos">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
+        </div>
+        <div class="right-side">
+            <div class="shoppingCart">
+            <img src="../images/shopping cart.png" alt="logo de carrito">
+            <p>0</p>
+        </div>
+       <a href="./IniciarSesion.html" class="login">Iniciar Sesi&oacute;n</a>
+        <a href="./registrarse.html" class="register">reg&iacute;strate</a>   
+        </div>
+    </header>
+        <hr class="headerline">
+        <nav>
+        <ul class="nav-links">
+           <li><a href="../index.html"><h3>Inicio</h3></a></li>
+            <li><a href="./NosotrosSinLogin.html"><h3>Nosotros</h3></a></li>
+            <li><a href="./contactoSinLogin.html"><h3>Contacto</h3></a></li>
+            <li><a href="#">Mercado de Cursos</a></li>
+            <li><a href="#">Calendario</a></li>
+        </ul>
+        </nav>
+
+
+
+        <hr class="headerline">
+
+
+        <section>
+            <form action="Contacto" method="get">
+                <h2>Dejanos tu mensaje</h2>
+                <hr>
+                <label for="name">Nombre:
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                </label>
+                <label for="last_name">Apellido
+                    <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
+                </label>
+                <label for="phone">Telefono
+                    <input type="tel" id="phone" name="phone" placeholder="11 1234-5678">
+                </label>
+                <label for="email">Correo Electrónico:
+                    <input type="email" id="email" name="email" placeholder="alumno@ejemplo.com" required>
+                </label>
+                <label for="message">Mensaje:
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Deja tu mensaje aqui" required></textarea>
+                </label>
+                <button type="submit" formaction="./agradecimientoContacto.html">Enviar</button>
+            </form>
+
+            <article>
+                <h2>Otras formas de contacto</h2>
+                <hr>
+                <div>
+                    <img src="../images/1.png" alt="icono de smartphone">
+                    <p>15-1234-5678</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="../images/2.png" alt="icono de email">
+                    <p>contacto@xgroup.com</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="../images/3.png" alt="icono de ubicacion">
+                    <p>Sarmiento 701, Capital Federal</p>
+                </div>
+                <hr>
+                
+            </article>
+
+        </section>
+        
+        <div class="maps">
+            <img src="../images/Ubicacion en el mapa.png" alt="Ubicacion en el maps">
+        </div>
+
+        <hr>
+        <hr>
+        <footer class="footer">
+            <div class="footer-data grupo">
+                <h4>Integrantes</h4>
+                <p>Fernando Aybar 39211330</p>
+                <p>Silvana Topatigh 33810330</p>
+                <p>Sol Benitez 45749670</p>
+                <p>Axel Deantonio 42673324</p>
+                <p>Gonzalo Gomez 45128637</p>
+            </div>
+            <div class="footer-data menu">
+                <h4>Menu</h4>
+                <a href="../index.html"><p>Inicio</p></a>              
+            <a href="./NosotrosSinLogin.html"><p>Nosotros</p></a>
+            <a href="#"><p>Cursos</p></a>
+            <a href="./contactoSinLogin.html"><p>Contacto</p></a>
+            <a href="#"><p>Calendario</p></a> 
+            </div>
+            <div class="footer-data redes">
+                <h4>Redes</h4>
+                <div class="iconos">
+                <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer"><img src="../images/twitter-x.svg" alt="Twitter"></a>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img src="../images/facebook.svg" alt="Facebook"></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="../images/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+            </div>
+        </footer>
+
+    </main>
+    
+</body>
+</html>
