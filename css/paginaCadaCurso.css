@@ -222,11 +222,6 @@ main {
     height: auto;
 }
 
-.contenedorCursosDestacado h3,
-.contenedorCursosDestacado h4 {
-    margin: 0.5em 0;
-}
-
 .contenedorCursosDestacado .verMasIndex {
     cursor: pointer;
     color: gray;
