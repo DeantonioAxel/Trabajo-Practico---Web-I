@@ -29,7 +29,7 @@ font-size: 3em;
 position: relative;
 background-color: #eaebff;
 color: #6227dc;
-height: 20%;
+height: 30%;
 width: 30%;
 display: flex;
 justify-content: center;
@@ -52,6 +52,16 @@ border: 0.06em solid #6227dc;
     border-radius: 1.25em;
 }
 
+@media screen and (max-width: 90em){
+
+    .page .notificacion{
+        height: 60%;
+        width: 50%;
+
+}
+
+}
+
 @media screen and (max-width: 64em){
     .maps img{
         width: 100%;
@@ -69,4 +79,24 @@ border: 0.06em solid #6227dc;
     .notificacion h2 {
     font-size: 2em;
     }
+}
+@media screen and (max-width: 23em){
+
+    .page .notificacion{
+        height: 50%;
+        width: 90%;
+    }
+    .notificacion h2 {
+    font-size: 1.5em;
+    }
+    .notificacion h3 {
+    font-size: 0.8em;
+    padding: 0.5em;
+    }
+    .notificacion a {
+    padding: 0.8em;
+    gap: 1em;
+    font-size: 0.8em;
+    }
+
 }
