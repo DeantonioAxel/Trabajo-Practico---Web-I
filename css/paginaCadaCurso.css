@@ -121,6 +121,11 @@ main {
     background: #eaeaea;
 }
 
+.check {
+    width: 1.2em;
+    height: 1.2em;
+}
+
 .contenidoClases ul {
     list-style: none;
     padding: 0.625em 1.25em;

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript - X Group Education</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/paginaCadaCurso.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../images/logo X Group.png" type="image/png">
+</head>
+<body>
+        <header class="headerC" id="headerC">
+        <div class="logo"> 
+            <a href="./homeLogueado.html"> <img src="../images/logo X Group.png"   alt="Logo de la pagina"> </a>
+        
+            <a class="titulologo" href="./homeLogueado.html"><h1>X Group Education</h1></a>
+        </div>
+        <div class="search-cursos">
+        <input 
+            list="cursos" 
+            id="traveling-web" 
+            name="traveling-web" 
+        >
+        <datalist id="cursos">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+            <option value="Photoshop">
+            <option value="Java">
+            <option value="Programacion C">
+            <option value="Chat Gpt">
+            <option value="Blender Diseño 3d">
+            <option value="Canva">
+            <option value="Ia: Generacion de prompts">
+            <option value="Illustrator">
+            <option value="Inteligencia Artificial">
+            <option value="Marketing Digital">
+        </datalist>
+        </div>
+        <div class="right-side">
+            <div class="shoppingCart">
+            <img src="../images/shopping cart.png" alt="logo de carrito">
+            <p>0</p>
+        </div>
+        <a href="./perfil.html" class="login">Perfil</a>
+        <a href="./IniciarSesion.html" class="register">Cerrar Sesión</a>   
+        </div>
+    </header>
+        <hr class="headerline">
+        <nav>
+        <ul class="nav-links">
+            <li><a href="./homeLogueado.html"><h3>Inicio</h3></a></li>
+            <li><a href="./Nosotros.html"><h3>Nosotros</h3></a></li>
+            <li><a href="./giftcard.html"><h3>GiftCard</h3></a></li>
+            <li><a href="./contacto.html"><h3>Contacto</h3></a></li>
+            <li><a href="./mercadoDeCursos.html">Mercado de Cursos</a></li>
+            <li><a href="./calendarioOctubre.html">Calendario</a></li>
+            <li><a href="./inscripcionParaEmpresas.html"><h3>Empresas</h3></a></li>
+        </ul>
+        </nav>
+
+
+
+        <hr class="headerline">
+
+    <main>
+        <div class="contenedorInformacionCurso">
+            <div class="imagenPaginaCurso">
+                <img src="../images/Curso javascript.png" alt="Imagen del curso de JavaScript">
+            </div>
+            <section class="informacionDelCurso">
+                <h2>Curso completo de JavaScript</h2>
+                <h3>Tiempo de dedicación necesario: 60 horas</h3>
+                <h3>Descripción del curso:</h3>
+                <p>Este curso te permitirá dominar JavaScript, el lenguaje esencial para el desarrollo web. Aprenderás a darle dinamismo e interactividad a tus páginas, construir aplicaciones del lado del cliente y sentar bases para frameworks modernos.</p>
+                <p>Comenzarás con lo fundamental: variables, operadores y funciones. Luego avanzarás hacia manipulación del DOM, eventos y asincronía. Finalmente, aprenderás conceptos modernos de ES6+, APIs y proyectos prácticos.</p>
+
+                <h3>Requisitos previos:</h3>
+                <div class="requisitosCurso">
+                    <h3>Conocimientos</h3>
+                    <ul>
+                        <li>Conocimientos básicos de HTML y CSS.</li>
+                        <li>No se requiere experiencia previa en programación avanzada.</li>
+                    </ul>
+                    <h4>Requisitos técnicos</h4>
+                    <ul>
+                        <li>Un navegador moderno (Chrome, Firefox, Edge).</li>
+                        <li>Editor de texto (VS Code recomendado).</li>
+                    </ul>
+                </div>
+            </section> 
+        </div>
+
+        <section class="contenidoClases">
+            <h2>CONTENIDOS POR CLASE</h2>
+
+            <details open>
+                <summary>Unidad 1: Introducción a JavaScript</summary>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>¿Qué es JavaScript y dónde se usa?</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>15 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Integración de JavaScript en HTML</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>20 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-pencil-square"></i> 
+                        <h3>Primer script en el navegador</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>15 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Unidad 2: Variables y Tipos de Datos</summary>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>let, const y var</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>20 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Tipos primitivos</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>25 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-pencil-square"></i> 
+                        <h3>Ejercicios básicos con variables</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>20 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Unidad 3: Operadores y Estructuras de Control</summary>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Operadores aritméticos y lógicos</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>25 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Condicionales if, else, switch</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>30 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Bucles for y while</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>25 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Unidad 4: Funciones</summary>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Funciones tradicionales</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>20 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Funciones flecha (arrow functions)</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>20 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-pencil-square"></i> 
+                        <h3>Ejercicio: calculadora básica</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>30 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Unidad 5: DOM y Eventos</summary>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Selección de elementos del DOM</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>30 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Manipulación de contenido y estilos</h3> 
+                        i class="bi bi-clock"></i> 
+                        <span>25 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Manejo de eventos</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>30 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Unidad 6: Asincronía</summary>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Callbacks y promesas</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>35 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Async/Await</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>30 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-pencil-square"></i> 
+                        <h3>Ejercicio: consumo de una API</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>40 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Unidad 7: Proyecto Final</summary>
+                <ul>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Buenas prácticas y estructura de proyectos</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>30 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-play-circle"></i> 
+                        <h3>Uso de ES6+ (spread, destructuring, módulos)</h3> 
+                        <i class="bi bi-clock"></i> <span>40 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                    <li>
+                        <i class="bi bi-pencil-square"></i> 
+                        <h3>Proyecto final: To-Do List interactiva</h3> 
+                        <i class="bi bi-clock"></i> 
+                        <span>1 hora 30 minutos</span>
+                        <input type="checkbox" class="check">
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section class="informacionDocente">
+            <h2>Docente</h2>
+            <h3>Laura Fernández</h3>
+            <div class="estrellas">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+            <p>Laura es desarrolladora frontend con más de 8 años de experiencia. Ha trabajado en startups y empresas internacionales creando aplicaciones modernas con JavaScript, React y Node.js. Su enfoque es práctico y siempre basado en proyectos reales.</p>
+        </section>
+        <aside class="cajasCursosRecomendados">
+                <section class="contenedorCursosDestacado">
+                    <img class="imagenCursoDestacadoIndex" src="../images/Curso java.png" alt="Curso Java"> 
+                    <h3 class="precioIndex">59,99 US$</h3>
+                    <h3 class="duracionIndex">62 hs</h3>
+                    <h4 class="tituloCursoIndex">Curso completo de Java</h4>
+                    <a href="../html/cursoJava.html"><h5 class="verMasIndex">Ver más</h5></a>
+                    
+                </section>
+                <section class="contenedorCursosDestacado">
+                    <img class="imagenCursoDestacadoIndex" src="../images/Curso programacion c.png" alt="Curso C"> 
+                    <h3 class="precioIndex">49,99 US$</h3>
+                    <h3 class="duracionIndex">50 hs</h3>
+                    <h4 class="tituloCursoIndex">Curso completo de programacón C</h4>
+                    <a href="../html/cursoProgramacionC.html"><h5 class="verMasIndex">Ver más</h5></a>
+                    
+                </section>
+                <section class="contenedorCursosDestacado">
+                    <img class="imagenCursoDestacadoIndex" src="../images/Curso python.png" alt="Curso Python"> 
+                    <h3 class="precioIndex">59,99 US$</h3>
+                    <h3 class="duracionIndex">62 hs</h3>
+                    <h4 class="tituloCursoIndex">Curso completo de Python</h4>
+                    <a href="../html/cursoPhyton.html"><h5 class="verMasIndex">Ver más</h5></a>
+                   
+                </section>
+            </aside>  
+    </main>
+        <footer class="footer">
+            <div class="footer-data grupo">
+                <h4>Integrantes</h4>
+                <p>Fernando Aybar 39211330</p>
+                <p>Silvana Topatigh 33810330</p>
+                <p>Sol Benitez 45749670</p>
+                <p>Axel Deantonio 42673324</p>
+                <p>Gonzalo Gomez 45128637</p>
+            </div>
+            <div class="footer-data menu">
+                <h4>Menu</h4>
+                <a href="./homeLogueado.html"><p>Inicio</p></a>
+                <a href="./Nosotros.html"><p>Nosotros</p></a>
+                <a href="./giftcard.html"><p>GiftCard</p></a>
+                <a href="./mercadoDeCursos.html"><p>Cursos</p></a>
+                <a href="./contacto.html"><p>Contacto</p></a>
+                <a href="./inscripcionParaEmpresas.html"><p>Empresas</p></a>
+                <a href="./calendario.html"><p>Calendario</p></a>  
+            </div>
+            <div class="footer-data redes">
+                <h4>Redes</h4>
+                <div class="iconos">
+                <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer"><img src="../images/twitter-x.svg" alt="Twitter"></a>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img src="../images/facebook.svg" alt="Facebook"></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="../images/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+            </div>
+        </footer>
+        
+</body>
+</html>
