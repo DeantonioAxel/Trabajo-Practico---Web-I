@@ -45,7 +45,7 @@
     margin-top: 0.5em;
     padding: 0 0.8em;
     width: auto;
-    white-space: nowrap;
+    white-space: break-spaces;
     overflow: hidden;
     text-overflow: ellipsis;
 } 
@@ -80,6 +80,7 @@
     .day.number a{
         padding: 0.2em 0.4em;
         font-size: 0.6em;
+        
     }
     .day.number span{
         font-size: 0.6em;
