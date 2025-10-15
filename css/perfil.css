@@ -148,7 +148,7 @@
     font-weight: bold;
     color: black;
     position: absolute;
-    top: 13.75em;
+    top: 12em;
     left: 0.3125em;
 }
 
@@ -202,6 +202,42 @@
     transform: scale(0.95);
 }
 
+@media screen and (max-width:1600px ) and
+(min-width: 1440px) {
+.cursos-contenedor .precio {
+    top: 12em;
+}
+.cursos-contenedor .verMas {
+    top: 16em;
+}
+.cursos-contenedor .comprar {
+top: 16em;
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 779px) {
+
+.cursos-contenedor .precio {
+    top: 7.5em;
+}
+.cursos-contenedor .duracion {
+    top: 8.5em;
+    font-size: 0.9em;
+}
+.cursos-contenedor .tituloCurso {
+    font-size: 0.6em;
+    top: 15em;;
+}
+.cursos-contenedor .verMas {
+    top: 11em;
+}
+
+.cursos-contenedor .comprar {
+    top: 11.5em;
+    
+}
+}
+
 @media screen and (max-width: 60em) {
     .perfil {
         width: 90%;
@@ -218,9 +254,21 @@
     }
 
     .perfil .cursos-recomendados h2 {
-        font-size: 1.875em;
+        font-size: 1.3em;
     }
+
+    .cursos-contenedor .precio {
+    
+    padding: 0.125em 0.3125em;
+    position: absolute;
+    top: 11.8em;
+    right: 0;
+    }
+
+  
 }
+
+
 
 @media screen and (max-width: 48em) {
     .perfil {
@@ -244,10 +292,16 @@
     .perfil .cursos-recomendados .cursos-recomendados-grilla {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .cursos-contenedor .duracion{
+        font-size: 0.9em;
+        top: 12em;
+    }
 }
 
 @media screen and (max-width: 30em) {
     .perfil {
+        display: block ;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         width: 100%;
@@ -255,6 +309,12 @@
 
     .perfil .descripcion .usuario {
         font-size: 1.5em;
+    }
+
+    .perfil .descripcion img {
+    display: flex;
+    justify-self: center;
+    width: 80%;
     }
 
     .perfil .descripcion .enviar-giftcard {
@@ -286,6 +346,6 @@
     }
 
     .cursos-contenedor .comprar {
-        width: 100%;
+         width: 50%;
     }
 }
