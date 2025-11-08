@@ -49,6 +49,22 @@ body {
     font-size: 1rem;
 }
 
+.registrarse .formulario-registrarse .mensaje-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+    height: 0;
+}
+
+.registrarse .formulario-registrarse .mensaje-error.activo {
+    display: block;
+    height: auto;
+}
+.registrarse .formulario-registrarse .mensaje-error.activo ul {
+    list-style: none;
+}
+
 .registrarse .formulario-registrarse .btn {
     height: 3.25rem;
     border-radius: 0.625rem;

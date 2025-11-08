@@ -14,10 +14,10 @@
         <img class="logo" src="../images/logo X Group.png" alt="logo_X_Group">
         <h1>Iniciar Sesión</h1>
 
-        <form class="formulario-iniciar-sesion" method="get">
+        <form class="formulario-iniciar-sesion js-form-login" method="get">
 
-            <label for="ususario">
-                <input type="text" placeholder="Usuario" id="ususario" name="ususario" required>
+            <label for="correo">
+                <input type="email" name="correo" id="correo" placeholder="Email">
             </label>
 
             <label for="password">
@@ -26,13 +26,13 @@
 
             <div class="recordarme-contrasena">
                 <div class="recordarme">
-                    <input type="checkbox" name="radio">
+                    <input type="checkbox" name="radio" id="radio">
                     <label for="radio">Recordarme</label>
                 </div>
                 <a href="./recuperarContrasenia.html">¿Olvidó su contraseña?</a>
             </div>
 
-            <button class="btn" type="submit" formaction="./homeLogueado.html">Iniciar Sesión</button>
+            <button class="btn js-btn-login" type="submit" formaction="./homeLogueado.html">Iniciar Sesión</button>
 
             <div class="crear-cuenta">
                 <p>¿No estás registrado?</p>
@@ -41,6 +41,7 @@
             </div>
         </form>
     </section>
+    <script src="../js/iniciarSesion.js"></script>
 </body>
 
 </html>
