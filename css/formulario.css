@@ -43,19 +43,45 @@
     border-radius: 0.3em;
 }
 
-.forms-enrollment-amount .inscription {
+button{
+    width: 10em;
+    font-weight: 700;
+    padding: 0.5em;
+    border-radius: 999px;
     color: #6227dc;
-    border: 0.13em solid #6227dc; /* 2px ≈ 0.125em */
+    border: 0.06em solid #6227dc;
     background-color: white;
-    padding: 0 1em;
-    border-radius: 0.31em; /* 5px */
-    cursor: pointer;
-    transition: color 0.3s, background-color 0.3s;
 }
 
 .forms-enrollment-amount .inscription:hover {
     color: white;
     background-color:#6227dc ;
+}
+
+dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-self: center;
+    border: 0.06em solid #6227dc;
+    border-radius: 0.63em;
+    padding: 2em;
+}
+#js-CloseDialog{
+    margin-top: 1em;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #8269f1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2em 0;
+    letter-spacing: 0.06em;
 }
 
 @media screen and (max-width: 32.25em){

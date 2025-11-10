@@ -74,7 +74,7 @@
                     <h3>Inscripción</h3>
                 </div>
 
-                <form action="anotar" method="get">
+                <form method="get">
                     <label for="nombre1">Nombre</label>
                     <input type="text" name="nombre" id="nombre1" placeholder="Nombre" required>
 
@@ -84,26 +84,31 @@
                     <label for="dni1">DNI</label>
                     <input type="number" name="DNI" id="dni1" placeholder="DNI">
 
-                <div class="forms-add">
-                    <label for="Horario">Horario:
-                        <select name="horario" id="horario">
-                            <option value="" disabled selected>Selecciona un horario</option>
-                            <option value="Mañana">Mañana 8-12hs</option>
-                            <option value="Tarde">Tarde 14-18hs</option>
-                            <option value="Noche">Noche 19-23hs</option>
-                        </select>
-                    </label>
-                </div>
+                    <div class="forms-add">
+                        <label for="Horario">Horario:
+                            <select name="horario" id="horario">
+                                <option value="" disabled selected>Selecciona un horario</option>
+                                <option value="Mañana">Mañana 8-12hs</option>
+                                <option value="Tarde">Tarde 14-18hs</option>
+                                <option value="Noche">Noche 19-23hs</option>
+                            </select>
+                        </label>
+                    </div>
 
-                <div class="forms-enrollment-amount">
-                    <h3>$000,-</h3>
-                  <button type="submit" formaction="./confirmacionCompra.html" class="inscription" >Inscripción</button>
-                </div>
+                    <div class="forms-enrollment-amount">
+                        <h3>$000,-</h3>
+                    <button type="submit" class="inscription" >Inscripción</button>
+                    </div>
+
+                    <dialog>
+                        <h2>Inscripcion exitosa</h2>
+                        <p>Nos pondremos en contacto contigo a la brevedad.</p>
+                        <button id="js-CloseDialog">Contin&uacute;a Mirando</button>
+                    </dialog>
+
                 </form>
 
             </div>
-        </section>
-
         </section>
         <footer class="footer">
             <div class="footer-data grupo">
@@ -133,7 +138,8 @@
             </div>
             </div>
         </footer>
-    </main>        
+    </main>
+    <script src="../js/dialog.js" type="module"></script>   
 
 </body>
 </html>

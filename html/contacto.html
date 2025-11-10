@@ -68,7 +68,7 @@
 
 
         <section>
-            <form action="Contacto" method="get">
+            <form method="get">
                 <h2>Dejanos tu mensaje</h2>
                 <hr>
                 <label for="name">Nombre:
@@ -86,8 +86,14 @@
                 <label for="message">Mensaje:
                     <textarea id="message" name="message" rows="4" cols="50" placeholder="Deja tu mensaje aqui" required></textarea>
                 </label>
-                <button type="submit" formaction="./agradecimientoLoguin.html">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
+            <dialog>
+                <h2>Mensaje enviado con exito</h2>
+                <p>Gracias por contactarte con X Group Education</p>
+                <p>Nos pondremos en contacto contigo a la brevedad.</p>
+                <button id="js-CloseDialog">Contin&uacute;a Mirando</button>
+            </dialog>
 
             <article>
                 <h2>Otras formas de contacto</h2>
@@ -148,6 +154,6 @@
         </footer>
 
     </main>
-    
+    <script src="../js/dialog.js"></script>
 </body>
 </html>
