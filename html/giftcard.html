@@ -67,11 +67,11 @@
         <hr class="headerline">
     <main>
         <section>
-            <div class="visualizacion">
+            <div class="visualizacion" >
                 <p class="importe">000.-US$</p>
-                <h3 class="giftcard">gift card</h3>
-                <h4 class="para">para</h4>
-                <h1 class="destinatario" id="js-giftcard-nombre-destinatario">destinatario</h1>
+                <h3 class="giftcard js-color-letra" >gift card</h3>
+                <h4 class="para js-color-letra" >para</h4>
+                <h1 class="destinatario js-color-letra" id="js-giftcard-nombre-destinatario" >destinatario</h1>
             </div>
             <p class="vista">vista previa de personalizacion</p>
         </section>
@@ -83,30 +83,30 @@
             <label class="colores" for="color"> Color
                 <div class="seleccion_de_color">
                     <img src="../images/negro.png" alt="negro">
-                    <input type="radio" id="color" name="color" value="negro">
+                    <input type="radio" id="color" name="color" value="#000000">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/azul noche.png" alt="azul-noche">
-                    <input type="radio" id="color" name="color" value="azul-noche">
+                    <input type="radio" id="color" name="color" value="#00167a">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/ciruela.png" alt="ciruela">
-                    <input type="radio" id="color" name="color" value="ciruela">
+                    <input type="radio" id="color" name="color" value="#401268">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/verde oscuro.png" alt="verde-oscuro">
-                    <input type="radio" id="color" name="color" value="verde-oscuro">
+                    <input type="radio" id="color" name="color" value="#053827">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/cereza.png" alt="cereza">
-                    <input type="radio" id="color" name="color" value ="cereza">
+                    <input type="radio" id="color" name="color" value ="#661414">
                 </div>
             </label>
             <label for="Font">Tamaño de fuente
                 <select name="Font" id="Font">
                     <option value="20px">20px</option>
-                    <option value="28px">25px</option>
-                    <option value="28px">30px</option>
+                    <option value="25px">25px</option>
+                    <option value="30px">30px</option>
                 </select>
             </label>
             <label for="Amount">Monto US$
@@ -115,26 +115,26 @@
             <label for="Background"> Fondo
                 <div class="seleccion_de_color">
                     <img src="../images/azul.png" alt="azul">
-                    <input type="radio" id="Background" name="Background">
+                    <input type="radio" id="Background" name="Background" value="#6227dc">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/celeste.png" alt="color celeste">
-                    <input type="radio" id="Background" name="Background">
+                    <input type="radio" id="Background" name="Background" value="#0cc0df">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/lila.png" alt="color lila">
-                    <input type="radio" id="Background" name="Background">
+                    <input type="radio" id="Background" name="Background" value="#cb6ce6">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/verde.png" alt="color verde">
-                    <input type="radio" id="Background" name="Background">
+                    <input type="radio" id="Background" name="Background" value="#5cffb0">
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/amarillo.png" alt="color amarillo">
-                    <input type="radio" id="Background" name="Background">
+                    <input type="radio" id="Background" name="Background" value="#ffde59">
                 </div>
             </label>
-            <button class="boton-confirmar" type="submit" formaction="./confirmacionDeEnvio.html">Confirmar</button>
+            <button class="boton-confirmar" type="submit">Confirmar</button>
        </form>
        <dialog>
             <h3> ~ Gift Card ~ </h3>
@@ -172,7 +172,7 @@
             </div>
             </div>
         </footer>
-        <script src="../js/giftcard.js"></script>
+        <script type = "module" src = "../js/giftcard.js"></script>
     
 </body>
 </html>

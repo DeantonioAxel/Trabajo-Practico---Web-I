@@ -11,6 +11,7 @@ export class Dialog {
 
         cerrar.addEventListener("click", (event) => {
         dialog.close();
+        form.reset();
         });
         }
 }

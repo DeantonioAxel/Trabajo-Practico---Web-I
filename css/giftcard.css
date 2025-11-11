@@ -42,7 +42,7 @@ form input #name, #number{
     flex-direction: column;
     gap:0.1em;
 }
-.boton-confirmar {
+.boton-confirmar, #js-CloseDialog {
     width: 10em;
     font-weight: 700;
     padding: 0.5em;
@@ -107,6 +107,21 @@ h2{
     font-size: 1em; 
     text-transform: uppercase; 
     text-align: center; 
+}
+
+dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-self: center;
+    border: 0.06em solid #6227dc;
+    border-radius: 0.63em;
+    padding: 2em;
+}
+#js-CloseDialog{
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 60em) {
