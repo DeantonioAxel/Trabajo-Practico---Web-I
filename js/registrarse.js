@@ -22,6 +22,10 @@ const INPUT_CORREO = document.querySelector('#correo');
 const INPUT_CONTRASENIA = document.querySelector('#contrasenia');
 const INPUT_REPETIR_CONTRASENIA = document.querySelector('#repetir-contrasenia');
 
+//Dialog
+const DIALOG = document.querySelector('.dialog-register');
+const ACEPTAR_DIALOG = document.querySelector('.js-btn-aceptar')
+
 //Formulario
 FORM_REGISTER.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -50,13 +54,14 @@ FORM_REGISTER.addEventListener('submit', (event) => {
                             USUARIOS_GUARDADOS.push(NUEVO_USUARIO);
                             localStorage.setItem('usuarios', JSON.stringify(USUARIOS_GUARDADOS));
 
-                            alert('Usuario registrado con exito')
-                            FORM_REGISTER.reset();
+                            DIALOG.showModal();
 
-                            ERROR_USUARIO_EXISTENTE.textContent = "";
-                            ERROR_USUARIO_EXISTENTE.classList.remove('activo');
-
-                            window.location.href = "IniciarSesion.html"
+                            ACEPTAR_DIALOG.addEventListener('click', (event) => {
+                                FORM_REGISTER.reset();
+                                ERROR_USUARIO_EXISTENTE.textContent = "";
+                                ERROR_USUARIO_EXISTENTE.classList.remove('activo');
+                                window.location.href = "IniciarSesion.html"
+                            });
                         } else {
                             ERROR_USUARIO_EXISTENTE.textContent = "Ya existe un usuario con ese correo"
                             ERROR_USUARIO_EXISTENTE.classList.add('activo');
@@ -77,8 +82,7 @@ FORM_REGISTER.addEventListener('submit', (event) => {
                                     <li>1 número</li>
                                     <li>1 carácter especial</li>
                                     <li>8 o más caracteres</li>
-                                </ul>
-                            `;
+                                </ul>`;
                     ERROR_CONTRASENIA.classList.add('activo');
                 }
             } else {

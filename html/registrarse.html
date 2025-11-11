@@ -10,46 +10,55 @@
 </head>
 
 <body>
-    <section class="registrarse">
-        <img class="logo" src="../images/logo X Group.png" alt="logo_X_Group">
-        <h1>Registrarse</h1>
-        <form class="formulario-registrarse js-form-register" method="get">
+    <main>
+        <section class="registrarse">
+            <img class="logo" src="../images/logo X Group.png" alt="logo_X_Group">
+            <h1>Registrarse</h1>
+            <form class="formulario-registrarse js-form-register" method="get">
+                <label for="nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </label>
+                <div class="mensaje-error" id="js-error-nombre"></div>
 
-            <label for="nombre">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-            </label>
-            <div class="mensaje-error" id="js-error-nombre"></div>
+                <label for="apellido">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </label>
+                <div class="mensaje-error" id="js-error-apellido"></div>
 
-            <label for="apellido">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-            </label>
-            <div class="mensaje-error" id="js-error-apellido"></div>
+                <label for="correo">
+                    <input type="email" name="correo" id="correo" placeholder="Email">
+                </label>
+                <div class="mensaje-error" id="js-error-correo"></div>
 
-            <label for="correo">
-                <input type="email" name="correo" id="correo" placeholder="Email">
-            </label>
-            <div class="mensaje-error" id="js-error-correo"></div>
+                <label for="contrasenia">
+                    <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña">
+                </label>
+                <div class="mensaje-error" id="js-error-contrasenia"></div>
 
-            <label for="contrasenia">
-                <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña">
-            </label>
-            <div class="mensaje-error" id="js-error-contrasenia"></div>
+                <label for="repetir-contrasenia">
+                    <input type="password" name="repetir-contrasenia" id="repetir-contrasenia"
+                        placeholder="Repetir contraseña">
+                </label>
+                <div class="mensaje-error" id="js-error-repetir-contrasenia"></div>
 
-            <label for="repetir-contrasenia">
-                <input type="password" name="repetir-contrasenia" id="repetir-contrasenia"
-                    placeholder="Repetir contraseña">
-            </label>
-            <div class="mensaje-error" id="js-error-repetir-contrasenia"></div>
+                <button class="btn" type="submit" formaction="./IniciarSesion.html">Registrarse</button>
+                <div class="mensaje-error" id="js-error-usuario-existente"></div>
 
-            <button class="btn" type="submit" formaction="./IniciarSesion.html">Registrarse</button>
-            <div class="mensaje-error" id="js-error-usuario-existente"></div>
+                <div class="iniciar-sesion">
+                    <p>¿Ya tenés una cuenta?</p>
+                    <a href="./IniciarSesion.html">Iniciar Sesión</a>
+                </div>
+            </form>
+        </section>
+    </main>
 
-            <div class="iniciar-sesion">
-                <p>¿Ya tenés una cuenta?</p>
-                <a href="./IniciarSesion.html">Iniciar Sesión</a>
-            </div>
-        </form>
-    </section>
+    <dialog class="dialog-register">
+        <div class="dialog-body">¡Usted se registró correctamente!</div>
+        <div class="dialog-footer">
+            <button class="btn js-btn-aceptar">Aceptar</button>
+        </div>
+    </dialog>
+
     <script src="../js/registrarse.js" type="module"></script>
 </body>
 

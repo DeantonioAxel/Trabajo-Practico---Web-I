@@ -50,6 +50,19 @@ body {
     font-size: 1rem;
 }
 
+.iniciar-sesion .formulario-iniciar-sesion .mensaje-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+    height: 0;
+}
+
+.iniciar-sesion .formulario-iniciar-sesion .mensaje-error.activo {
+    display: block;
+    height: auto;
+}
+
 .recordarme-contrasena{
     display: flex;
     flex-direction: row;
