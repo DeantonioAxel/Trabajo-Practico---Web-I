@@ -1,4 +1,5 @@
-
+export class Dialog {
+        constructor() {
         const formulario = document.querySelector("form");
         const dialog = document.querySelector("dialog");
         const cerrar = document.querySelector("#js-CloseDialog");
@@ -11,3 +12,5 @@
         cerrar.addEventListener("click", (event) => {
         dialog.close();
         });
+        }
+}
