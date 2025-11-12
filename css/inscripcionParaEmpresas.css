@@ -47,6 +47,7 @@ form input, select{
     display: flex;
     justify-content: space-around; 
 }
+
 .boton_circular{
     width: 2em;
     height: 2em;
@@ -62,7 +63,7 @@ form input, select{
     align-items: center;
     margin: 2em 0em;
 }
-.Importe_acumulado{
+#Importe_acumulado{
     width: 5em;
     background-color: #6227dc;
     color: #eaebff;
@@ -77,6 +78,27 @@ form input, select{
     color: #6227dc;
     border-color: #6227dc;
     background-color: white;
+}
+dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-self: center;
+    border: 0.06em solid #6227dc;
+    border-radius: 0.63em;
+    padding: 2em;
+}
+#js-CloseDialog{
+    margin-top: 1em;
+    width: 10em;
+    font-weight: 700;
+    padding: 0.5em;
+    border-radius: 999px;
+    color: white;
+    border: 0;
+    background-color: #6227dc;
 }
 
 @media screen and (max-width: 60em) {

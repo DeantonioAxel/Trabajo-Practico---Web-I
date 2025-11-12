@@ -92,21 +92,18 @@
                             <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
                         </label>
                         <button type="button" class="boton_circular" id="borrar-alumno">-</button>
-                    
                 </div>
-                <div id="contenedor"></div>
-                
-                <div>
+                <div class="agregar_persona">
                     <p>Agregar persona <button type="button" class="boton_circular" id="agregar-alumno">+</button></p> 
                 </div>
                 <div class="datos_confirmacion">
-                    <p class="Importe_acumulado">$000.-</p>
-                    <button type="submit" formaction="./confirmacionCompra.html" class="boton_inscripcion">Confirmar inscripcion</button>
+                    <p id="Importe_acumulado">$000.-</p>
+                    <button type="submit" class="boton_inscripcion">Confirmar inscripcion</button>
                 </div>
             </form>
             <dialog>
                 <h2> ~ Muchas gracias ~ </h2>
-                <h3 class="container"></h3>
+                <h3 class="contenedor_empresa_dialog"></h3>
                 <h3>El listado de alumnos y el link de pago seran enviados por email</h3>
                 <button id="js-CloseDialog">Cerrar</button>
             </dialog>
@@ -145,6 +142,6 @@
             </div>
         </footer>
 
-    <script src="../js/inscripcionEmpresas.js"></script>
+    <script type = "module" src="../js/inscripcionEmpresas.js"></script>
 </body>
 </html>

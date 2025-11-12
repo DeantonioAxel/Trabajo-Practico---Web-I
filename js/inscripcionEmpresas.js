@@ -1,12 +1,14 @@
+import {Dialog} from './dialog.js';
 
 const nombreEmpresaInput = document.querySelector("#company_name");
-const empresaSeleccionadaDialog = document.querySelector(".container");
 const selectCursos = document.querySelector("#Seleccion_curso");
-const cursoOption = document.createElement("option");
-const precioTotal = document.querySelector(".Importe_acumulado");
+const precioAcumulado = document.querySelector("#Importe_acumulado");
 const botonBorrarAlumno = document.querySelector("#borrar-alumno");
 const botonAgregarAlumno = document.querySelector("#agregar-alumno");
-const contenedorAlumno = document.querySelector("#contenedor");
+let precioPorAlumno = 0;
+let contadorAlumnos = 0;
+const botonConfirmar = document.querySelector(".boton_inscripcion");
+const empresaSeleccionadaDialog = document.querySelector(".contenedor_empresa_dialog");
 
 nombreEmpresaInput.addEventListener("keyup", (event) => {
     const filtro = event.target.value.toUpperCase();
@@ -39,7 +41,7 @@ selectCursos.appendChild(opcionDefault);
 cursosDisponibles.forEach(curso => {
     const option = document.createElement("option");
     option.value = curso.nombre;
-    option.textContent = `${curso.nombre} - $${curso.precio}`;
+    option.textContent = `${curso.nombre} - U$S ${curso.precio}`;
     selectCursos.appendChild(option);
 });
 
@@ -47,7 +49,8 @@ cursosDisponibles.forEach(curso => {
 selectCursos.addEventListener("change", (event) => {
     const cursoSeleccionado = cursosDisponibles.find(curso => curso.nombre === event.target.value);
         if (cursoSeleccionado) {
-                console.log(`Curso seleccionado: ${cursoSeleccionado.nombre}, Precio: $${cursoSeleccionado.precio}`);
+                console.log(`Curso seleccionado: ${cursoSeleccionado.nombre}, Precio: U$D ${cursoSeleccionado.precio}`);
+                precioPorAlumno = cursoSeleccionado.precio;
         }
 });
 
@@ -58,24 +61,34 @@ botonBorrarAlumno.addEventListener("click", (event) => {
 });
 
 botonAgregarAlumno.addEventListener("click", (event) => {
-    event.preventDefault();    
-    contenedorAlumno.innerHTML = `
+    event.preventDefault(); 
+    const nuevoAlumnoDiv = document.createElement("div");
+    nuevoAlumnoDiv.classList.add("datos_alumno");
+    const datosAlumno = botonAgregarAlumno.parentElement;   
+    nuevoAlumnoDiv.innerHTML = `
         
         <label for="first_name">
-            <input type="text" id="first_name" name="first_name" placeholder="Nombre" required>
+            <input type="text" id="first_name_${contadorAlumnos}" name="first_name" placeholder="Nombre" required>
         </label>
         <label for="last_name">
-            <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
+            <input type="text" id="last_name_${contadorAlumnos}" name="last_name" placeholder="Apellido" required>
         </label>
         <label for="DNI">
-            <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
+            <input type="text" id="DNI_${contadorAlumnos}" name="DNI" placeholder="DNI" max="99999999" required>
         </label>
-        <button type="reset" class="boton_circular" id="borrar-alumno">-</button>`;
+        <button type="button" class="boton_circular" id="borrar-alumno">-</button>`;
         
     botonAgregarAlumno.parentElement.insertAdjacentElement("beforebegin", nuevoAlumnoDiv);
     const nuevoBotonBorrar = nuevoAlumnoDiv.querySelector("#borrar-alumno");
+    contadorAlumnos++;
+    precioAcumulado.textContent = `US$${(contadorAlumnos * precioPorAlumno).toFixed(2)}.-`;
     nuevoBotonBorrar.addEventListener("click", (event) => {
         event.preventDefault();
-        datosAlumno.remove();
+        nuevoAlumnoDiv.remove();
+        contadorAlumnos--;
+        precioAcumulado.textContent = `US$${(contadorAlumnos * precioPorAlumno).toFixed(2)}.-`;
     });
 });
+
+const DIALOG_EMPRESAS = new Dialog();
+
