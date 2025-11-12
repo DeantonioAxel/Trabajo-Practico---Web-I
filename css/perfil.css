@@ -110,6 +110,22 @@
     margin: 2rem auto;
 }
 
+.btn-eliminar-cuenta {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.7em 1.5em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 1.5em auto;
+}
+
+.btn-eliminar-cuenta:hover {
+  background-color: #d63333;
+}
+
 .cursos-contenedor {
     border: 0.125em solid #8269f1;
     border-radius: 0.625em;
