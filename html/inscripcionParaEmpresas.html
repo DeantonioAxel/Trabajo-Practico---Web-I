@@ -76,65 +76,40 @@
                     <label for="Seleccion_curso">Selecciona el curso:
                         <select id="Seleccion_curso" name="Seleccion_curso" required>
                             <option value="" disabled selected>Seleccionar curso</option>
-                            <option value="Canva">Canva</option>
-                            <option value="Blenderdiseño3d">Blender: Diseño 3D</option>
-                            <option value="JavaScript">JavaScript</option>
-                            <option value="Python">Python</option>
-                            <option value="ChatGpt">Chat Gpt</option>
-                            <option value="Illustrator">Illustrator</option>
-                            <option value="Photoshop">Photoshop</option>
-                            <option value="Java">Java</option>
-                            <option value="ProgramacionC">Programacion C</option>
-                            <option value="InteligenciaArtificial(AI)">Inteligencia artificial (AI)</option>
-                            <option value="GeneracionPromptsIA">AI: Generación de Prompts</option>
-                            <option value="AIMarketingDigital">AI: Marketing Digital</option>
+                            
                         </select>
                     </label>
                 </div>
                 <div class= "datos_alumno">
-                    <label for="last_name">
-                        <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
-                    </label>
-                    <label for="Name">
-                        <input type="text" id="Name" name="Name" placeholder="Nombre" required>
-                    </label>
-                    <label for="DNI">
-                        <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
-                    </label>
-                    <button type="button" class="boton_circular">-</button>
+                    
+                        <label for="last_name">
+                            <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
+                        </label>
+                        <label for="Name">
+                            <input type="text" id="Name" name="Name" placeholder="Nombre" required>
+                        </label>
+                        <label for="DNI">
+                            <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
+                        </label>
+                        <button type="button" class="boton_circular" id="borrar-alumno">-</button>
+                    
                 </div>
-                <div class="datos_alumno">
-                    <label for="last_name">
-                        <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
-                    </label>
-                    <label for="Name">
-                        <input type="text" id="Name" name="Name" placeholder="Nombre" required>
-                    </label>
-                    <label for="DNI">
-                        <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
-                    </label>
-                    <button type="button" class="boton_circular">-</button>
-                </div>
-                <div class="datos_alumno">
-                    <label for="last_name">
-                        <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
-                    </label>
-                    <label for="Name">
-                        <input type="text" id="Name" name="Name" placeholder="Nombre" required>
-                    </label>
-                    <label for="DNI">
-                        <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
-                    </label>
-                    <button type="button" class="boton_circular">-</button>
-                </div>
+                <div id="contenedor"></div>
+                
                 <div>
-                    <p>Agregar persona <button type="button" class="boton_circular">+</button></p> 
+                    <p>Agregar persona <button type="button" class="boton_circular" id="agregar-alumno">+</button></p> 
                 </div>
                 <div class="datos_confirmacion">
                     <p class="Importe_acumulado">$000.-</p>
-                    <button type="submit" formaction="./confirmacionCompra.html" class="boton_inscripcion">Inscribirse</button>
+                    <button type="submit" formaction="./confirmacionCompra.html" class="boton_inscripcion">Confirmar inscripcion</button>
                 </div>
             </form>
+            <dialog>
+                <h2> ~ Muchas gracias ~ </h2>
+                <h3 class="container"></h3>
+                <h3>El listado de alumnos y el link de pago seran enviados por email</h3>
+                <button id="js-CloseDialog">Cerrar</button>
+            </dialog>
         </section>    
 
 
@@ -170,6 +145,6 @@
             </div>
         </footer>
 
-    
+    <script src="../js/inscripcionEmpresas.js"></script>
 </body>
 </html>
