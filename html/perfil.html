@@ -14,64 +14,70 @@
 <body>
     <main>
         <header class="headerC" id="headerC">
-        <div class="logo"> 
-            <a href="./homeLogueado.html"> <img src="../images/logo X Group.png"   alt="Logo de la pagina"> </a>
-        
-            <a class="titulologo" href="./homeLogueado.html"><h1>X Group Education</h1></a>
-        </div>
-        <div class="search-cursos">
-        <input 
-            list="cursos" 
-            id="traveling-web" 
-            name="traveling-web" 
-        >
-        <datalist id="cursos">
-            <option value="HTML">
-            <option value="CSS">
-            <option value="JavaScript">
-            <option value="Python">
-            <option value="Photoshop">
-            <option value="Java">
-            <option value="Programacion C">
-            <option value="Chat Gpt">
-            <option value="Blender Diseño 3d">
-            <option value="Canva">
-            <option value="Ia: Generacion de prompts">
-            <option value="Illustrator">
-            <option value="Inteligencia Artificial">
-            <option value="Marketing Digital">
-        </datalist>
-        </div>
-        <div class="right-side">
-            <div class="shoppingCart">
-            <img src="../images/shopping cart.png" alt="logo de carrito">
-            <p>0</p>
-        </div>
-        <a href="./perfil.html" class="login">Perfil</a>
-        <a href="./IniciarSesion.html" class="register">Cerrar Sesión</a>   
-        </div>
-    </header>
+            <div class="logo">
+                <a href="./homeLogueado.html"> <img src="../images/logo X Group.png" alt="Logo de la pagina"> </a>
+
+                <a class="titulologo" href="./homeLogueado.html">
+                    <h1>X Group Education</h1>
+                </a>
+            </div>
+            <div class="search-cursos">
+                <input list="cursos" id="traveling-web" name="traveling-web">
+                <datalist id="cursos">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="Python">
+                    <option value="Photoshop">
+                    <option value="Java">
+                    <option value="Programacion C">
+                    <option value="Chat Gpt">
+                    <option value="Blender Diseño 3d">
+                    <option value="Canva">
+                    <option value="Ia: Generacion de prompts">
+                    <option value="Illustrator">
+                    <option value="Inteligencia Artificial">
+                    <option value="Marketing Digital">
+                </datalist>
+            </div>
+            <div class="right-side">
+                <div class="shoppingCart">
+                    <img src="../images/shopping cart.png" alt="logo de carrito">
+                    <p>0</p>
+                </div>
+                <a href="./perfil.html" class="login">Perfil</a>
+                <a href="./IniciarSesion.html" class="register js-btn-cerrar-sesion">Cerrar Sesión</a>
+            </div>
+        </header>
         <hr class="headerline">
         <nav>
-        <ul class="nav-links">
-            <li><a href="./homeLogueado.html"><h3>Inicio</h3></a></li>
-            <li><a href="./Nosotros.html"><h3>Nosotros</h3></a></li>
-            <li><a href="./giftcard.html"><h3>GiftCard</h3></a></li>
-            <li><a href="./contacto.html"><h3>Contacto</h3></a></li>
-            <li><a href="./mercadoDeCursos.html">Mercado de Cursos</a></li>
-            <li><a href="./calendarioOctubre.html">Calendario</a></li>
-            <li><a href="./inscripcionParaEmpresas.html"><h3>Empresas</h3></a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a href="./homeLogueado.html">
+                        <h3>Inicio</h3>
+                    </a></li>
+                <li><a href="./Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a></li>
+                <li><a href="./giftcard.html">
+                        <h3>GiftCard</h3>
+                    </a></li>
+                <li><a href="./contacto.html">
+                        <h3>Contacto</h3>
+                    </a></li>
+                <li><a href="./mercadoDeCursos.html">Mercado de Cursos</a></li>
+                <li><a href="./calendarioOctubre.html">Calendario</a></li>
+                <li><a href="./inscripcionParaEmpresas.html">
+                        <h3>Empresas</h3>
+                    </a></li>
+            </ul>
         </nav>
-
-
-
         <hr class="headerline">
+
         <section class="perfil">
             <article class="descripcion">
                 <img src="../images/ejemplo-perfil.png" alt="ejemplo perfil">
-                <p class="usuario">Usuario</p>
-                <p>ejemplo@correo.com</p>
+                <p class="usuario js-nombre-usuario"></p>
+                <p class="js-correo-usuario">ejemplo@correo.com</p>
                 <a class="enviar-giftcard" href="./giftcard.html">Enviar un regalo &#127873</a>
             </article>
             <article class="mis-cursos">
@@ -83,14 +89,18 @@
                         <h3 class="precio">59,99 US$</h3>
                         <h3 class="duracion">60 hs</h3>
                         <h4 class="tituloCurso">Curso completo de Java Script</h4>
-                        <a href="../html/cursoJavaScriptComprado.html"><h5 class="verMas">Ver más</h5></a>
+                        <a href="../html/cursoJavaScriptComprado.html">
+                            <h5 class="verMas">Ver más</h5>
+                        </a>
                     </div>
                     <div class="cursos-contenedor">
                         <img class="imagenCurso" src="../images/Curso java.png" alt="Imagen del curso de java">
                         <h3 class="precio">59,99 US$</h3>
                         <h3 class="duracion">62 hs</h3>
                         <h4 class="tituloCurso">Curso completo de Java</h4>
-                        <a href="../html/cursoJavaComprado.html"><h5 class="verMas">Ver más</h5></a>
+                        <a href="../html/cursoJavaComprado.html">
+                            <h5 class="verMas">Ver más</h5>
+                        </a>
                     </div>
                 </div>
             </article>
@@ -98,12 +108,13 @@
                 <h2>Cursos que podrian gustarte</h2>
                 <div class="cursos-recomendados-grilla">
                     <div class="cursos-contenedor">
-                        <img class="imagenCurso" src="../images/Curso chat gpt.png"
-                            alt="Imagen del curso de chat gpt">
+                        <img class="imagenCurso" src="../images/Curso chat gpt.png" alt="Imagen del curso de chat gpt">
                         <h3 class="precio">49,99 US$</h3>
                         <h3 class="duracion">50 hs</h3>
                         <h4 class="tituloCurso">Curso completo de Chat gpt</h4>
-                        <a href="../html/cursoChatGpt.html"><h5 class="verMas">Ver más</h5></a>
+                        <a href="../html/cursoChatGpt.html">
+                            <h5 class="verMas">Ver más</h5>
+                        </a>
                         <button class="comprar">Comprar</button>
                     </div>
                     <div class="cursos-contenedor">
@@ -112,7 +123,9 @@
                         <h3 class="precio">39,99 US$</h3>
                         <h3 class="duracion">32 hs</h3>
                         <h4 class="tituloCurso">Curso completo de Photoshop</h4>
-                        <a href="../html/cursoPhotoshop.html"><h5 class="verMas">Ver más</h5></a>
+                        <a href="../html/cursoPhotoshop.html">
+                            <h5 class="verMas">Ver más</h5>
+                        </a>
                         <button class="comprar">Comprar</button>
                     </div>
                     <div class="cursos-contenedor">
@@ -121,21 +134,25 @@
                         <h3 class="precio">48,99 US$</h3>
                         <h3 class="duracion">55 hs</h3>
                         <h4 class="tituloCurso">Curso completo de Programación C</h4>
-                        <a href="../html/cursoProgramacionC.html"><h5 class="verMas">Ver más</h5></a>
+                        <a href="../html/cursoProgramacionC.html">
+                            <h5 class="verMas">Ver más</h5>
+                        </a>
                         <button class="comprar">Comprar</button>
                     </div>
                     <div class="cursos-contenedor">
-                        <img class="imagenCurso" src="../images/Curso python.png"
-                            alt="Imagen del curso de phyton">
+                        <img class="imagenCurso" src="../images/Curso python.png" alt="Imagen del curso de phyton">
                         <h3 class="precio">59,99 US$</h3>
                         <h3 class="duracion">62 hs</h3>
                         <h4 class="tituloCurso">Curso completo de Python</h4>
-                        <a href="../html/cursoPhyton.html"><h5 class="verMas">Ver más</h5></a>
+                        <a href="../html/cursoPhyton.html">
+                            <h5 class="verMas">Ver más</h5>
+                        </a>
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
             </article>
         </section>
+
         <footer class="footer">
             <div class="footer-data grupo">
                 <h4>Integrantes</h4>
@@ -147,24 +164,42 @@
             </div>
             <div class="footer-data menu">
                 <h4>Menu</h4>
-                <a href="./homeLogueado.html"><p>Inicio</p></a>
-                <a href="./Nosotros.html"><p>Nosotros</p></a>
-                <a href="./giftcard.html"><p>GiftCard</p></a>
-                <a href="./mercadoDeCursos.html"><p>Cursos</p></a>
-                <a href="./contacto.html"><p>Contacto</p></a>
-                <a href="./inscripcionParaEmpresas.html"><p>Empresas</p></a>
-                <a href="./calendario.html"><p>Calendario</p></a>  
+                <a href="./homeLogueado.html">
+                    <p>Inicio</p>
+                </a>
+                <a href="./Nosotros.html">
+                    <p>Nosotros</p>
+                </a>
+                <a href="./giftcard.html">
+                    <p>GiftCard</p>
+                </a>
+                <a href="./mercadoDeCursos.html">
+                    <p>Cursos</p>
+                </a>
+                <a href="./contacto.html">
+                    <p>Contacto</p>
+                </a>
+                <a href="./inscripcionParaEmpresas.html">
+                    <p>Empresas</p>
+                </a>
+                <a href="./calendario.html">
+                    <p>Calendario</p>
+                </a>
             </div>
             <div class="footer-data redes">
                 <h4>Redes</h4>
                 <div class="iconos">
-                <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer"><img src="../images/twitter-x.svg" alt="Twitter"></a>
-                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img src="../images/facebook.svg" alt="Facebook"></a>
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="../images/whatsapp.svg" alt="WhatsApp"></a>
-            </div>
+                    <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer"><img
+                            src="../images/twitter-x.svg" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img
+                            src="../images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="../images/whatsapp.svg" alt="WhatsApp"></a>
+                </div>
             </div>
         </footer>
-        
+
+        <script type="module" src="../js/perfil.js"></script>
     </main>
 </body>
 

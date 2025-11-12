@@ -18,4 +18,8 @@ export class Validaciones {
     usuario_existente(correo, lista_usuarios) {
         return lista_usuarios.some(usuario => usuario.correo === correo);
     }
+
+    obtener_usuario(correo, contrasenia, lista_usuarios) {
+        return lista_usuarios.find(usuario => usuario.correo === correo && usuario.contrasenia === contrasenia);
+    }
 }

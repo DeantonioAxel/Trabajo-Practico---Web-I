@@ -45,13 +45,15 @@ FORM_REGISTER.addEventListener('submit', (event) => {
                 if (validar.contrasenia(CONTRASENIA) && CONTRASENIA !== "") {
 
                     if (validar.contrasenias_iguales(CONTRASENIA, REPETIR_CONTRASENIA)) {
-
-                        const NUEVO_USUARIO = new Usuario(NOMBRE, APELLIDO, CORREO, CONTRASENIA);
+                        
                         const USUARIOS_GUARDADOS = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-                        if (!validar.usuario_existente(NUEVO_USUARIO.correo, USUARIOS_GUARDADOS)) {
+                        if (!validar.usuario_existente(CORREO, USUARIOS_GUARDADOS)) {
 
+                            const NUEVO_USUARIO = new Usuario(NOMBRE, APELLIDO, CORREO, CONTRASENIA);
+                        
                             USUARIOS_GUARDADOS.push(NUEVO_USUARIO);
+
                             localStorage.setItem('usuarios', JSON.stringify(USUARIOS_GUARDADOS));
 
                             DIALOG.showModal();
