@@ -7,8 +7,7 @@ const validar = new Validaciones();
 const FORMULARIO_LOGIN = document.querySelector('.js-form-login');
 
 //mensajes de error
-const ERROR_CORREO = document.querySelector('#js-error-correo');
-const ERROR_CONTRASENIA = document.querySelector('#js-error-contrasenia');
+const MSJ_ERROR = document.querySelector('#js-msj-error');
 const ERROR_USUARIO_INEXISTENTE = document.querySelector('#js-error-usuario-inexistente');
 
 //inputs
@@ -23,27 +22,21 @@ if (FORMULARIO_LOGIN) {
         const CONTRASENIA = INPUT_CONTRASENIA.value.trim();
 
 
-        if (validar.correo(CORREO) && CORREO !== "") {
-            if (validar.contrasenia(CONTRASENIA) && CONTRASENIA !== "") {
+        if ((validar.correo(CORREO) && CORREO !== "") && (validar.contrasenia(CONTRASENIA) && CONTRASENIA !== "")) {
+            const USUARIOS_GUARDADOS = JSON.parse(localStorage.getItem('usuarios') || []);
 
-                const USUARIOS_GUARDADOS = JSON.parse(localStorage.getItem('usuarios') || []);
-                
-                const USUARIO_ENCONTRADO = validar.obtener_usuario(CORREO, CONTRASENIA, USUARIOS_GUARDADOS);
-                
-                if (USUARIO_ENCONTRADO) {
-                    localStorage.setItem('usuarioLogueado', JSON.stringify(USUARIO_ENCONTRADO));                   
-                    window.location.href = "../html/homeLogueado.html";
-                } else {
-                    ERROR_USUARIO_INEXISTENTE.textContent = "No existe un usuario con ese correo "
-                    ERROR_USUARIO_INEXISTENTE.classList.add('activo');
-                }
+            const USUARIO_ENCONTRADO = validar.obtener_usuario(CORREO, CONTRASENIA, USUARIOS_GUARDADOS);
+
+            if (USUARIO_ENCONTRADO) {
+                localStorage.setItem('usuarioLogueado', JSON.stringify(USUARIO_ENCONTRADO));
+                window.location.href = "../html/homeLogueado.html";
             } else {
-                ERROR_CONTRASENIA.textContent = "Ingrese una contraseña valida"
-                ERROR_CONTRASENIA.classList.add('activo');
+                ERROR_USUARIO_INEXISTENTE.textContent = "Error al iniciar sesion"
+                ERROR_USUARIO_INEXISTENTE.classList.add('activo');
             }
         } else {
-            ERROR_CORREO.textContent = "Ingrese un correo valido";
-            ERROR_CORREO.classList.add('activo');
+            MSJ_ERROR.textContent = "Los datos ingresados son incorrectos"
+            MSJ_ERROR.classList.add('activo');
         }
     })
 }
@@ -52,8 +45,8 @@ if (FORMULARIO_LOGIN) {
 if (INPUT_CORREO) {
     INPUT_CORREO.addEventListener('input', () => {
         if (INPUT_CORREO.value.trim() !== "") {
-            ERROR_CORREO.textContent = "";
-            ERROR_CORREO.classList.remove('active');
+            MSJ_ERROR.textContent = "";
+            MSJ_ERROR.classList.remove('active');
         }
     });
 }
@@ -61,8 +54,8 @@ if (INPUT_CORREO) {
 if (INPUT_CONTRASENIA) {
     INPUT_CONTRASENIA.addEventListener('input', () => {
         if (INPUT_CONTRASENIA.value.trim() !== "") {
-            ERROR_CONTRASENIA.textContent = "";
-            ERROR_CONTRASENIA.classList.remove('active');
+            MSJ_ERROR.textContent = "";
+            MSJ_ERROR.classList.remove('active');
         }
     });
 }
