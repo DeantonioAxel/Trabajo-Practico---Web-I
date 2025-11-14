@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/cursos.css">
   <link rel="stylesheet" href="../css/mercadoCursos.css">
   <link rel="icon" href="../images/logo X Group.png" type="image/png">
 </head>
@@ -60,7 +59,7 @@
             <li><a href="./Nosotros.html"><h3>Nosotros</h3></a></li>
             <li><a href="./giftcard.html"><h3>GiftCard</h3></a></li>
             <li><a href="./contacto.html"><h3>Contacto</h3></a></li>
-            <li><a href="./mercadoDeCursos.html">Mercado de Cursos</a></li>
+            <li id="mercado_de_cursos"><a href="./mercadoDeCursos.html">Mercado de Cursos</a></li>
             <li><a href="./calendarioOctubre.html">Calendario</a></li>
             <li><a href="./inscripcionParaEmpresas.html"><h3>Empresas</h3></a></li>
         </ul>
@@ -72,124 +71,19 @@
     <aside class="sidebar">
       <h3>Filtros</h3>
       <ul>
-        <li><input type="checkbox"> Diseño</li>
-        <li><input type="checkbox"> Programación</li>
-        <li><input type="checkbox"> Inteligencia Artificial</li>
-        <li><input type="checkbox"> Marketing</li>
+        <li><input type="checkbox" class="filtroCategoria" value="todos"> Todos los cursos</li>
+        <li><input type="checkbox" class="filtroCategoria" value="diseño"> Diseño</li>
+        <li><input type="checkbox" class="filtroCategoria" value="programacion"> Programación</li>
+        <li><input type="checkbox" class="filtroCategoria" value="inteligencia artificial"> Inteligencia Artificial</li>
+        <li><input type="checkbox" class="filtroCategoria" value="marketing"> Marketing</li>
       </ul>
     </aside>
 
     <div class="contenido-cursos">
-      <h2 class="tituloCursos">Todos los Cursos</h2>
+      <h2 class="tituloCursos">Cursos disponibles</h2>
       <div class="cajasCursosRecomendados">
 
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso photoshop.png" alt="Curso Photoshop"> 
-          <h3 class="precioIndex">39,99 US$</h3>
-          <h3 class="duracionIndex">32 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de Photoshop</h4>
-          <a href="../html/cursoPhotoshop.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoPhotoshop.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso java.png" alt="Curso Java"> 
-          <h3 class="precioIndex">59,99 US$</h3>
-          <h3 class="duracionIndex">62 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de Java</h4>
-          <a href="../html/cursoJavaComprado.html"><h5 class="verMasIndex">Ver más</h5></a>
-           <a href="./cursoJavaComprado.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso programacion c.png" alt="Curso C"> 
-          <h3 class="precioIndex">49,99 US$</h3>
-          <h3 class="duracionIndex">50 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de programacón C</h4>
-          <a href="../html/cursoProgramacionC.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoProgramacionC.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso python.png" alt="Curso Python"> 
-          <h3 class="precioIndex">59,99 US$</h3>
-          <h3 class="duracionIndex">62 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de Python</h4>
-          <a href="../html/cursoPhyton.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoPhyton.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso javascript.png" alt="Curso JavaScript"> 
-          <h3 class="precioIndex">59,99 US$</h3>
-          <h3 class="duracionIndex">60 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de JavaScript</h4>
-          <a href="../html/cursoJavaScriptComprado.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoJavaScriptComprado.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso chat gpt.png" alt="Curso ChatGPT"> 
-          <h3 class="precioIndex">49,99 US$</h3>
-          <h3 class="duracionIndex">50 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de ChatGPT</h4>
-          <a href="../html/cursoChatGPT.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoChatGpt.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso blender diseño 3d.png" alt="Curso Blender"> 
-          <h3 class="precioIndex">69,99 US$</h3>
-          <h3 class="duracionIndex">50 hs</h3>
-          <h4 class="tituloCursoIndex">Curso de Blender - Diseño 3D</h4>
-          <a href="../html/cursoBlenderDiseño3d.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoBlenderDiseño3d.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso canva.png" alt="Curso Canva"> 
-          <h3 class="precioIndex">29,99 US$</h3>
-          <h3 class="duracionIndex">20 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de Canva</h4>
-          <a href="../html/cursoCanva.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoCanva.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso generacion de prompts.png" alt="Curso Prompts IA"> 
-          <h3 class="precioIndex">39,99 US$</h3>
-          <h3 class="duracionIndex">25 hs</h3>
-          <h4 class="tituloCursoIndex">Generación de Prompts con IA</h4>
-          <a href="../html/cursoGeneraciónPromptsIA.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoGeneraciónPromptsIA.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso illustrator.png" alt="Curso Illustrator"> 
-          <h3 class="precioIndex">49,99 US$</h3>
-          <h3 class="duracionIndex">40 hs</h3>
-          <h4 class="tituloCursoIndex">Curso completo de Illustrator</h4>
-          <a href="../html/cursoIllustrator.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoIllustrator.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso inteligencia artificial.png" alt="Curso Inteligencia Artificial"> 
-          <h3 class="precioIndex">69,99 US$</h3>
-          <h3 class="duracionIndex">55 hs</h3>
-          <h4 class="tituloCursoIndex">Curso de Inteligencia Artificial</h4>
-          <a href="../html/cursoInteligenciaArtificial.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoInteligenciaArtificial.html" class="comprarIndex">Comprar</a>
-        </section>
-
-        <section class="contenedorCursosDestacado">
-          <img class="imagenCursoDestacadoIndex" src="../images/Curso marketing digital AI.png" alt="Curso Marketing IA"> 
-          <h3 class="precioIndex">59,99 US$</h3>
-          <h3 class="duracionIndex">45 hs</h3>
-          <h4 class="tituloCursoIndex">Marketing Digital con IA</h4>
-          <a href="../html/cursoMarketingDigitalIA.html"><h5 class="verMasIndex">Ver más</h5></a>
-          <a href="./cursoMarketingDigitalIA.html" class="comprarIndex">Comprar</a>
-        </section>
+     
 
       </div>
     </div>
@@ -223,5 +117,6 @@
             </div>
             </div>
         </footer>
+        <script type = "module" src="../js/mercadoDeCursos.js"></script>
 </body>
 </html>
