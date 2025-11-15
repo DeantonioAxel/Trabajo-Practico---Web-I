@@ -1,7 +1,4 @@
-import { Validaciones } from "./validaciones.js";
-const validaciones = new Validaciones();
-
-export class Header {
+export class HeaderHome {
     constructor() { }
 
     render() {
@@ -12,11 +9,11 @@ export class Header {
         if (usuarioLogueado) {
             botones.innerHTML = `
                     <div class="shoppingCart">
-                        <img src="./images/shopping cart.png" alt="logo de carrito">
+                        <img src="../images/shopping cart.png" alt="logo de carrito">
                         <p>0</p>
                     </div>
                     <a href="./html/perfil.html" class="login">Perfil</a>
-                    <a href="./html/IniciarSesion.html" class="register js-btn-cerrarSesion">Cerrar Sesión</a>                
+                    <a href="../html/IniciarSesion.html" class="register js-btn-cerrarSesion">Cerrar Sesión</a>                
                 `;
             nav.innerHTML = `
                     <li><a href="./index.html"><h3>Inicio</h3></a></li>
@@ -37,9 +34,9 @@ export class Header {
                 `;
             nav.innerHTML = `
                     <li><a href="index.html"><h3>Inicio</h3></a></li>
-                    <li><a href="./html/NosotrosSinLogin.html"><h3>Nosotros</h3></a></li>
-                    <li><a href="./html/contactoSinLogin.html"><h3>Contacto</h3></a></li>
-                    <li><a href="./html/mercadoDeCursosSinLog.html"><h3>Mercado de Cursos</h3></a></li>
+                    <li><a href="./html/Nosotros.html"><h3>Nosotros</h3></a></li>
+                    <li><a href="./html/contacto.html"><h3>Contacto</h3></a></li>
+                    <li><a href="./html/mercadoDeCursos.html"><h3>Mercado de Cursos</h3></a></li>
             `;
         }
 

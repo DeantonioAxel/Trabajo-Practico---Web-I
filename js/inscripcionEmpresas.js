@@ -1,5 +1,7 @@
 import {Dialog} from './dialog.js';
+import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 
+const header = new HeaderOtrasVistas();
 const nombreEmpresaInput = document.querySelector("#company_name");
 const selectCursos = document.querySelector("#Seleccion_curso");
 const precioAcumulado = document.querySelector("#Importe_acumulado");
@@ -37,14 +39,12 @@ opcionDefault.disabled = true;
 opcionDefault.selected = true;
 selectCursos.appendChild(opcionDefault);
 
-
 cursosDisponibles.forEach(curso => {
     const option = document.createElement("option");
     option.value = curso.nombre;
     option.textContent = `${curso.nombre} - U$S ${curso.precio}`;
     selectCursos.appendChild(option);
 });
-
 
 selectCursos.addEventListener("change", (event) => {
     const cursoSeleccionado = cursosDisponibles.find(curso => curso.nombre === event.target.value);
@@ -90,5 +90,6 @@ botonAgregarAlumno.addEventListener("click", (event) => {
     });
 });
 
-const DIALOG_EMPRESAS = new Dialog();
+header.render();
 
+const DIALOG_EMPRESAS = new Dialog();

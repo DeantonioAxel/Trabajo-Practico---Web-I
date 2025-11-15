@@ -1,6 +1,11 @@
 import {Dialog} from './dialog.js';
-   
+//header
+import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 
+const header = new HeaderOtrasVistas();
+
+header.render();
+   
 
 //input
 const INPUT_NOMBRE_DESTINATARIO = document.querySelector('#js-Name');

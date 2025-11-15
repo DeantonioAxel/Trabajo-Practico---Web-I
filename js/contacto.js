@@ -1,3 +1,5 @@
+import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
   const nombre = document.querySelector("#name");
@@ -7,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const mensaje = document.querySelector("#message");
   const dialog = document.querySelector("dialog");
   const cerrarDialog = document.querySelector("#js-CloseDialog");
+
+  const header = new HeaderOtrasVistas();
 
   const contador = document.createElement("p");
   contador.id = "contador";
@@ -66,6 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cerrarDialog.addEventListener("click", () => {
     dialog.close();
-    window.location.href = "./homeLogueado.html";
+    window.location.href = "../index.html";
   });
+
+  header.render();
 });

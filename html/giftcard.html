@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,73 +10,55 @@
     <link rel="icon" href="../images/logo X Group.png" type="imagen/png">
     <link rel="stylesheet" href="../css/giftcard.css">
 </head>
+
 <body>
-        <header class="headerC" id="headerC">
-        <div class="logo"> 
-            <a href="./homeLogueado.html"> <img src="../images/logo X Group.png"   alt="Logo de la pagina"> </a>
-        
-            <a class="titulologo" href="./homeLogueado.html"><h1>X Group Education</h1></a>
+    <header class="headerC" id="headerC">
+        <div class="logo">
+            <a href="./homeLogueado.html"> <img src="../images/logo X Group.png" alt="Logo de la pagina"> </a>
+            <a class="titulologo" href="./homeLogueado.html">
+                <h1>X Group Education</h1>
+            </a>
         </div>
         <div class="search-cursos">
-        <input 
-            list="cursos" 
-            id="traveling-web" 
-            name="traveling-web" 
-        >
-        <datalist id="cursos">
-            <option value="HTML">
-            <option value="CSS">
-            <option value="JavaScript">
-            <option value="Python">
-            <option value="Photoshop">
-            <option value="Java">
-            <option value="Programacion C">
-            <option value="Chat Gpt">
-            <option value="Blender Diseño 3d">
-            <option value="Canva">
-            <option value="Ia: Generacion de prompts">
-            <option value="Illustrator">
-            <option value="Inteligencia Artificial">
-            <option value="Marketing Digital">
-        </datalist>
+            <input list="cursos" id="traveling-web" name="traveling-web">
+            <datalist id="cursos">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="Photoshop">
+                <option value="Java">
+                <option value="Programacion C">
+                <option value="Chat Gpt">
+                <option value="Blender Diseño 3d">
+                <option value="Canva">
+                <option value="Ia: Generacion de prompts">
+                <option value="Illustrator">
+                <option value="Inteligencia Artificial">
+                <option value="Marketing Digital">
+            </datalist>
         </div>
-        <div class="right-side">
-            <div class="shoppingCart">
-            <img src="../images/shopping cart.png" alt="logo de carrito">
-            <p>0</p>
-        </div>
-        <a href="./perfil.html" class="login">Perfil</a>
-        <a href="./IniciarSesion.html" class="register">Cerrar Sesión</a>   
+        <div class="right-side js-btns-header">
         </div>
     </header>
-        <hr class="headerline">
-        <nav>
-        <ul class="nav-links">
-            <li><a href="./homeLogueado.html"><h3>Inicio</h3></a></li>
-            <li><a href="./Nosotros.html"><h3>Nosotros</h3></a></li>
-            <li><a href="./giftcard.html"><h3>GiftCard</h3></a></li>
-            <li><a href="./contacto.html"><h3>Contacto</h3></a></li>
-            <li><a href="./mercadoDeCursos.html">Mercado de Cursos</a></li>
-            <li><a href="./calendarioOctubre.html">Calendario</a></li>
-            <li><a href="./inscripcionParaEmpresas.html"><h3>Empresas</h3></a></li>
+    <hr class="headerline">
+    <nav>
+        <ul class="nav-links js-nav">
         </ul>
-        </nav>
-
-
-
-
-        <hr class="headerline">
+    </nav>
+    <hr class="headerline">
+    
     <main>
         <section>
-            <div class="visualizacion" >
+            <div class="visualizacion">
                 <p class="importe">000.-US$</p>
-                <h3 class="giftcard js-color-letra" >gift card</h3>
-                <h4 class="para js-color-letra" >para</h4>
-                <h1 class="destinatario js-color-letra" id="js-giftcard-nombre-destinatario" >destinatario</h1>
+                <h3 class="giftcard js-color-letra">gift card</h3>
+                <h4 class="para js-color-letra">para</h4>
+                <h1 class="destinatario js-color-letra" id="js-giftcard-nombre-destinatario">destinatario</h1>
             </div>
             <p class="vista">vista previa de personalizacion</p>
         </section>
-       <form action="Contacto" method="get">
+        <form action="Contacto" method="get">
             <h2>Personaliza tu giftcard</h2>
             <label for="Name">
                 <input type="text" id="js-Name" name="Name" placeholder="Nombre del destinatario" required>
@@ -99,7 +82,7 @@
                 </div>
                 <div class="seleccion_de_color">
                     <img src="../images/cereza.png" alt="cereza">
-                    <input type="radio" id="color" name="color" value ="#661414">
+                    <input type="radio" id="color" name="color" value="#661414">
                 </div>
             </label>
             <label for="Font">Tamaño de fuente
@@ -110,7 +93,7 @@
                 </select>
             </label>
             <label for="Amount">Monto US$
-                <input type="number" id ="monto" min="40" max="500" required>
+                <input type="number" id="monto" min="40" max="500" required>
             </label>
             <label for="Background"> Fondo
                 <div class="seleccion_de_color">
@@ -135,44 +118,62 @@
                 </div>
             </label>
             <button class="boton-confirmar" type="submit">Confirmar</button>
-       </form>
-       <dialog>
+        </form>
+        <dialog>
             <h3> ~ Gift Card ~ </h3>
             <p>Enviada con exito</p>
             <button id="js-CloseDialog">Cerrar</button>
-       </dialog>
-       
-    </main>
+        </dialog>
 
-        <footer class="footer">
-            <div class="footer-data grupo">
-                <h4>Integrantes</h4>
-                <p>Fernando Aybar 39211330</p>
-                <p>Silvana Topatigh 33810330</p>
-                <p>Sol Benitez 45749670</p>
-                <p>Axel Deantonio 42673324</p>
-                <p>Gonzalo Gomez 45128637</p>
-            </div>
-            <div class="footer-data menu">
-                <h4>Menu</h4>
-                <a href="./homeLogueado.html"><p>Inicio</p></a>
-                <a href="./Nosotros.html"><p>Nosotros</p></a>
-                <a href="./giftcard.html"><p>GiftCard</p></a>
-                <a href="./mercadoDeCursos.html"><p>Mercado de Cursos</p></a>
-                <a href="./contacto.html"><p>Contacto</p></a>
-                <a href="./inscripcionParaEmpresas.html"><p>Empresas</p></a>
-                <a href="./calendarioOctubre.html"><p>Calendario</p></a>  
-            </div>
-            <div class="footer-data redes">
-                <h4>Redes</h4>
-                <div class="iconos">
-                <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer"><img src="../images/twitter-x.svg" alt="Twitter"></a>
-                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img src="../images/facebook.svg" alt="Facebook"></a>
-                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="../images/whatsapp.svg" alt="WhatsApp"></a>
-            </div>
-            </div>
-        </footer>
-        <script type = "module" src = "../js/giftcard.js"></script>
+    </main>
     
+    <footer class="footer">
+        <div class="footer-data grupo">
+            <h4>Integrantes</h4>
+            <p>Fernando Aybar 39211330</p>
+            <p>Silvana Topatigh 33810330</p>
+            <p>Sol Benitez 45749670</p>
+            <p>Axel Deantonio 42673324</p>
+            <p>Gonzalo Gomez 45128637</p>
+        </div>
+        <div class="footer-data menu">
+            <h4>Menu</h4>
+            <a href="./homeLogueado.html">
+                <p>Inicio</p>
+            </a>
+            <a href="./Nosotros.html">
+                <p>Nosotros</p>
+            </a>
+            <a href="./giftcard.html">
+                <p>GiftCard</p>
+            </a>
+            <a href="./mercadoDeCursos.html">
+                <p>Mercado de Cursos</p>
+            </a>
+            <a href="./contacto.html">
+                <p>Contacto</p>
+            </a>
+            <a href="./inscripcionParaEmpresas.html">
+                <p>Empresas</p>
+            </a>
+            <a href="./calendarioOctubre.html">
+                <p>Calendario</p>
+            </a>
+        </div>
+        <div class="footer-data redes">
+            <h4>Redes</h4>
+            <div class="iconos">
+                <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer"><img
+                        src="../images/twitter-x.svg" alt="Twitter"></a>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer"><img
+                        src="../images/facebook.svg" alt="Facebook"></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
+                        src="../images/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="../js/giftcard.js"></script>
 </body>
+
 </html>

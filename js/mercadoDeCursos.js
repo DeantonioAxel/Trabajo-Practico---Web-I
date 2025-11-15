@@ -1,6 +1,7 @@
 import {cursosDisponibles} from './cursos.js';
+import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 
-
+const header = new HeaderOtrasVistas();
 const contenedorCursos = document.querySelector('.cajasCursosRecomendados');
 const filtros = document.querySelectorAll('.filtroCategoria');
 
@@ -20,7 +21,6 @@ function mostrarCursos(lista) {
         contenedorCursos.appendChild(cursoSection);
     });
 }
-
 mostrarCursos(cursosDisponibles);
 
 function aplicarFiltros() {
@@ -35,5 +35,6 @@ function aplicarFiltros() {
 
     mostrarCursos(filtrados);
 }
-
 filtros.forEach(f => f.addEventListener("change", aplicarFiltros));
+
+header.render();
