@@ -1,0 +1,88 @@
+export const cursoProgramacionC = {
+    nombre: "Programacion C",
+    titulo: "Curso completo de Programación en C",
+    precio: "49,99 US$",
+    cargaHoraria: "50 horas",
+    imgclass:"imagenCursoDestacadoIndex" , 
+    imgsrc:"../images/Curso programacion c.png", 
+    imgalt:"Curso C" ,
+    filtro : "programacion",
+
+    descripcion: [
+        "Este curso está diseñado para quienes quieran aprender los fundamentos de la programación desde cero con el lenguaje C, uno de los más influyentes de la historia.",
+        "Aprenderás la sintaxis básica, estructuras de control, funciones, punteros, manejo de memoria y trabajarás con archivos. Además, realizarás proyectos prácticos para consolidar tu aprendizaje."
+    ],
+    requisitos: {
+        conocimientos: [
+            "Manejo básico de computadora.",
+            "No se necesita experiencia previa en programación."
+        ],
+        tecnicos: [
+            "Computadora con compilador de C instalado (GCC o similar).",
+            "Editor recomendado: Code::Blocks o Visual Studio Code."
+        ]
+    },
+    link: "formularioProgramacionC.html",
+    contenidos: [
+        {
+            unidad: "Unidad 1: Introducción a C",
+            clases: [
+                { titulo: "Historia y características del lenguaje C", tipo: "video", duracion: "15 minutos" },
+                { titulo: "Instalación y configuración del compilador", tipo: "video", duracion: "25 minutos" },
+                { titulo: "Ejercicio: tu primer programa en C", tipo: "practica", duracion: "20 minutos" }
+            ]
+        },
+        {
+            unidad: "Unidad 2: Tipos de Datos y Operadores",
+            clases: [
+                { titulo: "Variables y constantes", tipo: "video", duracion: "25 minutos" },
+                { titulo: "Operadores aritméticos y lógicos", tipo: "video", duracion: "20 minutos" },
+                { titulo: "Ejercicios de operadores", tipo: "practica", duracion: "20 minutos" }
+            ]
+        },
+        {
+            unidad: "Unidad 3: Control de Flujo",
+            clases: [
+                { titulo: "Condicionales if y switch", tipo: "video", duracion: "30 minutos" },
+                { titulo: "Bucles for y while", tipo: "video", duracion: "25 minutos" },
+                { titulo: "Ejercicio: calculadora en C", tipo: "practica", duracion: "30 minutos" }
+            ]
+        },
+        {
+            unidad: "Unidad 4: Funciones",
+            clases: [
+                { titulo: "Definición y declaración de funciones", tipo: "video", duracion: "25 minutos" },
+                { titulo: "Ámbito de variables y paso de parámetros", tipo: "video", duracion: "30 minutos" },
+                { titulo: "Ejercicio: funciones matemáticas", tipo: "practica", duracion: "35 minutos" }
+            ]
+        },
+        {
+            unidad: "Unidad 5: Arreglos y Cadenas",
+            clases: [
+                { titulo: "Vectores y matrices", tipo: "video", duracion: "40 minutos" },
+                { titulo: "Manipulación de cadenas", tipo: "video", duracion: "30 minutos" },
+                { titulo: "Ejercicio: sistema de calificaciones", tipo: "practica", duracion: "40 minutos" }
+            ]
+        },
+        {
+            unidad: "Unidad 6: Punteros y Memoria Dinámica",
+            clases: [
+                { titulo: "Concepto de punteros", tipo: "video", duracion: "35 minutos" },
+                { titulo: "Reserva y liberación de memoria", tipo: "video", duracion: "30 minutos" },
+                { titulo: "Ejercicio: lista dinámica de números", tipo: "practica", duracion: "45 minutos" }
+            ]
+        },
+        {
+            unidad: "Unidad 7: Archivos y Proyecto Final",
+            clases: [
+                { titulo: "Lectura y escritura de archivos", tipo: "video", duracion: "40 minutos" },
+                { titulo: "Proyecto final: sistema de gestión de biblioteca", tipo: "practica", duracion: "1 hora 30 minutos" }
+            ]
+        }
+    ],
+    docente: {
+        nombre: "Ana Torres",
+        estrellas: 4,
+        descripcion: "Ana es licenciada en informática y docente universitaria con más de 12 años de experiencia enseñando programación en C. Ha trabajado en sistemas embebidos, aplicaciones de bajo nivel y proyectos de investigación en eficiencia de software."
+    }
+};
