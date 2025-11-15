@@ -29,7 +29,7 @@ if (FORMULARIO_LOGIN) {
 
             if (USUARIO_ENCONTRADO) {
                 localStorage.setItem('usuarioLogueado', JSON.stringify(USUARIO_ENCONTRADO));
-                window.location.href = "../html/homeLogueado.html";
+                window.location.href = "../index.html";
             } else {
                 ERROR_USUARIO_INEXISTENTE.textContent = "Error al iniciar sesion"
                 ERROR_USUARIO_INEXISTENTE.classList.add('activo');
