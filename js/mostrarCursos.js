@@ -1,8 +1,15 @@
 import { cursosDisponibles } from './cursos.js';
 
-const contenedorCursos = document.querySelector('.cajasCursosRecomendados');
+
 
 export function mostrarCursos(lista) {
+    const contenedorCursos = document.querySelector('.cajasCursosRecomendados');
+
+    if (!contenedorCursos) {
+        console.error("ERROR: No existe .cajasCursosRecomendados en el HTML");
+        return;
+    }
+
     contenedorCursos.innerHTML = "";
 
     lista.forEach(curso => {
@@ -42,6 +49,26 @@ export function mostrarCursos(lista) {
 }
 
 export function mostrarSoloPares() {
+    const contenedorCursos = document.querySelector('.cajasCursosRecomendados');
+
+    if (!contenedorCursos) {
+        console.error("ERROR: No existe .cajasCursosRecomendados en el HTML");
+        return;
+    }
+
     const pares = cursosDisponibles.filter(c => c.id % 2 === 0);
     mostrarCursos(pares);
+}
+
+export function mostrarPrimerosNCursos(n = 3) {
+    const contenedorCursos = document.querySelector('.cajasCursosRecomendados');
+
+    if (!contenedorCursos) {
+        console.error("ERROR: No existe .cajasCursosRecomendados en el HTML");
+        return;
+    }
+
+    const primerosNCursos = cursosDisponibles.slice(0, n);
+
+    mostrarCursos(primerosNCursos);
 }

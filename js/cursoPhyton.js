@@ -7,7 +7,8 @@ export const cursoPython = {
   imgsrc: "../images/Curso python.png",
   imgalt: "Curso Python",
   filtro: "programacion",
-
+  id:"4",
+  
   descripcion: [
       "Este curso está pensado para aprender Python desde cero hasta un nivel intermedio-avanzado. Python es un lenguaje versátil y muy usado en desarrollo web, análisis de datos, inteligencia artificial y automatización.",
       "Comenzarás con la sintaxis básica, tipos de datos y estructuras de control. Luego avanzarás hacia programación orientada a objetos, manejo de archivos y librerías estándar. También aprenderás a trabajar con librerías de análisis de datos y proyectos prácticos."

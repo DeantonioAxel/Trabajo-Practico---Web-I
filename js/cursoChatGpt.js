@@ -7,6 +7,7 @@ export const cursoChatGPT = {
   imgsrc:"../images/Curso chat gpt.png", 
   imgalt:"Curso ChatGPT" ,
   filtro : "inteligencia artificial",
+  id:"5",
 
   descripcion: [
     "En este curso aprenderás a usar ChatGPT de forma práctica, desde lo más básico hasta aplicaciones avanzadas en estudio, trabajo y creación de contenidos. Descubrirás cómo diseñar prompts efectivos, automatizar tareas y aplicar la IA en diferentes áreas.",

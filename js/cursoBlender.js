@@ -7,7 +7,7 @@ export const cursoBlender = {
     imgsrc:"../images/Curso blender diseño 3d.png", 
     imgalt:"Curso Blender" , 
     filtro: "diseño",
-
+    id:"2",
 
     descripcion: [
         "En este curso aprenderás a dominar Blender desde cero, una de las herramientas más potentes y gratuitas para el modelado, animación y renderizado 3D.",
