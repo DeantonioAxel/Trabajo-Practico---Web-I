@@ -7,7 +7,8 @@ export const cursoProgramacionC = {
     imgsrc:"../images/Curso programacion c.png", 
     imgalt:"Curso C" ,
     filtro : "programacion",
-
+    id:"9",
+    
     descripcion: [
         "Este curso está diseñado para quienes quieran aprender los fundamentos de la programación desde cero con el lenguaje C, uno de los más influyentes de la historia.",
         "Aprenderás la sintaxis básica, estructuras de control, funciones, punteros, manejo de memoria y trabajarás con archivos. Además, realizarás proyectos prácticos para consolidar tu aprendizaje."

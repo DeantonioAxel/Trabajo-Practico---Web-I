@@ -7,7 +7,7 @@ export const cursoCanva = {
     imgsrc: "../images/Curso canva.png", 
     imgalt: "Curso Canva",
     filtro: "diseño",
-  
+    id:"1", 
 
   descripcion: [
     "Este curso te enseñará a dominar Canva, la herramienta online más popular para diseñar de manera rápida, intuitiva y profesional sin necesidad de conocimientos previos en diseño gráfico.",

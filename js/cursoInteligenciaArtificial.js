@@ -7,7 +7,8 @@ export const cursoInteligenciaArtificial = {
     imgsrc:"../images/Curso inteligencia artificial.png", 
     imgalt:"Curso AI" ,
     filtro : "inteligencia artificial",
-
+    id:"10",
+    
     descripcion: [
         "Este curso te permitirá adentrarte en el mundo de la Inteligencia Artificial, comprendiendo sus fundamentos, algoritmos y aplicaciones prácticas.",
         "Comenzarás conociendo los conceptos básicos de IA, aprendizaje supervisado y no supervisado. Luego, aprenderás a trabajar con modelos de machine learning y redes neuronales.",
