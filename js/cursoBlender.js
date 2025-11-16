@@ -7,7 +7,7 @@ export const cursoBlender = {
     imgsrc:"../images/Curso blender diseño 3d.png", 
     imgalt:"Curso Blender" , 
     filtro: "diseño",
-    id: "2",
+
 
     descripcion: [
         "En este curso aprenderás a dominar Blender desde cero, una de las herramientas más potentes y gratuitas para el modelado, animación y renderizado 3D.",
@@ -28,6 +28,7 @@ export const cursoBlender = {
     ]
   },
   link: "./formulario.html",
+  verMas: "./cursoDinamico.html",
 
   unidades: [
     {
@@ -86,3 +87,4 @@ export const cursoBlender = {
       "Laura es diseñadora 3D y animadora con más de 8 años de experiencia en la industria creativa. Ha trabajado en proyectos de videojuegos, cine y publicidad, y su pasión es enseñar Blender de manera práctica y accesible para todos."
   }
 };
+

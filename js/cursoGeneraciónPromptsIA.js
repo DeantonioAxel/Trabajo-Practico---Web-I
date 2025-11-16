@@ -7,8 +7,7 @@ export const cursoGeneraciónPromptsIA = {
   imgsrc:"../images/Curso generacion de prompts.png", 
   imgalt:"Curso AI Prompts",
   filtro : "inteligencia artificial",
-  id:"11",
-  
+
   descripcion: [
     "Este curso está diseñado para enseñarte a crear prompts efectivos que mejoren los resultados obtenidos con herramientas de inteligencia artificial como ChatGPT, DALL·E y MidJourney.",
     "Aprenderás técnicas de redacción, estructuras de prompt, ingeniería inversa y estrategias para adaptar el contenido a diferentes objetivos: educación, marketing, diseño, programación y más.",
@@ -27,7 +26,8 @@ export const cursoGeneraciónPromptsIA = {
   },
 
   link: "./formulario.html",
-
+  verMas: "./cursoDinamico.html",
+  
   unidades: [
     {
       unidad: "Unidad 1: Fundamentos",

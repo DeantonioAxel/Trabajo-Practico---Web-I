@@ -1,14 +1,12 @@
 export const cursoAIMarketingDigital = {
     nombre: "AI: Marketing Digital",
     titulo: "Curso completo de Marketing Digital con Inteligencia Artificial",
-    precio: "54.99 US$",
-    cargaHoraria: "45 horas",
+    precio: 54.99,
+    cargaHoraria: 45,
     imgclass:"imagenCursoDestacadoIndex" , 
     imgsrc:"../images/Curso marketing digital AI.png", 
     imgalt:"Curso AI Marketing" ,
     filtro : "marketing",
-    id: "12",
-    
     descripcion: [
         "Este curso te enseñará a aplicar la Inteligencia Artificial en el marketing digital para optimizar campañas, mejorar la segmentación y aumentar las conversiones.",
         "Aprenderás a utilizar herramientas de IA para crear contenido, analizar métricas en tiempo real, automatizar procesos y personalizar experiencias de usuario.",
@@ -26,39 +24,41 @@ export const cursoAIMarketingDigital = {
         ]
     },
     link: "./formulario.html",
-    contenidos: [
+    verMas: "./cursoDinamico.html",
+    
+    unidades: [
         {
             unidad: "Unidad 1: Introducción al Marketing con IA",
             clases: [
-                { titulo: "¿Qué es la IA aplicada al marketing?", duracion: "20 minutos" },
-                { titulo: "Beneficios de usar IA en campañas digitales", duracion: "25 minutos" }
+                { titulo: "¿Qué es la IA aplicada al marketing?", tiempo: "20 minutos" },
+                { titulo: "Beneficios de usar IA en campañas digitales", tiempo: "25 minutos" }
             ]
         },
         {
             unidad: "Unidad 2: Creación de Contenido con IA",
             clases: [
-                { titulo: "Generación de textos publicitarios", duracion: "30 minutos" },
-                { titulo: "Diseño gráfico asistido por IA", duracion: "25 minutos" }
+                { titulo: "Generación de textos publicitarios", tiempo: "30 minutos" },
+                { titulo: "Diseño gráfico asistido por IA", tiempo: "25 minutos" }
             ]
         },
         {
             unidad: "Unidad 3: Publicidad y Segmentación Inteligente",
             clases: [
-                { titulo: "Segmentación predictiva con IA", duracion: "40 minutos" },
-                { titulo: "Optimización de anuncios en tiempo real", duracion: "35 minutos" }
+                { titulo: "Segmentación predictiva con IA", tiempo: "40 minutos" },
+                { titulo: "Optimización de anuncios en tiempo real", tiempo: "35 minutos" }
             ]
         },
         {
             unidad: "Unidad 4: Automatización y Analítica",
             clases: [
-                { titulo: "Automatización de emails y chatbots", duracion: "30 minutos" },
-                { titulo: "Ejercicio práctico: creación de flujo automatizado", duracion: "45 minutos" }
+                { titulo: "Automatización de emails y chatbots", tiempo: "30 minutos" },
+                { titulo: "Ejercicio práctico: creación de flujo automatizado", tiempo: "45 minutos" }
             ]
         },
         {
             unidad: "Unidad 5: Proyecto Final",
             clases: [
-                { titulo: "Diseño de una estrategia de marketing digital usando IA", duracion: "2 horas" }
+                { titulo: "Diseño de una estrategia de marketing digital usando IA", tiempo: "2 horas" }
             ]
         }
     ],

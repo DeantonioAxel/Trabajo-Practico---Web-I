@@ -7,8 +7,7 @@ export const cursoJava = {
     imgsrc:"../images/Curso java.png", 
     imgalt:"Curso Java" ,
     filtro : "programacion",
-    id: "8",
-    
+
     descripcion: [
         "Aprenderás a programar en Java desde cero hasta un nivel avanzado. Verás fundamentos de la programación orientada a objetos, estructuras de datos, excepciones, colecciones y acceso a bases de datos.",
         "Además, desarrollarás proyectos prácticos que te permitirán aplicar tus conocimientos en aplicaciones reales."
@@ -25,60 +24,62 @@ export const cursoJava = {
         ]
     },
     link: "./formulario.html",
-    contenidos: [
+    verMas: "./cursoDinamico.html",
+    
+    unidades: [
         {
             unidad: "Unidad 1: Fundamentos de Java",
             clases: [
-                { tipo: "video", titulo: "¿Qué es Java y para qué se usa?", duracion: "20 minutos" },
-                { tipo: "video", titulo: "Instalación del JDK y entorno de trabajo", duracion: "25 minutos" },
-                { tipo: "practica", titulo: "Ejercicio práctico: tu primer programa en Java", duracion: "15 minutos" }
+                { tipo: "video", titulo: "¿Qué es Java y para qué se usa?", tiempo: "20 minutos" },
+                { tipo: "video", titulo: "Instalación del JDK y entorno de trabajo", tiempo: "25 minutos" },
+                { tipo: "practica", titulo: "Ejercicio práctico: tu primer programa en Java", tiempo: "15 minutos" }
             ]
         },
         {
             unidad: "Unidad 2: Variables y Operadores",
             clases: [
-                { tipo: "video", titulo: "Tipos de datos en Java", duracion: "20 minutos" },
-                { tipo: "video", titulo: "Operadores aritméticos, lógicos y relacionales", duracion: "30 minutos" },
-                { tipo: "practica", titulo: "Ejercicios prácticos de variables y operadores", duracion: "25 minutos" }
+                { tipo: "video", titulo: "Tipos de datos en Java", tiempo: "20 minutos" },
+                { tipo: "video", titulo: "Operadores aritméticos, lógicos y relacionales", tiempo: "30 minutos" },
+                { tipo: "practica", titulo: "Ejercicios prácticos de variables y operadores", tiempo: "25 minutos" }
             ]
         },
         {
             unidad: "Unidad 3: Estructuras de Control",
             clases: [
-                { tipo: "video", titulo: "Condicionales: if, else, switch", duracion: "25 minutos" },
-                { tipo: "video", titulo: "Bucles: for, while, do-while", duracion: "25 minutos" },
-                { tipo: "practica", titulo: "Ejercicio práctico: calculadora simple", duracion: "30 minutos" }
+                { tipo: "video", titulo: "Condicionales: if, else, switch", tiempo: "25 minutos" },
+                { tipo: "video", titulo: "Bucles: for, while, do-while", tiempo: "25 minutos" },
+                { tipo: "practica", titulo: "Ejercicio práctico: calculadora simple", tiempo: "30 minutos" }
             ]
         },
         {
             unidad: "Unidad 4: Programación Orientada a Objetos",
             clases: [
-                { tipo: "video", titulo: "Clases y objetos", duracion: "30 minutos" },
-                { tipo: "video", titulo: "Herencia y polimorfismo", duracion: "35 minutos" },
-                { tipo: "proyecto", titulo: "Proyecto: sistema de gestión de estudiantes", duracion: "40 minutos" }
+                { tipo: "video", titulo: "Clases y objetos", tiempo: "30 minutos" },
+                { tipo: "video", titulo: "Herencia y polimorfismo", tiempo: "35 minutos" },
+                { tipo: "proyecto", titulo: "Proyecto: sistema de gestión de estudiantes", tiempo: "40 minutos" }
             ]
         },
         {
             unidad: "Unidad 5: Colecciones y Excepciones",
             clases: [
-                { tipo: "video", titulo: "Listas, sets y mapas en Java", duracion: "30 minutos" },
-                { tipo: "video", titulo: "Manejo de excepciones", duracion: "25 minutos" },
-                { tipo: "practica", titulo: "Ejercicio: gestor de inventario", duracion: "35 minutos" }
+                { tipo: "video", titulo: "Listas, sets y mapas en Java", tiempo: "30 minutos" },
+                { tipo: "video", titulo: "Manejo de excepciones", tiempo: "25 minutos" },
+                { tipo: "practica", titulo: "Ejercicio: gestor de inventario", tiempo: "35 minutos" }
             ]
         },
         {
             unidad: "Unidad 6: Acceso a Bases de Datos",
             clases: [
-                { tipo: "video", titulo: "Introducción a JDBC", duracion: "30 minutos" },
-                { tipo: "video", titulo: "Conexión a MySQL desde Java", duracion: "40 minutos" },
-                { tipo: "proyecto", titulo: "Proyecto: CRUD con base de datos", duracion: "50 minutos" }
+                { tipo: "video", titulo: "Introducción a JDBC", tiempo: "30 minutos" },
+                { tipo: "video", titulo: "Conexión a MySQL desde Java", tiempo: "40 minutos" },
+                { tipo: "proyecto", titulo: "Proyecto: CRUD con base de datos", tiempo: "50 minutos" }
             ]
         },
         {
             unidad: "Unidad 7: Proyecto Final",
             clases: [
-                { tipo: "video", titulo: "Arquitectura de aplicaciones en Java", duracion: "30 minutos" },
-                { tipo: "proyecto", titulo: "Proyecto final: aplicación completa", duracion: "2 horas" }
+                { tipo: "video", titulo: "Arquitectura de aplicaciones en Java", tiempo: "30 minutos" },
+                { tipo: "proyecto", titulo: "Proyecto final: aplicación completa", tiempo: "2 horas" }
             ]
         }
     ],

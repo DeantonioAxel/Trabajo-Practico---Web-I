@@ -7,8 +7,7 @@ export const cursoPython = {
   imgsrc: "../images/Curso python.png",
   imgalt: "Curso Python",
   filtro: "programacion",
-  id: "4",
-  
+
   descripcion: [
       "Este curso está pensado para aprender Python desde cero hasta un nivel intermedio-avanzado. Python es un lenguaje versátil y muy usado en desarrollo web, análisis de datos, inteligencia artificial y automatización.",
       "Comenzarás con la sintaxis básica, tipos de datos y estructuras de control. Luego avanzarás hacia programación orientada a objetos, manejo de archivos y librerías estándar. También aprenderás a trabajar con librerías de análisis de datos y proyectos prácticos."
@@ -24,62 +23,63 @@ export const cursoPython = {
     ]
   },
   link: "./formulario.html",
-
+  verMas: "./cursoDinamico.html",
+  
   unidades: [
     {
       unidad: "Unidad 1: Introducción a Python",
-      lecciones: [
-        { titulo: "Historia y aplicaciones de Python", tipo: "video", duracion: "15 minutos" },
-        { titulo: "Instalación y entorno de trabajo", tipo: "video", duracion: "20 minutos" },
-        { titulo: "Primer programa en Python", tipo: "ejercicio", duracion: "15 minutos" }
+      clases: [
+        { titulo: "Historia y aplicaciones de Python", tipo: "video", tiempo: "15 minutos" },
+        { titulo: "Instalación y entorno de trabajo", tipo: "video", tiempo: "20 minutos" },
+        { titulo: "Primer programa en Python", tipo: "ejercicio", tiempo: "15 minutos" }
       ]
     },
     {
       unidad: "Unidad 2: Tipos de Datos y Operadores",
-      lecciones: [
-        { titulo: "Números, cadenas y booleanos", tipo: "video", duracion: "25 minutos" },
-        { titulo: "Operadores básicos y lógicos", tipo: "video", duracion: "20 minutos" },
-        { titulo: "Ejercicios de operadores", tipo: "ejercicio", duracion: "20 minutos" }
+      clases: [
+        { titulo: "Números, cadenas y booleanos", tipo: "video", tiempo: "25 minutos" },
+        { titulo: "Operadores básicos y lógicos", tipo: "video", tiempo: "20 minutos" },
+        { titulo: "Ejercicios de operadores", tipo: "ejercicio", tiempo: "20 minutos" }
       ]
     },
     {
       unidad: "Unidad 3: Control de Flujo",
-      lecciones: [
-        { titulo: "Condicionales if y match", tipo: "video", duracion: "30 minutos" },
-        { titulo: "Bucles for y while", tipo: "video", duracion: "25 minutos" },
-        { titulo: "Ejercicio: juego de adivinanza", tipo: "ejercicio", duracion: "30 minutos" }
+      clases: [
+        { titulo: "Condicionales if y match", tipo: "video", tiempo: "30 minutos" },
+        { titulo: "Bucles for y while", tipo: "video", tiempo: "25 minutos" },
+        { titulo: "Ejercicio: juego de adivinanza", tipo: "ejercicio", tiempo: "30 minutos" }
       ]
     },
     {
       unidad: "Unidad 4: Funciones y Módulos",
-      lecciones: [
-        { titulo: "Definir y llamar funciones", tipo: "video", duracion: "25 minutos" },
-        { titulo: "Parámetros y retorno", tipo: "video", duracion: "30 minutos" },
-        { titulo: "Módulos y paquetes", tipo: "video", duracion: "25 minutos" }
+      clases: [
+        { titulo: "Definir y llamar funciones", tipo: "video", tiempo: "25 minutos" },
+        { titulo: "Parámetros y retorno", tipo: "video", tiempo: "30 minutos" },
+        { titulo: "Módulos y paquetes", tipo: "video", tiempo: "25 minutos" }
       ]
     },
     {
       unidad: "Unidad 5: Estructuras de Datos",
-      lecciones: [
-        { titulo: "Listas y tuplas", tipo: "video", duracion: "35 minutos" },
-        { titulo: "Diccionarios y conjuntos", tipo: "video", duracion: "30 minutos" },
-        { titulo: "Ejercicio: agenda de contactos", tipo: "ejercicio", duracion: "40 minutos" }
+      clases: [
+        { titulo: "Listas y tuplas", tipo: "video", tiempo: "35 minutos" },
+        { titulo: "Diccionarios y conjuntos", tipo: "video", tiempo: "30 minutos" },
+        { titulo: "Ejercicio: agenda de contactos", tipo: "ejercicio", tiempo: "40 minutos" }
       ]
     },
     {
       unidad: "Unidad 6: Programación Orientada a Objetos",
-      lecciones: [
-        { titulo: "Clases y objetos", tipo: "video", duracion: "35 minutos" },
-        { titulo: "Herencia y polimorfismo", tipo: "video", duracion: "40 minutos" },
-        { titulo: "Ejercicio: sistema de facturación", tipo: "ejercicio", duracion: "50 minutos" }
+      clases: [
+        { titulo: "Clases y objetos", tipo: "video", tiempo: "35 minutos" },
+        { titulo: "Herencia y polimorfismo", tipo: "video", tiempo: "40 minutos" },
+        { titulo: "Ejercicio: sistema de facturación", tipo: "ejercicio", tiempo: "50 minutos" }
       ]
     },
     {
       unidad: "Unidad 7: Archivos y Proyecto Final",
-      lecciones: [
-        { titulo: "Lectura y escritura de archivos", tipo: "video", duracion: "30 minutos" },
-        { titulo: "Manejo de excepciones", tipo: "video", duracion: "25 minutos" },
-        { titulo: "Proyecto final: gestor de tareas con Python", tipo: "ejercicio", duracion: "1 hora 30 minutos" }
+      clases: [
+        { titulo: "Lectura y escritura de archivos", tipo: "video", tiempo: "30 minutos" },
+        { titulo: "Manejo de excepciones", tipo: "video", tiempo: "25 minutos" },
+        { titulo: "Proyecto final: gestor de tareas con Python", tipo: "ejercicio", tiempo: "1 hora 30 minutos" }
       ]
     },
   ],

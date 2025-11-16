@@ -10,6 +10,10 @@ main {
     background-color: white;
     line-height: 1.6;
 }
+.encabezadoCursoDinamico{
+    display: flex;
+    justify-content: space-around;
+}
 
 .contenedorInformacionCurso {
     display: flex;

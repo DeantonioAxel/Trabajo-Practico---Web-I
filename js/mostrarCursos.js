@@ -19,15 +19,16 @@ export function mostrarCursos(lista) {
         `;
 
         const verMasBtn = cursoSection.querySelector('.verMasIndex');
-            if (curso.link) {
-                verMasBtn.addEventListener('click', () => {
-                    window.location.href = curso.link;
-                });
-            } else {
-                verMasBtn.addEventListener('click', () => {
-                    alert("El link de este curso no está disponible");
-                });
-            }
+        if (curso.verMas) {
+            verMasBtn.addEventListener('click', () => {
+                localStorage.setItem("cursoSeleccionado", JSON.stringify(curso));
+                window.location.href = curso.verMas;
+            });
+        } else {
+            verMasBtn.addEventListener('click', () => {
+                alert("El link de este curso no está disponible");
+            });
+        }
 
         const comprarBtn = cursoSection.querySelector('.botonComprarCurso');
         comprarBtn.addEventListener('click', (event) => {
