@@ -1,8 +1,8 @@
 export const cursoInteligenciaArtificial = {
     nombre: "Inteligencia artificial (AI)",
     titulo: "Curso completo de Inteligencia Artificial",
-    precio: 69.99,
-    cargaHoraria: 55,
+    precio: "69.99 US$",
+    cargaHoraria: "55 horas",
     imgclass:"imagenCursoDestacadoIndex" , 
     imgsrc:"../images/Curso inteligencia artificial.png", 
     imgalt:"Curso AI" ,

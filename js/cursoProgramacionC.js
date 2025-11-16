@@ -24,6 +24,7 @@ export const cursoProgramacionC = {
     },
     link: "./formulario.html",
     verMas: "./cursoDinamico.html",
+    comprar: "./cursoDinamico.html",
     
     unidades: [
         {
