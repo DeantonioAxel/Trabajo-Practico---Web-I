@@ -7,6 +7,8 @@ export const cursoIllustrator = {
   imgsrc:"../images/Curso illustrator.png", 
   imgalt:"Curso Illustrator" ,
   filtro: "diseño",
+  id:"6",
+  
   descripcion: [
     "Con este curso dominarás Adobe Illustrator, la herramienta líder para la creación de ilustraciones vectoriales. Aprenderás a diseñar logotipos, iconos, gráficos y piezas visuales con calidad profesional.",
     "Comenzarás conociendo la interfaz y las herramientas principales, luego explorarás el trabajo con formas, colores y tipografías. Más adelante, profundizarás en técnicas avanzadas de ilustración digital y preparación de archivos para impresión y web.",

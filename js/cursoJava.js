@@ -7,7 +7,8 @@ export const cursoJava = {
     imgsrc:"../images/Curso java.png", 
     imgalt:"Curso Java" ,
     filtro : "programacion",
-
+    id: "8",
+    
     descripcion: [
         "Aprenderás a programar en Java desde cero hasta un nivel avanzado. Verás fundamentos de la programación orientada a objetos, estructuras de datos, excepciones, colecciones y acceso a bases de datos.",
         "Además, desarrollarás proyectos prácticos que te permitirán aplicar tus conocimientos en aplicaciones reales."

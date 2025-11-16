@@ -7,7 +7,8 @@ export const cursoPhotoshop = {
     imgsrc: "../images/Curso photoshop.png",
     imgalt: "Curso Photoshop",
     filtro: "diseño",
-
+    id:"7",
+    
     descripcion: [
         "Con este curso aprenderás a usar Adobe Photoshop aunque nunca hayas utilizado el programa antes. A través de una serie lecciones prácticas descubrirás todo lo que necesitas saber para convertirte en un profesional del diseño y la edición digital.",
         "Comenzarás conociendo la interfaz y las herramientas principales de Adobe Photoshop. Aprenderás a gestionar y combinar documentos, a trabajar con capas, selecciones y algo fundamental en este tipo de proyectos: las máscaras.",

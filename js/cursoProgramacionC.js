@@ -7,6 +7,7 @@ export const cursoProgramacionC = {
     imgsrc:"../images/Curso programacion c.png", 
     imgalt:"Curso C" ,
     filtro : "programacion",
+    id: "9",
 
     descripcion: [
         "Este curso está diseñado para quienes quieran aprender los fundamentos de la programación desde cero con el lenguaje C, uno de los más influyentes de la historia.",
