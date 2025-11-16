@@ -25,7 +25,7 @@ export const cursoGeneraciónPromptsIA = {
     ]
   },
 
-  link: "formularioAIGeneracióndePrompts.html",
+  link: "./formulario.html",
 
   unidades: [
     {

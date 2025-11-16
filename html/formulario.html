@@ -62,29 +62,29 @@
             <li><a href="./inscripcionParaEmpresas.html"><h3>Empresas</h3></a></li>
         </ul>
         </nav>
+
         <hr class="headerline">
 
 
         <section class="forms">
             <div class="forms-inner">
-
                 <div class="forms-header">
-                    <h2>Curso AI: Marketing Digital</h2>
+                    <h2>Curso Blender: Diseño 3D</h2>
                     <h3>Inscripción</h3>
-                </div>
-
-                <form action="anotar" method="get">
-                    <label for="nombre1">Nombre</label>
-                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre" required>
-
-                    <label for="apellido1">Apellido</label>
+                </div>    
+            </div>
+            <form action="anotar" method="get">
+                <label for="nombre1">Nombre</label>
+                    <input type="text" name="nombre1" id="nombre1" placeholder="Nombre" required>
+                </label>
+                <label for="apellido1">Apellido
                     <input type="text" name="apellido" id="apellido1" placeholder="Apellido" required>
-
-                    <label for="dni1">DNI</label>
+                </label>
+                <label for="dni1">DNI
                     <input type="number" name="DNI" id="dni1" placeholder="DNI">
-
+                </label>
                 <div class="forms-add">
-                    <label for="Horario">Horario:
+                    <label for="horario">Horario:
                         <select name="horario" id="horario">
                             <option value="" disabled selected>Selecciona un horario</option>
                             <option value="Mañana">Mañana 8-12hs</option>
@@ -95,15 +95,19 @@
                 </div>
 
                 <div class="forms-enrollment-amount">
-                    <h3>$000,-</h3>
-                   <button type="submit" formaction="./confirmacionCompra.html" class="inscription" >Inscripción</button>
+                    <h3 id="total_a_abonar">$000.-</h3>
                 </div>
-                </form>
+                <button type="submit" class="inscription" >Inscripción</button>
+            </form>
 
-            </div>
+            <dialog>
+                <h2> ~ Muchas gracias ~ </h2>
+                <h3 class="contenedor_empresa_dialog"></h3>
+                <h3>El link de pago sera enviado por email</h3>
+                <button id="js-CloseDialog">Cerrar</button>
+            </dialog>
         </section>
 
-        </section>
         <footer class="footer">
             <div class="footer-data grupo">
                 <h4>Integrantes</h4>
@@ -132,7 +136,8 @@
             </div>
             </div>
         </footer>
-    </main>        
+    </main>
+    <script src="../js/formulario.js" type="module"></script>   
 
 </body>
 </html>

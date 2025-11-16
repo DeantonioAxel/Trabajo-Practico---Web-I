@@ -22,7 +22,7 @@ export const cursoProgramacionC = {
             "Editor recomendado: Code::Blocks o Visual Studio Code."
         ]
     },
-    link: "formularioProgramacionC.html",
+    link: "./formulario.html",
     contenidos: [
         {
             unidad: "Unidad 1: Introducción a C",

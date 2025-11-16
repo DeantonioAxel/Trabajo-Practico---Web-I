@@ -26,7 +26,7 @@ export const cursoChatGPT = {
     ]
   },
 
-  link: "formularioChatGpt.html",
+  link: "./formulario.html",
 
   unidades: [
     {

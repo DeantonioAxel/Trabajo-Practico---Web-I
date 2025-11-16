@@ -25,7 +25,7 @@ export const cursoInteligenciaArtificial = {
             "Conexión a internet"
         ]
     },
-    link: "formularioInteligenciaArtificial.html",
+    link: "./formulario.html",
     contenidoClases: [
         {
             unidad: "Unidad 1: Introducción a la IA",

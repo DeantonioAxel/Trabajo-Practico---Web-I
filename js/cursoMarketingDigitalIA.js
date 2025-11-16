@@ -23,7 +23,7 @@ export const cursoAIMarketingDigital = {
             "Acceso a herramientas de IA para marketing (ChatGPT, Copy.ai, MidJourney, etc.)."
         ]
     },
-    link: "formularioAIMarketingDigital.html",
+    link: "./formulario.html",
     contenidos: [
         {
             unidad: "Unidad 1: Introducción al Marketing con IA",

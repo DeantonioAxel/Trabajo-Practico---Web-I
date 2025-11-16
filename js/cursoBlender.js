@@ -27,7 +27,7 @@ export const cursoBlender = {
       "Conexión a internet para descargas y actualizaciones."
     ]
   },
-  link: "formulario.html",
+  link: "./formulario.html",
 
   unidades: [
     {

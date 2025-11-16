@@ -27,7 +27,7 @@ export const cursoCanva = {
     ]
   },
 
-  link: "formularioCanva.html",
+  link: "./formulario.html",
 
   unidades: [
     {

@@ -27,7 +27,7 @@ export const cursoIllustrator = {
     ]
   },
 
-  link: "formularioIllustrator.html",
+  link: "./formulario.html",
 
   unidades: [
     {

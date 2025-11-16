@@ -22,7 +22,7 @@ export const cursoPython = {
       "Editor recomendado: PyCharm, VS Code o Jupyter Notebook."
     ]
   },
-  link: "formulario.html",
+  link: "./formulario.html",
 
   unidades: [
     {

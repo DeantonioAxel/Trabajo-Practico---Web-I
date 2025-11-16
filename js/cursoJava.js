@@ -23,7 +23,7 @@ export const cursoJava = {
             "Editor recomendado: Eclipse o IntelliJ IDEA."
         ]
     },
-    link: "formularioCursoJava.html",
+    link: "./formulario.html",
     contenidos: [
         {
             unidad: "Unidad 1: Fundamentos de Java",

@@ -22,7 +22,7 @@ export const cursoJavaScript = {
             "Editor de texto (VS Code recomendado)."
         ]
     },
-    link: "formularioJavaScript.html",
+    link: "./formulario.html",
     contenidos: [
         {
             unidad: "Unidad 1: Introducción a JavaScript",

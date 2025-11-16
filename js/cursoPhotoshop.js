@@ -28,7 +28,7 @@ export const cursoPhotoshop = {
         ]
     },
 
-    link: "formulario.html",
+    link: "./formulario.html",
 
     contenidoClases: [
         {
