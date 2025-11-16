@@ -1,3 +1,4 @@
+import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 import { cursosDisponibles } from "./cursos.js";
 import {generarInformacionDelCursoSeleccionado} from "./generarInfoCurso.js"
 import { generarUnidades } from "./generarInfoCurso.js";
@@ -10,6 +11,7 @@ const contenedorInformacionCurso = document.querySelector(".contenedorInformacio
 const contenedorContenidoClases = document.querySelector(".contenidoClases");
 const contenedorInfoDocente = document.querySelector(".informacionDocente");
 
+const header = new HeaderOtrasVistas();
 
 if(cursoSeleccionado){
     generarImagenDelCursoSeleccionado(cursoSeleccionado, contenedorImagen);
@@ -42,3 +44,5 @@ if(cursoSeleccionado){
 } else {
     console.warn("No hay curso seleccionado");
 }
+
+header.render();

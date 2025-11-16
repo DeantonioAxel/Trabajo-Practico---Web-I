@@ -1,6 +1,9 @@
 import {cursosDisponibles} from './cursos.js';
 import {Dialog} from './dialog.js';
 import { generarFormulario } from './generarFormulario.js';
+import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+
+const header = new HeaderOtrasVistas();
 
 const cursoSeleccionado = JSON.parse(localStorage.getItem("cursoSeleccionado"));
 
@@ -12,7 +15,7 @@ if(cursoSeleccionado){
 
 const mensaje = new Dialog();
 
-
+header.render();
 
 
 

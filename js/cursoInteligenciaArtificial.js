@@ -13,7 +13,7 @@ export const cursoInteligenciaArtificial = {
         "Comenzarás conociendo los conceptos básicos de IA, aprendizaje supervisado y no supervisado. Luego, aprenderás a trabajar con modelos de machine learning y redes neuronales.",
         "Al finalizar, serás capaz de aplicar técnicas de IA en proyectos reales como procesamiento de imágenes, análisis de texto y predicciones basadas en datos."
     ],
-    requisitosPrevios: {
+    requisitos: {
         conocimientos: [
             "Conocimientos básicos de programación (Python recomendado).",
             "Nociones de álgebra y estadística."
