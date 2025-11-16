@@ -1,4 +1,7 @@
-    document.addEventListener("DOMContentLoaded", () => {
+import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = new HeaderOtrasVistas();
     const cursos = {
         "2025-10-01": { titulo: "Photoshop", resumen: "Curso de edición digital en Photoshop.", link: "./cursoPhotoshop.html" },
         "2025-10-06": { titulo: "Java", resumen: "Aprende programación en Java desde cero.", link: "./cursoJava.html" },
@@ -44,9 +47,9 @@
     if (tituloMes) {
         const partes = tituloMes.split(" ");
         if (partes.length >= 2) {
-        const nombreMes = partes[0].toLowerCase();
-        anioNumero = parseInt(partes[1], 10);
-        mesNumero = meses[nombreMes] || null;
+            const nombreMes = partes[0].toLowerCase();
+            anioNumero = parseInt(partes[1], 10);
+            mesNumero = meses[nombreMes] || null;
         }
     }
 
@@ -56,52 +59,54 @@
         anioNumero = 2025;
     }
 
-    function pad(n){ return String(n).padStart(2,"0"); }
-    function construirClave(year, monthNumber, dayNumber){
+    function pad(n) { return String(n).padStart(2, "0"); }
+    function construirClave(year, monthNumber, dayNumber) {
         return `${year}-${pad(monthNumber)}-${pad(dayNumber)}`;
     }
 
     // === Recorre los enlaces del calendario ===
     document.querySelectorAll(".day.number a").forEach(link => {
         link.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
+            e.preventDefault();
+            e.stopPropagation();
 
-        const parent = link.parentElement;
-        const span = parent ? parent.querySelector("span") : null;
-        if (!span) return;
-        const diaTexto = span.textContent.trim();
-        const diaNumero = parseInt(diaTexto, 10);
-        if (Number.isNaN(diaNumero)) return;
+            const parent = link.parentElement;
+            const span = parent ? parent.querySelector("span") : null;
+            if (!span) return;
+            const diaTexto = span.textContent.trim();
+            const diaNumero = parseInt(diaTexto, 10);
+            if (Number.isNaN(diaNumero)) return;
 
-        const clave = construirClave(anioNumero, mesNumero, diaNumero);
-        const curso = cursos[clave];
+            const clave = construirClave(anioNumero, mesNumero, diaNumero);
+            const curso = cursos[clave];
 
-        if (!curso) {
-            tituloCurso.textContent = link.textContent.trim() || "Curso";
-            resumenCurso.textContent = "Información del curso no disponible.";
-            botonCurso.style.display = "none";
+            if (!curso) {
+                tituloCurso.textContent = link.textContent.trim() || "Curso";
+                resumenCurso.textContent = "Información del curso no disponible.";
+                botonCurso.style.display = "none";
+                popup.style.display = "flex";
+                return;
+            }
+
+            tituloCurso.textContent = curso.titulo;
+            const fechaCurso = new Date(anioNumero, mesNumero - 1, diaNumero);
+
+            if (fechaCurso <= hoySinHora) {
+                resumenCurso.textContent = "🕒 La inscripción a este curso ya finalizó.";
+                botonCurso.style.display = "none";
+            } else {
+                resumenCurso.textContent = curso.resumen;
+                botonCurso.href = curso.link;
+                botonCurso.style.display = "inline-block";
+            }
+
             popup.style.display = "flex";
-            return;
-        }
-
-        tituloCurso.textContent = curso.titulo;
-        const fechaCurso = new Date(anioNumero, mesNumero - 1, diaNumero);
-
-        if (fechaCurso <= hoySinHora) {
-            resumenCurso.textContent = "🕒 La inscripción a este curso ya finalizó.";
-            botonCurso.style.display = "none";
-        } else {
-            resumenCurso.textContent = curso.resumen;
-            botonCurso.href = curso.link;
-            botonCurso.style.display = "inline-block";
-        }
-
-        popup.style.display = "flex";
         });
     });
 
     // cerrar popup
     cerrarPopup?.addEventListener("click", () => popup.style.display = "none");
     popup?.addEventListener("click", (e) => { if (e.target === popup) popup.style.display = "none"; });
-    });
+
+    header.render();
+});

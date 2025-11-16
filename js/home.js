@@ -22,11 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
             </a>
             <a href="./html/IniciarSesion.html" class="comprarIndex">Comprar</a>
         `;
-            contenedorCursos.appendChild(cursoSection);
+        contenedorCursos.appendChild(cursoSection);
         });
     }
-
     mostrarCursos(cursosDisponibles);
+
+    
     slider.render();
     header.render();
 });

@@ -6,52 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto -X Group Education</title>
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="icon" href="../images/logo X Group.png" type="imagen/png">
 </head>
 
 <body>
-    <main>
-        <header class="headerC" id="headerC">
-            <div class="logo">
-                <a href="../index.html"> <img src="../images/logo X Group.png" alt="Logo de la pagina"> </a>
-                <a class="titulologo" href="../index.html">
-                    <h1>X Group Education</h1>
-                </a>
-            </div>
-            <div class="search-cursos">
-                <input list="cursos" id="traveling-web" name="traveling-web">
-                <datalist id="cursos">
-                    <option value="HTML">
-                    <option value="CSS">
-                    <option value="JavaScript">
-                    <option value="Python">
-                    <option value="Photoshop">
-                    <option value="Java">
-                    <option value="Programacion C">
-                    <option value="Chat Gpt">
-                    <option value="Blender Diseño 3d">
-                    <option value="Canva">
-                    <option value="Ia: Generacion de prompts">
-                    <option value="Illustrator">
-                    <option value="Inteligencia Artificial">
-                    <option value="Marketing Digital">
-                </datalist>
-            </div>
-            <div class="right-side js-btns-header">
-            </div>
-        </header>
-        <hr class="headerline">
-        <nav>
-            <ul class="nav-links js-nav">
-            </ul>
-        </nav>
-        <hr class="headerline">
+    <header class="headerC" id="headerC">
+        <div class="logo">
+            <a href="../index.html"> <img src="../images/logo X Group.png" alt="Logo de la pagina"> </a>
+            <a class="titulologo" href="../index.html">
+                <h1>X Group Education</h1>
+            </a>
+        </div>
+        <div class="search-cursos">
+            <input list="cursos" id="traveling-web" name="traveling-web">
+            <datalist id="cursos">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="Photoshop">
+                <option value="Java">
+                <option value="Programacion C">
+                <option value="Chat Gpt">
+                <option value="Blender Diseño 3d">
+                <option value="Canva">
+                <option value="Ia: Generacion de prompts">
+                <option value="Illustrator">
+                <option value="Inteligencia Artificial">
+                <option value="Marketing Digital">
+            </datalist>
+        </div>
+        <div class="right-side js-btns-header">
+        </div>
+    </header>
+    <hr class="headerline">
+    <nav>
+        <ul class="nav-links js-nav">
+        </ul>
+    </nav>
+    <hr class="headerline">
 
+    <main>
+        <div class="sidebar-carrito">
+        </div>
         <section>
             <form method="get">
-                <h2>Dejanos tu mensaje</h2>
+                <h2 class="titulo">Dejanos tu mensaje</h2>
                 <hr>
                 <label for="name">Nombre:
                     <input type="text" id="name" name="name" placeholder="Nombre" required>
@@ -69,7 +72,7 @@
                     <textarea id="message" name="message" rows="4" cols="50" placeholder="Deja tu mensaje aqui"
                         required></textarea>
                 </label>
-                <button type="submit">Enviar</button>
+                <button class="btn-enviar" type="submit">Enviar</button>
             </form>
 
             <dialog>
@@ -80,7 +83,7 @@
             </dialog>
 
             <article>
-                <h2>Otras formas de contacto</h2>
+                <h2 class="titulo">Otras formas de contacto</h2>
                 <hr>
                 <div>
                     <img src="../images/1.png" alt="icono de smartphone">
@@ -100,15 +103,14 @@
 
             </article>
         </section>
-
         <div class="maps">
             <img src="../images/Ubicacion en el mapa.png" alt="Ubicacion en el maps">
         </div>
-
         <hr>
         <hr>
+    </main>
 
-        <footer class="footer">
+    <footer class="footer">
             <div class="footer-data grupo">
                 <h4>Integrantes</h4>
                 <p>Fernando Aybar 39211330</p>
@@ -153,8 +155,6 @@
                 </div>
             </div>
         </footer>
-    </main>
-
     <!-- <script src="../js/dialog.js"></script> -->
     <script src="../js/contacto.js" type="module"></script>
 </body>

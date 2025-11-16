@@ -56,7 +56,7 @@ form input #name, #number{
     cursor: pointer;
 }
 
-h2{
+.titulo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     color: #8269f1;

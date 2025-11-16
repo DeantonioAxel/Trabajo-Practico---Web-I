@@ -9,7 +9,7 @@ export class HeaderHome {
         if (usuarioLogueado) {
             botones.innerHTML = `
                     <div class="shoppingCart">
-                        <img src="../images/shopping cart.png" alt="logo de carrito">
+                        <img class="js-btnCarrito" src="../images/shopping cart.png" alt="logo de carrito">                 
                         <p>0</p>
                     </div>
                     <a href="./html/perfil.html" class="login">Perfil</a>
@@ -46,6 +46,26 @@ export class HeaderHome {
             btnCerrarSesion.addEventListener('click', () => {
                 localStorage.removeItem('usuarioLogueado');
                 window.location.href = "../html/IniciarSesion.html"
+            })
+        }
+
+        const btnCarrito = document.querySelector('.js-btnCarrito');
+
+        if (btnCarrito) {
+            const sidebar = document.querySelector('.sidebar-carrito');
+            btnCarrito.addEventListener('click', () => {
+                sidebar.classList.add("abierto");
+                sidebar.innerHTML = `
+                    <button class="cerrar-sidebar">&times;</button>    
+                    <h2 class="titulo-sidebar">Carrito</h2>
+                    <p>Todavía no se obtuvieron cursos</p>                    
+                `;
+
+                const btnCerrarSidebar = document.querySelector('.cerrar-sidebar');
+
+                btnCerrarSidebar.addEventListener('click', () => {
+                    sidebar.classList.remove("abierto");
+                })
             })
         }
     }
