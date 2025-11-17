@@ -8,7 +8,8 @@ export const cursoAIMarketingDigital = {
     imgalt:"Curso AI Marketing" ,
     filtro : "marketing",
     id:"12",
-    
+    resumen: "Estrategias digitales y uso de IA para marketing.",
+
     descripcion: [
         "Este curso te enseñará a aplicar la Inteligencia Artificial en el marketing digital para optimizar campañas, mejorar la segmentación y aumentar las conversiones.",
         "Aprenderás a utilizar herramientas de IA para crear contenido, analizar métricas en tiempo real, automatizar procesos y personalizar experiencias de usuario.",

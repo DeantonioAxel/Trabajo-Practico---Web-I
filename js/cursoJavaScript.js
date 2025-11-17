@@ -8,7 +8,8 @@ export const cursoJavaScript = {
     imgalt:"Curso JavaScript" ,  
     filtro : "programacion",
     id:"3",
-    
+    resumen: "Aprende JavaScript para desarrollo web.",
+
     descripcion: [
         "Este curso te permitirá dominar JavaScript, el lenguaje esencial para el desarrollo web. Aprenderás a darle dinamismo e interactividad a tus páginas, construir aplicaciones del lado del cliente y sentar bases para frameworks modernos.",
         "Comenzarás con lo fundamental: variables, operadores y funciones. Luego avanzarás hacia manipulación del DOM, eventos y asincronía. Finalmente, aprenderás conceptos modernos de ES6+, APIs y proyectos prácticos."

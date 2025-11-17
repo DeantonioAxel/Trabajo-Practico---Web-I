@@ -8,7 +8,8 @@ export const cursoJava = {
     imgalt:"Curso Java" ,
     filtro : "programacion",
     id:"8",
-    
+    resumen: "Aprende programación en Java desde cero.",
+
     descripcion: [
         "Aprenderás a programar en Java desde cero hasta un nivel avanzado. Verás fundamentos de la programación orientada a objetos, estructuras de datos, excepciones, colecciones y acceso a bases de datos.",
         "Además, desarrollarás proyectos prácticos que te permitirán aplicar tus conocimientos en aplicaciones reales."
