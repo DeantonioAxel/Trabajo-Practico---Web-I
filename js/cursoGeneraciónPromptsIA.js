@@ -1,6 +1,6 @@
 export const cursoGeneraciónPromptsIA = {
   nombre: "AI: Generación de Prompts",
-  titulo: "Curso completo de Generación de Prompts con Inteligencia Artificial",
+  titulo: "Curso de Generación de Prompts",
   precio: "39.99 US$",
   cargaHoraria: "25 horas",
   imgclass:"imagenCursoDestacadoIndex" , 
