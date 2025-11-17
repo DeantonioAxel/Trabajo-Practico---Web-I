@@ -6,6 +6,7 @@ const nombreEmpresaInput = document.querySelector("#company_name");
 const selectCursos = document.querySelector("#Seleccion_curso");
 const precioAcumulado = document.querySelector("#Importe_acumulado");
 const botonBorrarAlumno = document.querySelector("#borrar-alumno");
+const contenedorAlumnos = document.querySelector(".contenedorListadoAlumnos")
 const botonAgregarAlumno = document.querySelector("#agregar-alumno");
 let precioPorAlumno = 0;
 let contadorAlumnos = 0;
@@ -54,14 +55,10 @@ selectCursos.addEventListener("change", (event) => {
         }
 });
 
-botonBorrarAlumno.addEventListener("click", (event) => {
-    event.preventDefault();
-    const datosAlumno = botonBorrarAlumno.parentElement;
-    datosAlumno.remove();
-});
 
 botonAgregarAlumno.addEventListener("click", (event) => {
     event.preventDefault(); 
+    contenedorAlumnos.innerHTML="";
     const nuevoAlumnoDiv = document.createElement("div");
     nuevoAlumnoDiv.classList.add("datos_alumno");
     const datosAlumno = botonAgregarAlumno.parentElement;   
@@ -93,3 +90,4 @@ botonAgregarAlumno.addEventListener("click", (event) => {
 header.render();
 
 const DIALOG_EMPRESAS = new Dialog();
+
