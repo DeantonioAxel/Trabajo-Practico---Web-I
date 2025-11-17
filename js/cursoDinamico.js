@@ -1,9 +1,12 @@
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+import {inicializarDatalist} from './datalist.js'
 import { cursosDisponibles } from "./cursos.js";
 import {generarInformacionDelCursoSeleccionado} from "./generarInfoCurso.js"
 import { generarUnidades } from "./generarInfoCurso.js";
 import { generarImagenDelCursoSeleccionado } from "./generarInfoCurso.js";
 import {generarInformacionDocente} from "./generarInfoCurso.js";
+
+inicializarDatalist();
 
 const cursoSeleccionado = JSON.parse(localStorage.getItem("cursoSeleccionado"));
 const contenedorImagen = document.querySelector("#imagenPaginaCurso");
