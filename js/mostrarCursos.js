@@ -21,10 +21,10 @@ export function mostrarCursos(lista) {
             <h3 class="precioIndex">${curso.precio}</h3>
             <h3 class="duracionIndex">${curso.cargaHoraria}</h3>
             <h4 class="tituloCursoIndex">${curso.titulo}</h4>
-            <a href="./html/IniciarSesion.html">
+            <a href="#">
                 <h5 class="verMasIndex">Ver más</h5>
             </a>
-            <a href="./html/IniciarSesion.html" class="comprarIndex">Comprar</a>
+            <a href="#" class="comprarIndex">Comprar</a>
         `;
 
         const verMasBtn = cursoSection.querySelector('.verMasIndex');

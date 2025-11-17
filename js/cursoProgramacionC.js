@@ -23,9 +23,9 @@ export const cursoProgramacionC = {
             "Editor recomendado: Code::Blocks o Visual Studio Code."
         ]
     },
-    link: "./formulario.html",
-    verMas: "./cursoDinamico.html",
-    comprar: "./cursoDinamico.html",
+    link: "../html/formulario.html",
+    verMas: "../html/cursoDinamico.html",
+    comprar: "../html/cursoDinamico.html",
     
     unidades: [
         {

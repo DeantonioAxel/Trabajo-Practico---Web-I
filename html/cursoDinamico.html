@@ -7,6 +7,7 @@
     <title>Curso Blender - X Group Education</title>
     <link rel="stylesheet" href="../css/cursoDinamico.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="icon" href="../images/logo X Group.png" type="imagen/png">
@@ -15,9 +16,8 @@
 <body>
     <header class="headerC" id="headerC">
         <div class="logo">
-            <a href="./homeLogueado.html"> <img src="../images/logo X Group.png" alt="Logo de la pagina"> </a>
-
-            <a class="titulologo" href="./homeLogueado.html">
+            <a href="../index.html"> <img src="../images/logo X Group.png" alt="Logo de la pagina"> </a>
+            <a class="titulologo" href="../index.html">
                 <h1>X Group Education</h1>
             </a>
         </div>
@@ -40,42 +40,20 @@
                 <option value="Marketing Digital">
             </datalist>
         </div>
-        <div class="right-side">
-            <div class="shoppingCart">
-                <img src="../images/shopping cart.png" alt="logo de carrito">
-                <p>0</p>
-            </div>
-            <a href="./perfil.html" class="login">Perfil</a>
-            <a href="./IniciarSesion.html" class="register">Cerrar Sesión</a>
+        <div class="right-side js-btns-header">
         </div>
     </header>
     <hr class="headerline">
+    
     <nav>
-        <ul class="nav-links">
-            <li><a href="./homeLogueado.html">
-                    <h3>Inicio</h3>
-                </a></li>
-            <li><a href="./Nosotros.html">
-                    <h3>Nosotros</h3>
-                </a></li>
-            <li><a href="./giftcard.html">
-                    <h3>GiftCard</h3>
-                </a></li>
-            <li><a href="./contacto.html">
-                    <h3>Contacto</h3>
-                </a></li>
-            <li><a href="./mercadoDeCursos.html">Mercado de Cursos</a></li>
-            <li><a href="./calendarioOctubre.html">Calendario</a></li>
-            <li><a href="./inscripcionParaEmpresas.html">
-                    <h3>Empresas</h3>
-                </a></li>
+        <ul class="nav-links js-nav">
         </ul>
     </nav>
-
-
-
     <hr class="headerline">
+    
     <main>
+        <div class="sidebar-carrito">
+        </div>
         <section class="encabezadoCursoDinamico">
             <div id="imagenPaginaCurso">
                 
@@ -101,6 +79,7 @@
             
         </aside>   
     </main>
+    
     <footer class="footer">
         <div class="footer-data grupo">
             <h4>Integrantes</h4>
@@ -146,6 +125,7 @@
             </div>
         </div>
     </footer>
+
     <script src="../js/cursoDinamico.js" type="module"></script>
 </body>
 
