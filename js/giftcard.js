@@ -1,10 +1,12 @@
 import {Dialog} from './dialog.js';
 //header
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+import {inicializarDatalist} from './datalist.js'
 
 const header = new HeaderOtrasVistas();
 
 header.render();
+inicializarDatalist();
    
 
 //input

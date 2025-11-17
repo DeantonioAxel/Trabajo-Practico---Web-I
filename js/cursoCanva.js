@@ -8,6 +8,7 @@ export const cursoCanva = {
     imgalt: "Curso Canva",
     filtro: "diseño",
     id:"1", 
+    resumen: "Diseñá contenidos visuales fácilmente con Canva.",
 
   descripcion: [
     "Este curso te enseñará a dominar Canva, la herramienta online más popular para diseñar de manera rápida, intuitiva y profesional sin necesidad de conocimientos previos en diseño gráfico.",
@@ -29,6 +30,7 @@ export const cursoCanva = {
 
   link: "./formulario.html",
   verMas: "./cursoDinamico.html",
+  comprar: "../html/cursoDinamico.html",
   
   unidades: [
     {

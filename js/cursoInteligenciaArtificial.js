@@ -8,7 +8,8 @@ export const cursoInteligenciaArtificial = {
     imgalt:"Curso AI" ,
     filtro : "inteligencia artificial",
     id:"10",
-    
+    resumen: "Introducción a los conceptos y aplicaciones de la inteligencia artificial.",
+
     descripcion: [
         "Este curso te permitirá adentrarte en el mundo de la Inteligencia Artificial, comprendiendo sus fundamentos, algoritmos y aplicaciones prácticas.",
         "Comenzarás conociendo los conceptos básicos de IA, aprendizaje supervisado y no supervisado. Luego, aprenderás a trabajar con modelos de machine learning y redes neuronales.",
@@ -28,6 +29,7 @@ export const cursoInteligenciaArtificial = {
     },
     link: "./formulario.html",
     verMas: "./cursoDinamico.html",
+    comprar: "../html/cursoDinamico.html",
     
     unidades: [
         {

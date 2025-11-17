@@ -1,27 +1,42 @@
+import { cursoBlender } from "./cursoBlender.js";
+import { cursoAIMarketingDigital } from "./cursoMarketingDigitalIA.js";
+import { cursoProgramacionC } from "./cursoProgramacionC.js";
+import { cursoCanva } from "./cursoCanva.js";
+import { cursoChatGPT } from "./cursoChatGpt.js";
+import { cursoIllustrator } from "./cursoIllustrator.js";
+import { cursoInteligenciaArtificial } from "./cursoInteligenciaArtificial.js";
+import { cursoJava } from "./cursoJava.js";
+import { cursoJavaScript } from "./cursoJavaScript.js";
+import { cursoGeneraciónPromptsIA } from "./cursoGeneraciónPromptsIA.js";
+import { cursoPython } from "./cursoPhyton.js";
+import { cursoPhotoshop } from "./cursoPhotoshop.js";
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+import {inicializarDatalist} from './datalist.js'
+
+inicializarDatalist();
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = new HeaderOtrasVistas();
     const cursos = {
-        "2025-10-01": { titulo: "Photoshop", resumen: "Curso de edición digital en Photoshop.", link: "./cursoPhotoshop.html" },
-        "2025-10-06": { titulo: "Java", resumen: "Aprende programación en Java desde cero.", link: "./cursoJava.html" },
-        "2025-10-09": { titulo: "Chat GPT", resumen: "Uso profesional de ChatGPT y creación de prompts.", link: "./cursoChatGpt.html" },
-        "2025-10-14": { titulo: "Programación en C", resumen: "Fundamentos de programación estructurada en C.", link: "./cursoProgramacionC.html" },
-        "2025-10-23": { titulo: "Python", resumen: "Introducción a Python para principiantes.", link: "./cursoPhyton.html" },
-        "2025-10-26": { titulo: "JavaScript", resumen: "Aprende JavaScript para desarrollo web.", link: "./cursoJavaScript.html" },
-        "2025-10-31": { titulo: "Blender Diseño 3D", resumen: "Modelado y animación 3D con Blender.", link: "./cursoBlenderDiseño3d.html" },
+        "2025-10-01": cursoPhotoshop ,
+        "2025-10-06": cursoJava ,
+        "2025-10-09": cursoChatGPT,
+        "2025-10-14": cursoProgramacionC,
+        "2025-10-23": cursoPython,
+        "2025-10-26": cursoJavaScript,
+        "2025-10-31": cursoBlender,
 
-        "2025-11-01": { titulo: "Curso de Blender Diseño 3D", resumen: "Modelado y animación 3D con Blender.", link: "./cursoBlenderDiseño3d.html" },
-        "2025-11-03": { titulo: "Curso de Photoshop", resumen: "Edición y retoque profesional con Photoshop.", link: "./cursoPhotoshop.html" },
-        "2025-11-13": { titulo: "Curso de Canva", resumen: "Diseñá contenidos visuales fácilmente con Canva.", link: "./cursoCanva.html" },
-        "2025-11-18": { titulo: "Curso de Java", resumen: "Introducción a Java y POO.", link: "./cursoJava.html" },
-        "2025-11-28": { titulo: "Curso de Illustrator", resumen: "Creá ilustraciones vectoriales con Illustrator.", link: "./cursoIllustrator.html" },
-        "2025-11-30": { titulo: "Curso de Marketing Digital", resumen: "Estrategias digitales y uso de IA para marketing.", link: "./cursoMarketingDigitalIA.html" },
+        "2025-11-01": cursoBlender,
+        "2025-11-03": cursoPhotoshop,
+        "2025-11-13": cursoCanva,
+        "2025-11-18": cursoJava,
+        "2025-11-28": cursoIllustrator,
+        "2025-11-30": cursoAIMarketingDigital,
 
-        "2025-12-12": { titulo: "Curso de Prompts con IA", resumen: "Aprendé a crear prompts avanzados para optimizar resultados con IA.", link: "./cursoGeneraciónPromptsIA.html" },
-        "2025-12-15": { titulo: "Curso de Inteligencia Artificial", resumen: "Introducción a los conceptos y aplicaciones de la inteligencia artificial.", link: "./cursoInteligenciaArtificial.html" },
-        "2025-12-27": { titulo: "Curso de ChatGPT", resumen: "Uso profesional de ChatGPT y creación de prompts personalizados.", link: "./cursoChatGpt.html" },
-        "2025-12-29": { titulo: "Curso de Programación en C", resumen: "Fundamentos de la programación estructurada en lenguaje C.", link: "./cursoProgramacionC.html" }
+        "2025-12-12": cursoGeneraciónPromptsIA,
+        "2025-12-15": cursoInteligenciaArtificial,
+        "2025-12-27": cursoChatGPT,
+        "2025-12-29": cursoProgramacionC,
     };
 
     const popup = document.getElementById("popup");
@@ -96,7 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 botonCurso.style.display = "none";
             } else {
                 resumenCurso.textContent = curso.resumen;
-                botonCurso.href = curso.link;
+                botonCurso.onclick = () => {
+                    localStorage.setItem("cursoSeleccionado", JSON.stringify(curso));
+                    window.location.href = "./cursoDinamico.html";
+                };
+
                 botonCurso.style.display = "inline-block";
             }
 
