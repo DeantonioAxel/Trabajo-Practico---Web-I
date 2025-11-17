@@ -32,6 +32,7 @@ export const cursoIllustrator = {
 
   link: "./formulario.html",
   verMas: "./cursoDinamico.html",
+  comprar: "../html/cursoDinamico.html",
   
   unidades: [
     {

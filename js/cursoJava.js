@@ -27,6 +27,7 @@ export const cursoJava = {
     },
     link: "./formulario.html",
     verMas: "./cursoDinamico.html",
+    comprar: "../html/cursoDinamico.html",
     
     unidades: [
         {
