@@ -78,7 +78,7 @@
                         <label for="DNI">
                             <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
                         </label>
-                        <button type="button" class="boton_circular" id="borrar-alumno">-</button>
+                        <button type="button" class="boton_circular" id="borrar-primer-alumno">-</button>
                     </div>
                 </div>
                 <div class="agregar_persona">
@@ -89,10 +89,11 @@
                     <button type="submit" class="boton_inscripcion">Confirmar inscripcion</button>
                 </div>
             </form>
-            <dialog>
+            <dialog id="inscripcionDialog">
                 <h2> ~ Muchas gracias ~ </h2>
                 <h3 class="contenedor_empresa_dialog"></h3>
-                <h3>El listado de alumnos y el link de pago seran enviados por email</h3>
+                <h3 class="contenedor_alumnos_dialog"></h3>
+                <h3>El link de pago seran enviados por email</h3>
                 <button id="js-CloseDialog">Cerrar</button>
             </dialog>
         </section>

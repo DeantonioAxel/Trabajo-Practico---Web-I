@@ -1,6 +1,6 @@
-import {Dialog} from './dialog.js';
+
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
-import {inicializarDatalist} from './datalist.js'
+import { inicializarDatalist } from './datalist.js'
 import { cursosDisponibles } from './cursos.js';
 import { Footer } from "./footer.js";
 
@@ -11,11 +11,12 @@ const footer = new Footer();
 inicializarDatalist()
 header.render();
 footer.render();
+
+
 const nombreEmpresaInput = document.querySelector("#company_name");
 const selectCursos = document.querySelector("#Seleccion_curso");
 const precioAcumulado = document.querySelector("#Importe_acumulado");
 const botonBorrarAlumno = document.querySelector("#borrar-alumno");
-const contenedorAlumnos = document.querySelector(".contenedorListadoAlumnos")
 const botonAgregarAlumno = document.querySelector("#agregar-alumno");
 let precioPorAlumno = 0;
 let contadorAlumnos = 0;
@@ -23,10 +24,7 @@ let index = 1;
 const botonConfirmar = document.querySelector(".boton_inscripcion");
 const empresaSeleccionadaDialog = document.querySelector(".contenedor_empresa_dialog");
 
-nombreEmpresaInput.addEventListener("keyup", (event) => {
-    const filtro = event.target.value.toUpperCase();
-    empresaSeleccionadaDialog.textContent = `Empresa: ${filtro}`;
-});
+
 
 selectCursos.innerHTML = "";
 const opcionDefault = document.createElement("option");
@@ -47,62 +45,118 @@ selectCursos.addEventListener("change", (event) => {
     if (cursoSeleccionado) {
         console.log(`Curso seleccionado: ${cursoSeleccionado.nombre}, Precio: U$D ${cursoSeleccionado.precio}`);
         precioPorAlumno = Number(
-        cursoSeleccionado.precio.toString().replace(/[^0-9.]/g, ""));
+            cursoSeleccionado.precio.toString().replace(/[^0-9.]/g, ""));
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
 
+    const contenedor = document.querySelector(".contenedorListadoAlumnos");
+    const agregarBtn = document.getElementById("agregar-alumno");
+    const importeTexto = document.getElementById("Importe_acumulado");
 
-botonAgregarAlumno.addEventListener("click", () => {
+    // --- FUNCIÓN PARA ACTUALIZAR IMPORTE ---
+    function actualizarImporte() {
+        const alumnos = document.querySelectorAll(".datos_alumno");
 
-    const nuevoAlumnoDiv = document.createElement("div");
-    nuevoAlumnoDiv.classList.add("datos_alumno");
+        let cantidad = 0;
 
-    nuevoAlumnoDiv.innerHTML = `
-        <label><input type="text" id="last_name_${index}" name="last_name" placeholder="Apellido" required></label>
-        <label><input type="text" id="first_name_${index}" name="first_name" placeholder="Nombre" required></label>
-        <label><input type="text" id="DNI_${index}" name="DNI" placeholder="DNI" max="99999999" required></label>
-        <button type="button" class="boton_circular borrar-alumno">-</button>
-    `;
+        alumnos.forEach(alumno => {
+            const inputs = alumno.querySelectorAll("input");
 
-    contenedorAlumnos.appendChild(nuevoAlumnoDiv);
+            // Si el alumno tiene por lo menos un campo completo, cuenta
+            const tieneDatos = Array.from(inputs).some(input => input.value.trim() !== "");
+            if (tieneDatos) {
+                cantidad++;
+            }
+        });
 
-    
-    const botonBorrar = nuevoAlumnoDiv.querySelector(".borrar-alumno");
-    agregarEventoBorrar(botonBorrar, nuevoAlumnoDiv, false); 
+        // precioPorAlumno viene del selectCurso.addEventListener("change")
+        const total = cantidad * precioPorAlumno;
 
-    contadorAlumnos++;
-    precioAcumulado.textContent = `US$ ${(contadorAlumnos * precioPorAlumno).toFixed(2)}.-`;
+        importeTexto.textContent = `$${total.toLocaleString()}.-`;
+    }
 
-    index++; 
+    // --- LIMPIAR PRIMER ALUMNO ---
+    const botonPrimerBorrar = document.getElementById("borrar-primer-alumno");
+    botonPrimerBorrar.addEventListener("click", () => {
+        const primerAlumno = document.querySelector(".datos_alumno");
+        primerAlumno.querySelectorAll("input").forEach(input => input.value = "");
+        actualizarImporte();
+    });
+
+    // --- AGREGAR NUEVO ALUMNO ---
+    agregarBtn.addEventListener("click", () => {
+        const alumnoOriginal = document.querySelector(".datos_alumno");
+        const nuevoAlumno = alumnoOriginal.cloneNode(true);
+
+        // limpiar inputs
+        nuevoAlumno.querySelectorAll("input").forEach(input => input.value = "");
+
+        // botón borrar del nuevo alumno
+        const botonBorrar = nuevoAlumno.querySelector("button");
+        botonBorrar.addEventListener("click", () => {
+            nuevoAlumno.remove();
+            actualizarImporte();
+        });
+
+        // inputs del nuevo alumno actualizan importe
+        nuevoAlumno.querySelectorAll("input").forEach(input => {
+            input.addEventListener("input", actualizarImporte);
+        });
+
+        contenedor.appendChild(nuevoAlumno);
+
+        actualizarImporte();
+    });
+
+    // inputs del primer alumno actualizan importe
+    document.querySelectorAll(".datos_alumno input").forEach(input => {
+        input.addEventListener("input", actualizarImporte);
+    });
+
+    // cuando cambia el curso, recalcula todo
+    selectCursos.addEventListener("change", actualizarImporte);
+
 });
 
-const borrarPrimerAlumno = document.querySelector("#borrar-primer-alumno");
-const primerAlumnoDiv = borrarPrimerAlumno.closest(".datos_alumno");
-
-agregarEventoBorrar(borrarPrimerAlumno, primerAlumnoDiv, true);
-
-function agregarEventoBorrar(boton, alumnoDiv, esPrimerAlumno = false) {
-
-    if (esPrimerAlumno) {
-        
-        boton.addEventListener("click", () => {
-            const inputs = alumnoDiv.querySelectorAll("input");
-            inputs.forEach(input => input.value = "");
-            
-        });
-
-    } else {
-        
-        boton.addEventListener("click", () => {
-            alumnoDiv.remove();
-            contadorAlumnos--;
-            precioAcumulado.textContent = `US$ ${(contadorAlumnos * precioPorAlumno).toFixed(2)}.-`;
-        });
+document.addEventListener("DOMContentLoaded", () => {
+    const dialog = document.getElementById("inscripcionDialog");
+    if (!dialog) {
+        console.error("No se encontró el diálogo. Revisa el HTML.");
+        return;
     }
-}
 
+    const empresaDialog = dialog.querySelector(".contenedor_empresa_dialog");
+    const alumnosDialog = dialog.querySelector(".contenedor_alumnos_dialog");
+    const cerrarBtn = document.getElementById("js-CloseDialog");
+    const botonConfirmar = document.querySelector(".boton_inscripcion");
 
+    botonConfirmar.addEventListener("click", (event) => {
+        event.preventDefault();
 
-const DIALOG_EMPRESAS = new Dialog();
+        const empresa = document.querySelector("#company_name").value.trim();
+        empresaDialog.textContent = `Empresa: ${empresa}`;
+
+        const alumnos = document.querySelectorAll(".datos_alumno");
+        const listaFinal = [];
+        alumnos.forEach(alumno => {
+            const apellido = alumno.querySelector('input[name="last_name"]').value.trim();
+            const nombre = alumno.querySelector('input[name="Name"]').value.trim();
+            const dni = alumno.querySelector('input[name="DNI"]').value.trim();
+            if (apellido || nombre || dni) {
+                listaFinal.push(`${apellido}, ${nombre} - DNI: ${dni}`);
+            }
+        });
+
+        alumnosDialog.innerHTML = listaFinal.map(a => `<p>${a}</p>`).join("");
+
+        dialog.showModal();
+    });
+
+    cerrarBtn.addEventListener("click", () => {
+        dialog.close();
+        document.querySelector("form").reset();
+    });
+});
 
