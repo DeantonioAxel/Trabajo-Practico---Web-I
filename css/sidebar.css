@@ -22,6 +22,19 @@
 .sidebar-carrito.abierto {
     right: 0;
 }
+.sidebar-carrito.abierto p {
+    text-align: center;
+    color: #8269F1;
+}
+
+.sidebar-carrito.abierto .cerrar-sidebar {
+    position: absolute;
+    right: 30px;
+    font-size: 50px;
+    background-color: #fff;
+    color: #8269F1;
+    border: none;
+}
 
 .sidebar-carrito.abierto .titulo-sidebar {
     font-size: 1.5em;
@@ -33,11 +46,42 @@
     letter-spacing: 1px;
 }
 
-.sidebar-carrito.abierto .cerrar-sidebar {
-    position: absolute;
-    right: 30px;
-    font-size: 50px;
-    background-color: #fff;
+.sidebar-carrito.abierto .cursosDelSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar-carrito.abierto .cursosDelSidebar .cursos-contenedor {
+    position: relative;
+}
+
+.sidebar-carrito.abierto .cursosDelSidebar .cursos-contenedor img {
+    width: 100%;
+}
+
+.sidebar-carrito.abierto .cursosDelSidebar .cursos-contenedor h4 {
+    font-size: 14px;
+    text-align: right;
     color: #8269F1;
-    border: none;
+}
+
+.sidebar-carrito.abierto .cursosDelSidebar .cursos-contenedor button {
+    padding: 3px;
+    height: auto;
+    border-radius: 0.625rem;
+    font-size: 1rem;
+    background-color: #6227dc;
+    color: white;
+    border: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+}
+
+.sidebar-carrito.abierto .cursosDelSidebar .cursos-contenedor button:hover {
+    background-color: #8051dc;
+    cursor: pointer;
 }

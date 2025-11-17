@@ -9,7 +9,7 @@
     letter-spacing: 0.06em;
 }
 
-section{
+.contenido{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
