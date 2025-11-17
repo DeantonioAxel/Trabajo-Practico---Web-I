@@ -1,7 +1,7 @@
 export const cursoCanva = {
     nombre: "Canva",
     titulo: "Curso completo de Canva",
-    precio: "29,99 US$",
+    precio: "29.99 US$",
     cargaHoraria: "20 horas",
     imgclass: "imagenCursoDestacadoIndex" , 
     imgsrc: "../images/Curso canva.png", 

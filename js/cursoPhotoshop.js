@@ -1,7 +1,7 @@
 export const cursoPhotoshop = {
     nombre: "Photoshop",
     titulo: "Curso completo de Photoshop",
-    precio: "39,99 US$",
+    precio: "39.99 US$",
     cargaHoraria: "32 horas",
     imgclass: "imagenCursoDestacadoIndex",
     imgsrc: "../images/Curso photoshop.png",

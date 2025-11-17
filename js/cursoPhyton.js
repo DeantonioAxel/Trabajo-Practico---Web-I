@@ -1,7 +1,7 @@
 export const cursoPython = {
   nombre: "Python",
   titulo: "Curso completo de Python",
-  precio: "59,99 US$",
+  precio: "59.99 US$",
   cargaHoraria: "62 horas",
   imgclass: "imagenCursoDestacadoIndex",
   imgsrc: "../images/Curso python.png",

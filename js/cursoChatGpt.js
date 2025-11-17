@@ -1,7 +1,7 @@
 export const cursoChatGPT = {
   nombre: "Chat Gpt",
   titulo: "Curso completo de ChatGPT",
-  precio: "49,99 US$",
+  precio: "49.99 US$",
   cargaHoraria: "50 horas",
   imgclass:"imagenCursoDestacadoIndex" , 
   imgsrc:"../images/Curso chat gpt.png", 

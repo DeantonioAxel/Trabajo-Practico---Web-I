@@ -1,7 +1,7 @@
 export const cursoIllustrator = {
   nombre: "Illustrator",
   titulo: "Curso completo de Illustrator",
-  precio: "49,99 US$",
+  precio: "49.99 US$",
   cargaHoraria: "40 horas",
   imgclass:"imagenCursoDestacadoIndex" , 
   imgsrc:"../images/Curso illustrator.png", 

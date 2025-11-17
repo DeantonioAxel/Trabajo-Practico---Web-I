@@ -1,7 +1,7 @@
 export const cursoJavaScript = {
     nombre: "JavaScript",
     titulo: "Curso completo de JavaScript",
-    precio: "59,99 US$",
+    precio: "59.99 US$",
     cargaHoraria: "60 horas",
     imgclass:"imagenCursoDestacadoIndex" , 
     imgsrc:"../images/Curso javascript.png", 

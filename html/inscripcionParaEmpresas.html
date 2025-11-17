@@ -68,7 +68,18 @@
                     </label>
                 </div>
                 <div class="contenedorListadoAlumnos">
-                    
+                    <div class="datos_alumno">
+                        <label for="last_name">
+                            <input type="text" id="last_name" name="last_name" placeholder="Apellido" required>
+                        </label>
+                        <label for="Name">
+                            <input type="text" id="Name" name="Name" placeholder="Nombre" required>
+                        </label>
+                        <label for="DNI">
+                            <input type="text" id="DNI" name="DNI" placeholder="DNI" max="99999999" required>
+                        </label>
+                        <button type="button" class="boton_circular" id="borrar-alumno">-</button>
+                    </div>
                 </div>
                 <div class="agregar_persona">
                     <p>Agregar persona <button type="button" class="boton_circular" id="agregar-alumno">+</button></p>

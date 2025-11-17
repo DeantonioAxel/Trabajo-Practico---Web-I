@@ -1,7 +1,7 @@
 export const cursoProgramacionC = {
     nombre: "Programacion C",
     titulo: "Curso completo de Programación en C",
-    precio: "49,99 US$",
+    precio: "49.99 US$",
     cargaHoraria: "50 horas",
     imgclass:"imagenCursoDestacadoIndex" , 
     imgsrc:"../images/Curso programacion c.png", 
