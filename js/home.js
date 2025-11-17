@@ -13,14 +13,8 @@ slider.render();
 header.render();
 mediosPagosSlider.init();
 inicializarDatalist();
-s
 
-document.addEventListener('DOMContentLoaded', () => {
-    s
+document.addEventListener('DOMContentLoaded', () => { 
     const contenedorCursos = document.querySelector('#cajasCursosRecomendados');
     mostrarPrimerosNCursos();
-    
-
-    
-   
 });
