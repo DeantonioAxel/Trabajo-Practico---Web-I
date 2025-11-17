@@ -34,18 +34,38 @@ export function generarInformacionDelCursoSeleccionado (curso , contenedor){
 
 export function generarUnidades(unidades, contenedor){
     contenedor.innerHTML="";
-    unidades.forEach(unidad => {
-        const tituloUnidad = document.createElement('h3');
-        tituloUnidad.textContent = unidad.unidad;
-        contenedor.appendChild(tituloUnidad);
-        const lista = document.createElement('ul');
+    unidades.forEach((unidad, index) => {
+        const accordionItem = document.createElement("div");
+        accordionItem.classList.add("accordion-item");
+
+        const header = document.createElement("div");
+        header.classList.add("accordion-header");
+        header.textContent = unidad.unidad;
+        header.dataset.index = index;
+
+        const content = document.createElement("div");
+        content.classList.add("accordion-content");
+
         unidad.clases.forEach(clase => {
-            const li = document.createElement('li');
-            li.textContent = `${clase.titulo} — ${clase.tiempo}`;
-            lista.appendChild(li);
+            const claseItem = document.createElement("p");
+            claseItem.textContent = `• ${clase.titulo} — ${clase.tiempo}`;
+            content.appendChild(claseItem);
         });
-        contenedor.appendChild(lista);
+
+        content.style.display = "none";
+
+        header.addEventListener("click", () => {
+            const isOpen = content.style.display === "block";
+            document.querySelectorAll(".accordion-content").forEach(c => c.style.display = "none"); 
+
+            content.style.display = isOpen ? "none" : "block"; 
+        });
+
+        accordionItem.appendChild(header);
+        accordionItem.appendChild(content);
+        contenedor.appendChild(accordionItem);
     });
+
 }
 
 export function generarInformacionDocente (curso, contenedor){
