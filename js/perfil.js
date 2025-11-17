@@ -1,6 +1,8 @@
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+import {inicializarDatalist} from './datalist.js'
 
 const header = new HeaderOtrasVistas();
+inicializarDatalist();
 
 const USUARIO = JSON.parse(localStorage.getItem('usuarioLogueado'));
 const NOMBRE_USUARIO = document.querySelector('.js-nombre-usuario');

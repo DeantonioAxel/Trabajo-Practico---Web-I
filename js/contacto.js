@@ -1,4 +1,6 @@
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
+import {inicializarDatalist} from './datalist.js'
+inicializarDatalist();
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");

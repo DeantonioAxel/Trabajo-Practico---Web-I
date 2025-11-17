@@ -1,8 +1,11 @@
 import { cursosDisponibles } from './cursos.js';
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 import { mostrarCursos } from './mostrarCursos.js';
+import {inicializarDatalist} from './datalist.js'
 
 const header = new HeaderOtrasVistas();
+inicializarDatalist();
+
 const contenedorCursos = document.querySelector('.cajasCursosRecomendados');
 const filtros = document.querySelectorAll('.filtroCategoria');
 
