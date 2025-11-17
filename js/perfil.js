@@ -5,9 +5,9 @@ const header = new HeaderOtrasVistas();
 inicializarDatalist();
 
 const USUARIO = JSON.parse(localStorage.getItem('usuarioLogueado'));
+const CURSOS_DEL_USUARIO = USUARIO.cursos;
 const NOMBRE_USUARIO = document.querySelector('.js-nombre-usuario');
 const CORREO_USUARIO = document.querySelector('.js-correo-usuario');
-const CURSOS_DEL_USUARIO = USUARIO.cursos;
 
 NOMBRE_USUARIO.textContent = USUARIO.nombre;
 CORREO_USUARIO.textContent = USUARIO.correo;
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img class="imagenCurso" src="${curso.imgsrc}" alt="${curso.imgalt}">
         <h3 class="duracion">${curso.cargaHoraria}</h3>
         <h4 class="tituloCurso">${curso.titulo}</h4>
-        <a href="#"><h5 class="verMas">Ver más</h5></a>
+        <a href="../html/cursoDinamico.html"><h5 class="verMas">Ver más</h5></a>
         <button class="btn-eliminar-cuenta js-eliminar-curso">Eliminar curso</button>
       `;
     cursosDelUsuario.appendChild(cursoSection);
