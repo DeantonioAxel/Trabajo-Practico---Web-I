@@ -1,5 +1,7 @@
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 import {inicializarDatalist} from './datalist.js'
+import { Footer } from "./footer.js";
+
 inicializarDatalist();
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const cerrarDialog = document.querySelector("#js-CloseDialog");
 
   const header = new HeaderOtrasVistas();
+  const footer = new Footer();
+
+  footer.render();
 
   const contador = document.createElement("p");
   contador.id = "contador";

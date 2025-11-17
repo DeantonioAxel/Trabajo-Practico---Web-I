@@ -1,7 +1,12 @@
 import {cursosDisponibles} from './cursos.js';
+import { Footer } from "./footer.js";
+
 
 const contenedorTitulo = document.querySelector(".forms-inner");
 const contenedorPrecio = document.querySelector(".forms-enrollment-amount");
+const footer = new Footer();
+
+footer.render();
 
 
 export function generarFormulario (curso){

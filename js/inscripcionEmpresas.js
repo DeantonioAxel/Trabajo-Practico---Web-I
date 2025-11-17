@@ -2,10 +2,15 @@ import {Dialog} from './dialog.js';
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 import {inicializarDatalist} from './datalist.js'
 import { cursosDisponibles } from './cursos.js';
+import { Footer } from "./footer.js";
+
 
 const header = new HeaderOtrasVistas();
+const footer = new Footer();
+
 inicializarDatalist()
 header.render();
+footer.render();
 const nombreEmpresaInput = document.querySelector("#company_name");
 const selectCursos = document.querySelector("#Seleccion_curso");
 const precioAcumulado = document.querySelector("#Importe_acumulado");

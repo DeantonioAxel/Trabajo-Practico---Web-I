@@ -12,11 +12,17 @@ import { cursoPython } from "./cursoPhyton.js";
 import { cursoPhotoshop } from "./cursoPhotoshop.js";
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 import {inicializarDatalist} from './datalist.js'
+import { Footer } from "./footer.js";
+
 
 inicializarDatalist();
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = new HeaderOtrasVistas();
+    const footer = new Footer();
+    
+    footer.render();
+
     const cursos = {
         "2025-10-01": cursoPhotoshop ,
         "2025-10-06": cursoJava ,

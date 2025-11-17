@@ -2,8 +2,14 @@ import { cursosDisponibles } from './cursos.js';
 import { HeaderOtrasVistas } from "./headerOtrasVistas.js";
 import { mostrarCursos } from './mostrarCursos.js';
 import {inicializarDatalist} from './datalist.js'
+import { Footer } from "./footer.js";
+
 
 const header = new HeaderOtrasVistas();
+const footer = new Footer();
+
+footer.render();
+
 inicializarDatalist();
 
 const contenedorCursos = document.querySelector('.cajasCursosRecomendados');
