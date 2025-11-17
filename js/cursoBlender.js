@@ -1,6 +1,6 @@
 export const cursoBlender = {
     nombre: "Blenderdiseño3d",
-    titulo: "Curso completo de Blender - Diseño 3D",
+    titulo: "Curso de Blender - Diseño 3D",
     precio: "69.99 US$",
     cargaHoraria: "50 horas",
     imgclass:"imagenCursoDestacadoIndex" , 

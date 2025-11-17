@@ -1,6 +1,6 @@
 export const cursoAIMarketingDigital = {
     nombre: "AI: Marketing Digital",
-    titulo: "Curso completo de Marketing Digital con Inteligencia Artificial",
+    titulo: "Curso de Marketing Digital",
     precio: "54.99 US$",
     cargaHoraria: "45 horas",
     imgclass:"imagenCursoDestacadoIndex" , 
