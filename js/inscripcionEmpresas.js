@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const agregarBtn = document.getElementById("agregar-alumno");
     const importeTexto = document.getElementById("Importe_acumulado");
 
-    // --- FUNCIÓN PARA ACTUALIZAR IMPORTE ---
+    
     function actualizarImporte() {
         const alumnos = document.querySelectorAll(".datos_alumno");
 
@@ -64,20 +64,20 @@ document.addEventListener("DOMContentLoaded", () => {
         alumnos.forEach(alumno => {
             const inputs = alumno.querySelectorAll("input");
 
-            // Si el alumno tiene por lo menos un campo completo, cuenta
+            
             const tieneDatos = Array.from(inputs).some(input => input.value.trim() !== "");
             if (tieneDatos) {
                 cantidad++;
             }
         });
 
-        // precioPorAlumno viene del selectCurso.addEventListener("change")
+        
         const total = cantidad * precioPorAlumno;
 
         importeTexto.textContent = `$${total.toLocaleString()}.-`;
     }
 
-    // --- LIMPIAR PRIMER ALUMNO ---
+    
     const botonPrimerBorrar = document.getElementById("borrar-primer-alumno");
     botonPrimerBorrar.addEventListener("click", () => {
         const primerAlumno = document.querySelector(".datos_alumno");
@@ -85,22 +85,22 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarImporte();
     });
 
-    // --- AGREGAR NUEVO ALUMNO ---
+    
     agregarBtn.addEventListener("click", () => {
         const alumnoOriginal = document.querySelector(".datos_alumno");
         const nuevoAlumno = alumnoOriginal.cloneNode(true);
 
-        // limpiar inputs
+        
         nuevoAlumno.querySelectorAll("input").forEach(input => input.value = "");
 
-        // botón borrar del nuevo alumno
+        
         const botonBorrar = nuevoAlumno.querySelector("button");
         botonBorrar.addEventListener("click", () => {
             nuevoAlumno.remove();
             actualizarImporte();
         });
 
-        // inputs del nuevo alumno actualizan importe
+        
         nuevoAlumno.querySelectorAll("input").forEach(input => {
             input.addEventListener("input", actualizarImporte);
         });
@@ -110,12 +110,12 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarImporte();
     });
 
-    // inputs del primer alumno actualizan importe
+    
     document.querySelectorAll(".datos_alumno input").forEach(input => {
         input.addEventListener("input", actualizarImporte);
     });
 
-    // cuando cambia el curso, recalcula todo
+    
     selectCursos.addEventListener("change", actualizarImporte);
 
 });
