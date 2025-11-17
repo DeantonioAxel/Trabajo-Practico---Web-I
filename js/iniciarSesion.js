@@ -23,7 +23,7 @@ if (FORMULARIO_LOGIN) {
 
 
         if ((validar.correo(CORREO) && CORREO !== "") && (validar.contrasenia(CONTRASENIA) && CONTRASENIA !== "")) {
-            const USUARIOS_GUARDADOS = JSON.parse(localStorage.getItem('usuarios') || []);
+            const USUARIOS_GUARDADOS = JSON.parse(localStorage.getItem('usuarios')) || [];
 
             const USUARIO_ENCONTRADO = validar.obtener_usuario(CORREO, CONTRASENIA, USUARIOS_GUARDADOS);
 

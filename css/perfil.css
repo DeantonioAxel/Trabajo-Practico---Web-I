@@ -111,19 +111,26 @@
 }
 
 .btn-eliminar-cuenta {
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 0.7em 1.5em;
-  border-radius: 0.5em;
-  font-weight: bold;
-  cursor: pointer;
-  display: block;
-  margin: 1.5em auto;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 1.5em auto;
 }
 
 .btn-eliminar-cuenta:hover {
-  background-color: #d63333;
+    background-color: #d63333;
+}
+
+.btn-eliminar-cuenta.js-eliminar-curso {
+    margin: 0;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
 }
 
 .cursos-contenedor {
@@ -162,10 +169,12 @@
 .cursos-contenedor .duracion {
     font-size: 1em;
     font-weight: bold;
-    color: black;
+    color: white;
+    background-color: black;
+    padding: 0.125em 0.3125em;
     position: absolute;
-    top: 12em;
-    left: 0.3125em;
+    top: 11em;
+    right: 0.3125em;
 }
 
 .cursos-contenedor .tituloCurso {
@@ -218,40 +227,88 @@
     transform: scale(0.95);
 }
 
-@media screen and (max-width:1600px ) and
-(min-width: 1440px) {
-.cursos-contenedor .precio {
-    top: 12em;
+.dialog-borrar-curso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    padding: 1em;
+    border-color: #6227dc;
+    border-radius: 10px;
 }
-.cursos-contenedor .verMas {
-    top: 16em;
+
+.dialog-borrar-curso::backdrop {
+    background-color: rgba(0, 0, 0, 0.30);
 }
-.cursos-contenedor .comprar {
-top: 16em;
+
+.dialog-borrar-curso .dialog-body {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5rem;
 }
+
+.dialog-borrar-curso .dialog-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dialog-borrar-curso .btn {
+    display: block;
+    margin: 0;
+    width: 30%;
+    height: auto;
+    border-radius: 0.625rem;
+    font-size: 1.5rem;
+    background-color: #6227dc;
+    color: white;
+    border: 0;
+}
+
+.dialog-borrar-curso .btn:hover {
+    background-color: #8051dc;
+    cursor: pointer;
+}
+@media screen and (max-width:1600px) and (min-width: 1440px) {
+    .cursos-contenedor .precio {
+        top: 12em;
+    }
+
+    .cursos-contenedor .verMas {
+        top: 16em;
+    }
+
+    .cursos-contenedor .comprar {
+        top: 16em;
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 779px) {
 
-.cursos-contenedor .precio {
-    top: 7.5em;
-}
-.cursos-contenedor .duracion {
-    top: 8.5em;
-    font-size: 0.9em;
-}
-.cursos-contenedor .tituloCurso {
-    font-size: 0.6em;
-    top: 15em;;
-}
-.cursos-contenedor .verMas {
-    top: 11em;
-}
+    .cursos-contenedor .precio {
+        top: 7.5em;
+    }
 
-.cursos-contenedor .comprar {
-    top: 11.5em;
-    
-}
+    .cursos-contenedor .duracion {
+        top: 8.5em;
+        font-size: 0.9em;
+    }
+
+    .cursos-contenedor .tituloCurso {
+        font-size: 0.6em;
+        top: 15em;
+        ;
+    }
+
+    .cursos-contenedor .verMas {
+        top: 11em;
+    }
+
+    .cursos-contenedor .comprar {
+        top: 11.5em;
+
+    }
 }
 
 @media screen and (max-width: 60em) {
@@ -274,14 +331,14 @@ top: 16em;
     }
 
     .cursos-contenedor .precio {
-    
-    padding: 0.125em 0.3125em;
-    position: absolute;
-    top: 11.8em;
-    right: 0;
+
+        padding: 0.125em 0.3125em;
+        position: absolute;
+        top: 11.8em;
+        right: 0;
     }
 
-  
+
 }
 
 
@@ -293,7 +350,9 @@ top: 16em;
         width: 95%;
     }
 
-    .perfil .descripcion, .perfil .mis-cursos, .perfil .cursos-recomendados {
+    .perfil .descripcion,
+    .perfil .mis-cursos,
+    .perfil .cursos-recomendados {
         margin-top: 1em;
     }
 
@@ -309,7 +368,7 @@ top: 16em;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .cursos-contenedor .duracion{
+    .cursos-contenedor .duracion {
         font-size: 0.9em;
         top: 12em;
     }
@@ -317,7 +376,7 @@ top: 16em;
 
 @media screen and (max-width: 30em) {
     .perfil {
-        display: block ;
+        display: block;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         width: 100%;
@@ -328,9 +387,9 @@ top: 16em;
     }
 
     .perfil .descripcion img {
-    display: flex;
-    justify-self: center;
-    width: 80%;
+        display: flex;
+        justify-self: center;
+        width: 80%;
     }
 
     .perfil .descripcion .enviar-giftcard {
@@ -362,6 +421,6 @@ top: 16em;
     }
 
     .cursos-contenedor .comprar {
-         width: 50%;
+        width: 50%;
     }
 }

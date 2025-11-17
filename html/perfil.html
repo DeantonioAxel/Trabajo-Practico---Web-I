@@ -43,6 +43,7 @@
         </div>
     </header>
     <hr class="headerline">
+
     <nav>
         <ul class="nav-links js-nav">
         </ul>
@@ -56,34 +57,14 @@
             <article class="descripcion">
                 <img src="../images/ejemplo-perfil.png" alt="ejemplo perfil">
                 <p class="usuario js-nombre-usuario"></p>
-                <p class="js-correo-usuario">ejemplo@correo.com</p>
+                <p class="js-correo-usuario"></p>
                 <a class="enviar-giftcard" href="./giftcard.html">Enviar un regalo &#127873</a>
             </article>
-
             <button id="btnEliminarCuenta" class="btn-eliminar-cuenta">Eliminar mi cuenta</button>
-
             <article class="mis-cursos">
                 <h1>Mis cursos</h1>
                 <div class="mis-cursos-grilla">
-                    <div class="cursos-contenedor">
-                        <img class="imagenCurso" src="../images/Curso javascript.png"
-                            alt="Imagen del curso de javascript">
-                        <h3 class="precio">59,99 US$</h3>
-                        <h3 class="duracion">60 hs</h3>
-                        <h4 class="tituloCurso">Curso completo de Java Script</h4>
-                        <a href="../html/cursoJavaScriptComprado.html">
-                            <h5 class="verMas">Ver más</h5>
-                        </a>
-                    </div>
-                    <div class="cursos-contenedor">
-                        <img class="imagenCurso" src="../images/Curso java.png" alt="Imagen del curso de java">
-                        <h3 class="precio">59,99 US$</h3>
-                        <h3 class="duracion">62 hs</h3>
-                        <h4 class="tituloCurso">Curso completo de Java</h4>
-                        <a href="../html/cursoJavaComprado.html">
-                            <h5 class="verMas">Ver más</h5>
-                        </a>
-                    </div>
+                    
                 </div>
             </article>
             <article class="cursos-recomendados">
@@ -135,6 +116,14 @@
             </article>
         </section>
     </main>
+
+    <dialog class="dialog-borrar-curso">
+        <div class="dialog-body">¿Esta seguro de borrar el curso?</div>
+        <div class="dialog-footer">
+            <button class="btn js-btn-aceptar">Aceptar</button>
+            <button class="btn js-btn-cancelar">Cancelar</button>
+        </div>
+    </dialog>
 
     <footer class="footer">
         <div class="footer-data grupo">
